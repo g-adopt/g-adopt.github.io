@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         G-ADOPT
+      </title>
+      <link rel="shortcut icon" href="./graphix/icon.png" type="image/x-icon"> 
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      </script>
+   </head>
+
+   <!-- Header css files -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Style Formattings -->
+   <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", sans-serif}
+      .w3-bar,h1,button {font-family: "Times New Roman", sans-serif}
+      .fa-anchor,.fa-coffee {font-size:200px}
+   </style>
+
+
+   <body>
+
+   <!-- Navbar -->
+   <div class="w3-top">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+         <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+         <a href="./examples.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-padding-large ">Examples</a>
+         <a href="./contributors.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contributors</a>
+         <a href="https://github.com/g-adopt/g-adopt.git" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Repository <i class="fa fa-github" style="font-size:22px" ></i></a>
+      </div>
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+         <a href="https://github.com/g-adopt/g-adopt.git" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Repository <i class="fa fa-github" style="font-size:22px" ></i></a>
+         <a href="./examples.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Examples</a>
+         <a href="./contributors.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Contributors</a>
+      </div>
+   </div>
+
+
+   <!-- Header, Here we have a big graphic of G-ADOPT -->
+   <header class="w3-bar w3-white w3-center" style="padding-top:50px;padding-bottom:0px">
+
+      <!-- A brief description of what is going to happen -->
+      <div class="w3-container w3-white w3-center  w3-padding-32">
+         <!-- Title of the text -->
+         <h1 class="w3-center">Community Benchmarks and Examples:</h1>
+         <div class="w3-container w3-quarter"> </div>
+         <h5 class="w3-half"> Bellow is a collection of community benchmarks that are done using <a href="https://www.firedrakeproject.org/"> Firedrake </a>. Each case
+            is presented by a brief description of the numerical setting and the key structure of the code. The full script of  
+            each example click on <i class="fa fa-github" style="font-size:22px" ></i> for each example you will be taken to our github repository.</h5>
+         <div class="w3-third"></div>
+      </div> 
+
+      <!-- A menu of all the Examples we are going to show--> 
+      <div class="w3-container w3-black w3-center  w3-padding-32">
+         <!-- Each case is a button from here, referenced to the section we have  -->
+         <h5  class=" w3-button w3-margin">
+            <a href="#blankenbach2d">Blankenbach 2D square convection - isoviscous</a> 
+         </h5>
+
+         <h5 class=" w3-button w3-margin">
+            <a href="#BusseBox">Busse 3D convection - isoviscous</a>             
+         </h5>
+      </div> 
+   </header>
+
+   <!-- Text for Blankenbach 2 dimensional -->
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h2 id="blankenbach2d" class="w3-padding-small"> Blankenbach 2D square convection - isoviscous <a href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/blankenbach_1e4.py"><i class="fa fa-github" style="font-size:32px" ></i></a></h2>
+          <h5>
+             <!-- First paragraph -->
+            A simple 2-D square convection problem, from <a href='#refblankenbach2d'>Blankenbach et al (1989)</a>, for execution in Firedrake, is displayed in Listing 1. 
+            The problem is incompressible (Bousinessq approximation), is heated from below and cooled from above, with closed, free-slip
+            boundaries. Solutions are obtained by solving the Stokes equations for velocity and pressure, coupled to the energy equation
+            for temperature and a suitable equation of state.
+         </h5>
+         <h5>
+            We have set up the problem using a bilinear (quadrilateral, Q2-Q1) elements for velocity and pressure, and Q2 elements for
+            temperature, on a unit square mesh. In Listing 1, line 3 defines the mesh, with 40 quadrilateral elements in x and y directions.
+            Important constants (Rayleigh Number, \(Ra\); Viscosity, \(\mu\); Thermal diffusivity, \(\kappa\)), in addition to the timestep and
+            unit vector, are defined on lines 5-9. Lines 11-13 define the finite element function spaces and degree, using continuous Lagrange
+            elements, on the given mesh. Test (lines 15-17) and trial (lines 19-26) functions are subsequently defined and initialised, with
+            the UFL code for the Stokes and energy equations defined on lines 28-33. The resemblance to the mathematical formulation is immediately
+            apparent. Dirichlet boundary conditions for velocity (boundaries identified by markers 1-4) and temperature (set to 1 at the base and 0
+            at the top, identified by markers 3 and 4, respectively) are specified on lines 36-37. We note that pressure is only defined up to a 
+            constant and, hence, we define the associated nullspace on line 38. The time-loop is initiated on line 43, with the Stokes system solved
+            for velocity and pressure (z), using default solver options, and the energy equation solved using the same default options. Output, in
+            VTU format is written on line 47, to a file initialised on line 40.
+         </h5>
+         <div class="w3-center w3-padding-64">
+         <iframe width="560" height="560" src="https://www.youtube.com/embed/uupD4YXaZ3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+      </div>
+   </div>
+
+   <!-- Text for Busse Benchmark-->
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h2 id="BusseBox" class="w3-padding-small"> Busse 3D convection - isoviscous <a href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/busse_C1.py"><i class="fa fa-github" style="font-size:32px" ></i></a></h2>
+          <h5>
+            <!-- First paragraph -->
+            Here we highlight the ease at which things can be tried in different geometries. We first examine and validate our setup in a
+            3-D Cartesian domain, for a steady state case with both constant viscosity -- case 1a from <a href='#refbusse3d'>Busse el al. (1994)</a>.
+            The domain is a box of dimensions \(1.0079 \times 0.6283 \times 1\). Boundary conditions for temperature are T = 0 at the surface (z = 1) and 
+            T = 1 at the base (z = 0), with insulating (homogeneous Neumann) sidewalls. No‐slip velocity boundary conditions are specified
+            at the top surface and base of the domain, with free‐slip and no‐normal flow boundary conditions on all sidewalls. Initial
+            conditions are chosen to produce a single ascending and descending flow, at \(x = y = 0\) and \((x = a)\), \((y = b)\), respectively.
+            The Rayleigh number \(= 3 \times 10^{4}\).
+         </h5>
+         <div class="w3-center w3-padding-64">
+            <iframe width="560" height="560" src="https://www.youtube.com/embed/s6W_K5ftNpQ" title="Busse et al 1994 3-dimensional benchmark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+
+      </div>
+   </div>
+
+   <!-- References -->
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 id="blankenbach2d" class="w3-padding-small"> References: </h3>
+            <ol>
+               <li id='refblankenbach2d'> Blankenbach B, Busse F, Christensen U, Cserepes L, Gunkel D, Hansen U, Harder H, Jarvis G, Koch M,
+                  Marquart G, Moore D. A benchmark comparison for mantle convection codes. <i>Geophysical Journal International</i>. 1989 Jul 1;98(1):23-38.
+                  </li>
+               <li id='refbusse3d'> Busse FH, Christensen U, Clever R, Cserepes L, Gable C, Giannandrea E, Guillou L, Houseman G, Nataf HC, Ogawa M, 
+                  Parmentier M. 3D convection at infinite Prandtl number in Cartesian geometry—A benchmark comparison. <i>Geophysical & Astrophysical Fluid Dynamics</i>.
+                  1994 Aug 1;75(1):39-59.
+                  </li>
+            </ol>
+      </div>
+   </div>
+
+
+   <!-- Footer--> 
+   <!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+       <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+   </div> -->
+   <!-- Footer -->
+   <footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
+      <div class="w3-xlarge w3-padding-32">
+      </div>
+   </footer> 
+
+   <!--<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+     <div class="w3-xlarge w3-padding-32">
+       <i class="fa fa-facebook-official w3-hover-opacity"></i>
+       <i class="fa fa-instagram w3-hover-opacity"></i>
+       <i class="fa fa-snapchat w3-hover-opacity"></i>
+       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+       <i class="fa fa-twitter w3-hover-opacity"></i>
+       <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+   </footer> -->
+   <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+
+   <!-- defining the main scripts -->
+   <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+         var x = document.getElementById("navDemo");
+         if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+         } else { 
+            x.className = x.className.replace(" w3-show", "");
+         }
+      }
+   </script>
+
+
+   </body>
+</html>
