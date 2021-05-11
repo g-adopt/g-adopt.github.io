@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         G-ADOPT: Examples
+      </title>
+      <link rel="shortcut icon" href="./graphix/icon.png" type="image/x-icon"> 
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      </script>
+   </head>
+
+   <!-- Header css files -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Style Formattings -->
+   <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", sans-serif}
+      .w3-bar,h1,button {font-family: "Times New Roman", sans-serif}
+      .fa-anchor,.fa-coffee {font-size:200px}
+   </style>
+
+
+   <body>
+
+   <!-- Navbar -->
+   <div class="w3-top">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+         <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+         <a href="../examples.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-padding-large ">Examples</a>
+         <a href="https://github.com/g-adopt/g-adopt.git" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Repository <i class="fa fa-github" style="font-size:22px" ></i></a>
+      </div>
+   </div>
+
+   <!-- Text for Busse Benchmark-->
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+         <div class="w3-padding-32"></div>
+          <!-- main header -->
+          <h4 id="BusseBox" class="w3-padding-small"> 2.1. Convection in a Box - isoviscous (Busse 3D) <a style="font-size:12px" href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/busse_C1.py">Click on <i class="fa fa-github" style="font-size:32px" ></i> for code</a></h2>
+          <h5 class="w3-justify">
+            <!-- First paragraph -->
+            Here we highlight the ease at which things can be tried in different geometries. We first examine and validate our setup in a
+            3-D Cartesian domain, for a steady state case with both constant viscosity -- case 1a from <a href='#Cite:Busse1994'>Busse el al. (1994)</a>.
+            The domain is a box of dimensions \(1.0079 \times 0.6283 \times 1\). Boundary conditions for temperature are T = 0 at the surface (z = 1) and 
+            T = 1 at the base (z = 0), with insulating (homogeneous Neumann) sidewalls. No‐slip velocity boundary conditions are specified
+            at the top surface and base of the domain, with free‐slip and no‐normal flow boundary conditions on all sidewalls. Initial
+            conditions are chosen to produce a single ascending and descending flow, at \(x = y = 0\) and \((x = a)\), \((y = b)\), respectively.
+            The Rayleigh number \(= 3 \times 10^{4}\).
+         </h5>
+         <details style="border-style:solid" class="w3-center">
+            <summary>
+               Click to see the script!
+            </summary>
+            <p>
+               <script src="https://gist.github.com/sghelichkhani/083e7fa40a84d66281ee035ae2919793.js"></script>
+            </p>
+         </details>
+         <h5>
+            For this benchmark, we compute the Nusselt number and RMS velocity at a range of different mesh resolutions, with results presented in Fig. 2.
+            Video 1 is the visualisation of this time-dependent problem.
+         </h5>
+         <!-- Figure -->
+         <div class="w3-container w3-center w3-padding-32">
+                  <img style="max-width: 100%;min-width: 60%;
+                              height: auto\9; width: auto;
+                              text-align:center;"
+                       src="../graphix/Busse_Isoviscous.png" alt="BusseConvergence">
+                  <figcaption class="w3-justify">Figure 2) Results from 3‐D isoviscous benchmark cases 
+                     <a href='#Cite:Busse1994'>Busse el al. (1994)</a>: (a) Nusselt number versus number of
+                     pressure and velocity DOF, at \(Ra = 3 \times 10^4\) (Case 1a - <a href='#Cite:Busse1994'>Busse el al. (1994)</a>,
+                     for a series of uniform, structured meshes; (b) RMS velocity versus number of pressure and velocity DOF. Benchmark values
+                     denoted by dashed red lines. </figcaption>
+         </div>
+         <div class="w3-container w3-center w3-padding-32">
+                  <img style="max-width: 100%;min-width: 60%;
+                              height: auto\9; width: auto;
+                              text-align:center;"
+                       src="../graphix/Blankenbach_Busse.png" alt="BusseBlankenbachFinal">
+                  <figcaption class="w3-justify">Figure 3) Final steady-state temperature field results from Firedrake, designed to
+                     match: (a) case 1a from <a href="#Cite:Blankenbach1989">Blankenbach et al. (1989)</a>, with contours spanning 
+                     temperatures of 0 to 1, at 0.05 intervals; (b) case 1a from <a href="#Cite:Busse1994">Busse et al (1994)</a>,
+                     with isosurfaces plotted at $T=0.3, 0.5, 0.7$. </figcaption>
+         </div>
+         <div class="w3-center w3-padding-64">
+            <iframe width="560" height="560" src="https://www.youtube.com/embed/s6W_K5ftNpQ" title="Busse et al 1994 3-dimensional benchmark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>Video 2) Visualisation of the time-dependent problem in example 1.2.</figcaption>
+         </div>
+
+      </div>
+   </div>
+
+
+
+   <!-- References -->
+   <div  class="w3-row-padding w3-black w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 class="w3-padding-small"> References: </h3>
+            <ol>
+               <li id='Cite:Blankenbach1989'> Blankenbach B, Busse F, Christensen U, Cserepes L, Gunkel D, Hansen U, Harder H, Jarvis G, Koch M,
+                  Marquart G, Moore D. A benchmark comparison for mantle convection codes. <i>Geophysical Journal International</i>. 1989 Jul 1;98(1):23-38.
+                  </li>
+                  </li>
+               <li id='Cite:Busse1994'> Busse FH, Christensen U, Clever R, Cserepes L, Gable C, Giannandrea E, Guillou L, Houseman G, Nataf HC, Ogawa M, 
+                  Parmentier M. 3D convection at infinite Prandtl number in Cartesian geometry—A benchmark comparison. <i>Geophysical & Astrophysical Fluid Dynamics</i>.
+                  1994 Aug 1;75(1):39-59.
+                  </li>
+            </ol>
+      </div>
+   </div>
+
+
+   <!-- Footer--> 
+   <footer class="w3-container w3-black w3-center">
+       <h5 style="margin-right:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-left"></i> <a href="./example_1_1.html">Previous Example</a>
+       </h5>
+       <h5 style="margin-left:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-right"></i> <a href="./example_2_2.html">Next Example</a>
+       </h5>
+   </footer> 
+
+   <!-- defining the main scripts -->
+   <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+         var x = document.getElementById("navDemo");
+         if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+         } else { 
+            x.className = x.className.replace(" w3-show", "");
+         }
+      }
+   </script>
+
+
+   </body>
+</html>

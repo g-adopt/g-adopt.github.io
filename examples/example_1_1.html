@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         G-ADOPT: Examples
+      </title>
+      <link rel="shortcut icon" href="./graphix/icon.png" type="image/x-icon"> 
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      </script>
+   </head>
+
+   <!-- Header css files -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Style Formattings -->
+   <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", sans-serif}
+      .w3-bar,h1,button {font-family: "Times New Roman", sans-serif}
+      .fa-anchor,.fa-coffee {font-size:200px}
+   </style>
+
+
+   <body>
+
+   <!-- Navbar -->
+   <div class="w3-top">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+         <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+         <a href="../examples.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-padding-large ">Examples</a>
+         <a href="https://github.com/g-adopt/g-adopt.git" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Repository <i class="fa fa-github" style="font-size:22px" ></i></a>
+      </div>
+   </div>
+
+
+   <!-- Text for Blankenbach 2 dimensional -->
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 id="BasicExample" class="w3-padding-32"></h3>
+          <h4 id="blankenbach2d" class="w3-padding-small"> 1.1. Convection in a Rectangle  - isoviscous (Blankenbach 3D) <a style="font-size:12px" href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/blankenbach_1e4.py">Click on <i class="fa fa-github" style="font-size:32px"></i> for code</a></h4>
+          <h5 class="w3-justify">
+             <!-- First paragraph -->
+            A simple 2-D square convection problem, from <a href='#Cite:Blankenbach1989'>Blankenbach et al (1989)</a>, for execution in Firedrake, is displayed in Listing 1. 
+            The problem is incompressible (Bousinessq approximation), is heated from below and cooled from above, with closed, free-slip
+            boundaries. Solutions are obtained by solving the Stokes equations for velocity and pressure, coupled to the energy equation
+            for temperature and a suitable equation of state.
+         </h5>
+         <h5 class="w3-justify">
+            We have set up the problem using a bilinear (quadrilateral, Q2-Q1) elements for velocity and pressure, and Q2 elements for
+            temperature, on a unit square mesh. In Listing below, line 3 defines the mesh, with 40 quadrilateral elements in x and y directions.
+            Important constants (Rayleigh Number, \(Ra\); Viscosity, \(\mu\); Thermal diffusivity, \(\kappa\)), in addition to the timestep and
+            unit vector, are defined on lines 5-9. Lines 11-13 define the finite element function spaces and degree, using continuous Lagrange
+            elements, on the given mesh. Test (lines 15-17) and trial (lines 19-26) functions are subsequently defined and initialised, with
+            the UFL code for the Stokes and energy equations defined on lines 28-33. The resemblance to the mathematical formulation is immediately
+            apparent. Dirichlet boundary conditions for velocity (boundaries identified by markers 1-4) and temperature (set to 1 at the base and 0
+            at the top, identified by markers 3 and 4, respectively) are specified on lines 36-37. We note that pressure is only defined up to a 
+            constant and, hence, we define the associated nullspace on line 38. The time-loop is initiated on line 43, with the Stokes system solved
+            for velocity and pressure (z), using default solver options, and the energy equation solved using the same default options. Output, in
+            VTU format is written on line 47, to a file initialised on line 40.
+         </h5>
+         <div class="w3-padding-32">
+            <details style="border-style:solid" class="w3-center">
+               <summary>
+                  Click to see the script!
+               </summary>
+               <p>
+                  <script src="https://gist.github.com/sghelichkhani/ed6bd63161f537a6513aac4cbc4c94fa.js"></script>
+               </p>
+            </details>
+         </div>
+         <h5 class="w3-justify">
+            We have computed the RMS velocity and Nusselt number at a range of different mesh resolutions and Rayleigh numbers, with results presented in Fig. 1.
+            Video 1 is the visualisation of this time-dependent problem.
+         </h5>
+         <div class="w3-container w3-center w3-padding-32">
+                  <img style="max-width: 100%;min-width: 60%;
+                              height: auto\9; width: auto;
+                              text-align:center;"
+                              src="http://g-adopt.github.io/graphix/Blankenbach_Isoviscous.png" alt="BlankenbachConvergence">
+                  <figcaption class="w3-justify">Figure 1) Results from 2-D, isoviscous square convection benchmark cases: (a) Nusselt number versus number of pressure and
+                     velocity degrees of freedom (DOF), at \(Ra= 1\times10^4\) (case 1a - <a href="#Cite:Blankenbach1989">Blankenbach et al., 1989</a>),
+                     for a series of uniform, structured meshes and finite elementpairs; (b) RMS velocity versus number of pressure and velocity DOF,
+                     at \(Ra= 1\times 10^4\); (c, d) as in panels a and b, but at \(Ra= 1\times10^5\)(case1b - <a href="#Cite:Blankenbach1989">Blankenbach et al., 1989</a>);
+                     (e, f) at \(Ra=1\times 10^6\)(case 1c - <a href="#Cite:Blankenbach1989">Blankenbach et al., 1989</a>). Benchmark values denoted by dashed red lines .</figcaption>
+         </div>
+         <div class="w3-container">
+            <div class="w3-center w3-padding-64">
+               <iframe width="560" height="560" src="https://www.youtube.com/embed/uupD4YXaZ3U" title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+               <figcaption>Video 1) Visualisation of the time-dependent problem in example 1.1.</figcaption>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- References -->
+   <div  class="w3-row-padding w3-black w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 class="w3-padding-small"> References: </h3>
+            <ol>
+               <li id='Cite:Blankenbach1989'> Blankenbach B, Busse F, Christensen U, Cserepes L, Gunkel D, Hansen U, Harder H, Jarvis G, Koch M,
+                  Marquart G, Moore D. A benchmark comparison for mantle convection codes. <i>Geophysical Journal International</i>. 1989 Jul 1;98(1):23-38.
+                  </li>
+            </ol>
+      </div>
+   </div>
+
+
+   <!-- Footer--> 
+   <footer class="w3-container w3-black w3-center">
+       <h5 style="margin-right:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-left"></i> <a href="../examples.html">List of Examples</a>
+       </h5>
+       <h5 style="margin-left:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-right"></i> <a href="./example_2_1.html">Next Example</a>
+       </h5>
+   </footer> 
+   <!-- Footer -->
+   <!-- <footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
+      <div class="w3-xlarge w3-padding-32">
+      </div>
+   </footer> --> 
+
+   <!--<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+     <div class="w3-xlarge w3-padding-32">
+       <i class="fa fa-facebook-official w3-hover-opacity"></i>
+       <i class="fa fa-instagram w3-hover-opacity"></i>
+       <i class="fa fa-snapchat w3-hover-opacity"></i>
+       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+       <i class="fa fa-twitter w3-hover-opacity"></i>
+       <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+   </footer> -->
+   <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+
+   <!-- defining the main scripts -->
+   <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+         var x = document.getElementById("navDemo");
+         if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+         } else { 
+            x.className = x.className.replace(" w3-show", "");
+         }
+      }
+   </script>
+
+
+   </body>
+</html>

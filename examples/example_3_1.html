@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         G-ADOPT: Examples
+      </title>
+      <link rel="shortcut icon" href="./graphix/icon.png" type="image/x-icon"> 
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      </script>
+   </head>
+
+   <!-- Header css files -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Style Formattings -->
+   <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", sans-serif}
+      .w3-bar,h1,button {font-family: "Times New Roman", sans-serif}
+      .fa-anchor,.fa-coffee {font-size:200px}
+   </style>
+
+
+   <body>
+
+   <!-- Navbar -->
+   <div class="w3-top">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+         <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+         <a href="../examples.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-padding-large ">Examples</a>         <a href="https://github.com/g-adopt/g-adopt.git" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Repository <i class="fa fa-github" style="font-size:22px" ></i></a>
+      </div>
+   </div>
+
+   <hr/>
+   <!-- Geometrical Extensions -->
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 class="w3-padding-small"> </h3>
+          <h4 id="ViscoPlastic" class="w3-padding-small"> 3.1. Viscoplastic Rheology in a Rectangle (2D)</h4>
+          <h5 class="w3-justify">
+               Our cases are all examined in a 2-D square box, building on those presented in 
+               <a href="#BasicExamples">basic examples</a>. Aside from the viscosity, all other aspects of our setup are identical. 
+               The viscosity field, \(\mu\), is calculated as the harmonic mean between a linear component, \(\mu_{lin}\) and a non-linear,
+               plastic component, \(\mu_{plast}\), which is dependent on the strain-rate, as follows:
+          </h5>
+          <h5 class="w3-center">
+             \(\mu(T,z,\dot \epsilon)\) = \(2 \left( \frac{1}{\mu_{lin\left(T,z\right)}}  + \frac{1}{\mu_{plast\left(\dot\epsilon\right)}}\right)^{-1} \)
+         </h5>
+         <h5 class="w3-justify">
+         The linear part is given by an Arrhenius law (the so-called Frank-Kamenetskii approximation):
+         </h5>
+         <h5 class="w3-center">
+            \(\mu_{lin(T,z)} = exp(-\gamma_{T}T + \gamma_{z}z)\),
+         </h5>
+         <h5 class="w3-justify">
+            where \(\gamma_{T}=ln(\Delta\mu_T)\) and \(\gamma_{z}=ln(\Delta\mu_z)\) are parameters controlling the total viscosity contrast due to temperature 
+            and pressure, respectively. The non-liner component is given by:
+         </h5>
+         <h5 class="w3-center" data-equation-id="0">
+            \(\mu_{plast}(\dot\epsilon) = \mu^\star + \frac{\sigma_{y}}{\sqrt{\dot\epsilon:\dot\epsilon}}\)
+         </h5>
+         <h5 class="w3-justify">
+            where \(\mu^\star\) is a constant representing the effective viscosity at high stresses and \(\sigma_{y}\) is the yield stress.
+            The denominator of the second term represents the second invariant of the strain-rate tensor. The
+            visco-plastic flow law leads to linear viscous deformation at low stresses and to plastic deformation at stresses that exceed \(\sigma_{y}\),
+            with the decrease in viscosity limited by the choice of \(\mu^\star\). 
+
+            Although <a href="Cite:Tosi2014">Tosi et al._(2015)</a> examined a number of cases, we focus on two here.
+            Case 3 allows us to illustrate the inclusion of a temperature- and depth-dependent viscosity, with Case 4 allowing for the inclusion of the non-linear parts.
+
+            The key changes required to simulate these cases are highlighted in Listing 4 (noting that the full codes are available in Appendix XXX). These are:
+            <ol>
+               <li> The solver dictionary is updated to account for non-linearities, using the Scalable Nonlinear Equations Solvers (SNES) available through PETSc. </li>
+               <li> Viscosity is determined, as a function of temperature and depth (\(\mu_{lin}\)) and strain-rate (\(\mu_{plast}\)), subsequently combined via a harmonic mean. </li>
+               <li> The solve call includes an additional option: "appctx". This is supplied with the viscosity, which is subequently used in Firedrake's customisable preconditioners to compute the scaled pressure mass matrix.</li>
+            </ol>
+            We also update values for key constants (e.g. \(Ra\)). 
+         </h5>
+      </div>
+   </div> 
+
+
+   <!-- References -->
+   <div  class="w3-row-padding w3-black w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 class="w3-padding-small"> References: </h3>
+            <ol>
+               <li id='Cite:Tosi2014'> Tosi, N., Stein, C., Noack, L., Hüttig, C., Maierova, P., Samuel, H., Davies, D.R., Wilson, C.R., Kramer, S.C., 
+                  Thieulot, C. and Glerum, A., 2015. A community benchmark for viscoplastic thermal convection in a 2‐D square box.
+                  <i>Geochemistry, Geophysics, Geosystems</i>, 16(7), pp.2175-2196.
+                  </li>
+            </ol>
+      </div>
+   </div>
+
+
+   <!-- Footer--> 
+   <footer class="w3-container w3-black w3-center">
+       <h5 style="margin-right:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-left"></i> <a href="./example_2_3.html">Previous Example</a>
+       </h5>
+       <h5 style="margin-left:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-right"></i> <a href="./example_3_2.html">Next Example</a>
+       </h5>
+   </footer> 
+
+
+
+   <!-- defining the main scripts -->
+   <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+         var x = document.getElementById("navDemo");
+         if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+         } else { 
+            x.className = x.className.replace(" w3-show", "");
+         }
+      }
+   </script>
+
+
+   </body>
+</html>

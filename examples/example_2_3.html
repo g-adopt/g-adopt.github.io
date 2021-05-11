@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         G-ADOPT: Examples
+      </title>
+      <link rel="shortcut icon" href="./graphix/icon.png" type="image/x-icon"> 
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      </script>
+   </head>
+
+   <!-- Header css files -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Style Formattings -->
+   <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", sans-serif}
+      .w3-bar,h1,button {font-family: "Times New Roman", sans-serif}
+      .fa-anchor,.fa-coffee {font-size:200px}
+   </style>
+
+
+   <body>
+
+   <!-- Navbar -->
+   <div class="w3-top">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+         <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+         <a href="../examples.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-padding-large ">Examples</a>
+         <a href="https://github.com/g-adopt/g-adopt.git" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Repository <i class="fa fa-github" style="font-size:22px" ></i></a>
+      </div>
+   </div>
+
+
+
+   <!-- Geometrical Extensions -->
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+         <div class="w3-padding-64">
+         <h4 id="SphericalIso" class="w3-padding-small"> 2.3. Spherical Domain - isoviscous (3D) </h4>
+         <h5 class="w3-justify">
+            We next move into a 3-D spherical shell geometry, which is representative of Earth's mantle. The radii of our top and bottom surfaces are consistent with the 2-D
+            cylindrical case presented above. In line with our 2-D cases, we first confirm the accuracy of our Stokes solver for both zero-slip and free-slip boundary conditions,
+            through comparisons with analytical solutions from <a href="Cite:Kramer2021">Kramer et al. (2021)</a>. These provide a suite of solutions based upon a smooth forcing term, at a range of spherical
+            harmonic degrees, \(l\), and orders, \(m\), with radial dependence formed by a polynomial of arbitrary order \(k\). We study the convergence of our trilinear \(Q2-Q1\)
+            discretisation with respect to these solutions. Consistent with our 2-D cases, we observe super-convergence for the \(Q2-Q1\) element pair at fourth- and second-order,
+            for velocity and pressure, respectively, with both zero-slip and free-slip boundary conditions.
+            <div class="w3-padding-32">
+            <details style="border-style:solid" class="w3-center">
+               <summary>
+                  Click to see the script!
+               </summary>
+               <p>
+               <script src="https://gist.github.com/sghelichkhani/f3463148979c25ba012ea04370d37930.js"></script>
+               </p>
+            </details>
+
+            </div>
+         </h5>
+         <h5 class="w3-justify">
+            Having validated our Stokes solver, we now return to more typical examples and highlight the modifications necessary from our 2-D cylindrical case.
+            We examine a well-known isoviscous community benchmark case (e.g. <a href="#Cite:Bercovici1989"> Bercovici et al. 1989</a>, <a href="#Cite:Ratcliff1996"> Ratcliff et al. 1966 </a>,
+            <a href="#Cite:Zhong2008">Zhong et al 1989</a>, <a href="#Cite:Davies2013">Davies et al. 2013</a>), at a Rayleigh number
+            of \(Ra = 7 \times 10^{3}\), with free-slip boundaries. Temperature boundary conditions are set to 1 at the base of the domain and 0 at the surface, with 
+            a spherical harmonic temperature perturbation for an initial condition. 
+         </h5>
+         <h5 class="w3-justify">
+            The only major change required to simulate this case, in comparison to the cylindrical counterpart, as illustrated in Listing 4, is the initial mesh generation.
+            We generate a cubed sphere mesh, at refinement level 5, and extrude it radially to form 16 layers. Note that the quadratic approximation of the domain, for these
+            spherical cases, is incorporated in the generation of the 2D cubed sphere mesh. Additional changes, all relate to extensions into 3-dimensions (e.g. nullspaces 
+            and near-nullspaces, gravitational vector) and the initial condition for temperature. 
+         </h5>
+         <div class="w3-container w3-center w3-padding-32">
+                  <img style="max-width: 100%;min-width: 60%;
+                              height: auto\9; width: auto;
+                              text-align:center;"
+                       src="https://g-adopt.github.io/graphix/Cylindrical_Spherical.png" alt="BusseBlankenbachFinal">
+                  <figcaption class="w3-justify">Figure 3) Final steady-state temperature field results from Firedrake,
+                     designed to match: (a) Case 2.1 <a href="#Cite:Davies2022">Davies et al. (2022)</a>, 
+                     in a 2-D cylindrical geometry, with contours spanning temperatures of 0 to 1, at 0.05
+                     intervals; (b) Case A1 from <a href="#Cite:Zhong2008">Zhong et al. (2008)</a>, in a 3-D
+                     spherical geometry, with isosurfaces plotted at temperature anomalies (i.e. away from the radial
+                     average) of \(T=-0.15\) (blue) and \(T=0.15\) (orange). 
+                  </figcaption>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- References -->
+   <div  class="w3-black w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 class="w3-padding-small"> References: </h3>
+            <ol>
+               <li id='Cite:Bercovici1989'> Bercovici, D., Schubert, G. and Glatzmaier, G.A., 1989. Three-dimensional spherical models of 
+                  convection in the Earth's mantle. <i>Science</i>, 244(4907), pp.950-955. 
+                  </li>
+               <li id='Cite:Davies2013'> Davies, D.R., Wilson, C.R. and Kramer, S.C., 2011. Fluidity: A fully unstructured anisotropic adaptive
+                  mesh computational modeling framework for geodynamics. <i>Geochemistry, Geophysics, Geosystems</i>, 12(6).
+                  </li>
+               <li id='Cite:Kramer2021'> Kramer, S.C., Davies, D.R. and Wilson, C.R., 2021. Analytical solutions for mantle flow in cylindrical and spherical shells.
+                  <i>Geoscientific Model Development</i>, 14(4), pp.1899-1919..
+                  </li>
+               <li id='Cite:Ratcliff1966'> Ratcliff, J.T., Schubert, G. and Zebib, A., 1996. Steady tetrahedral and cubic patterns 
+                  of spherical shell convection with temperature‐dependent viscosity. <i>Journal of Geophysical Research: Solid Earth</i>, 101(B11), pp.25473-25484.
+                  </li>
+               <li id='Cite:Zhong2008'> Zhong, S., McNamara, A., Tan, E., Moresi, L. and Gurnis, M., 2008. A benchmark study on mantle convection in a 3‐D spherical 
+                  shell using CitcomS. <i>Geochemistry, Geophysics, Geosystems</i>, 9(10).
+                  </li>
+            </ol>
+      </div>
+   </div>
+
+
+   <!-- Footer--> 
+   <footer class="w3-container w3-black w3-center">
+       <h5 style="margin-right:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-left"></i> <a href="./example_2_2.html">Previous Example</a>
+       </h5>
+       <h5 style="margin-left:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-right"></i> <a href="./example_3_1.html">Next Example</a>
+       </h5>
+   </footer> 
+
+   <!-- defining the main scripts -->
+   <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+         var x = document.getElementById("navDemo");
+         if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+         } else { 
+            x.className = x.className.replace(" w3-show", "");
+         }
+      }
+   </script>
+
+
+   </body>
+</html>

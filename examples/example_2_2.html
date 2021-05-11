@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         G-ADOPT: Examples
+      </title>
+      <link rel="shortcut icon" href="./graphix/icon.png" type="image/x-icon"> 
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      </script>
+   </head>
+
+   <!-- Header css files -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Style Formattings -->
+   <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", sans-serif}
+      .w3-bar,h1,button {font-family: "Times New Roman", sans-serif}
+      .fa-anchor,.fa-coffee {font-size:200px}
+   </style>
+
+
+   <body>
+
+   <!-- Navbar -->
+   <div class="w3-top">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+         <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+         <a href="../examples.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-padding-large ">Examples</a>
+         <a href="https://github.com/g-adopt/g-adopt.git" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Repository <i class="fa fa-github" style="font-size:22px" ></i></a>
+      </div>
+   </div>
+
+
+
+   <!-- Geometrical Extensions -->
+
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 class="w3-padding-32"> </h3>
+          <h4 id="CylinderIso" class="w3-padding-small"> 2.2. Cylindrical Domain - isoviscous (2D) </h4>
+          <h5 class="w3-justify">
+             The domain is defined by the radii of the inner (\(r_min\)) and outer (\(r_{max}\)) boundaries. These are chosen such that the 
+             non–dimensional depth of the mantle, \(z=r_{max}−r_{min}= 1.0\), and the ratio of the inner and outer radii, \(f=r_{min}/r_{max}= 0.55\),
+             thus equalling the ratio between the radii of Earth’s surface and CMB.Specifically, we set \(r_{min} = 1.22\) and \(r_{max}= 2.22\).
+         </h5>
+         <h5 class="w3-justify">
+            Having validated  our Stokes solver,  we now return  to more  typical examples and  highlight the modifications  necessaryfrom our base case.
+            We examine two cases from <a href="#Cite:Davies2022"> Davies et al. (2022)</a>, at a Rayleigh number of \(Ra= 10^{4}\): the first withzero-slip
+            boundary conditions and the second with free-slip boundary conditions.
+            These represent an extension of of the cases presented in <a href="#Cite:Blankenbach1989">Blankenbach et al. (1989)</a>.
+            In both cases, temperature boundary conditions are set to 1 at the base of the domain 1 and 0 at the surface. These test cases allow us to illustrate the
+            simplicity of changing the geometry and boundary conditions in Firedrake. Furthermore, the case with free-slip boundary conditions on both
+            boundaries, which we incorporate weakly through the Nitsche approximation, implies that we may add an arbitrary rotation of the form \((−y,x) =r^\theta\) to
+            the velocity solution (i.e. this model incorporates a velocity nullspace, as well as a pressure nullspace). These lead to
+            zero modes (eigenvectors) for the linear system, rendering the resulting matrix singular. In preconditioned Krylov methods we typically need to
+            subtract the zero modes from the approximate solution at every iteration <a href="#Cite:Kramer2021"> Kramer et al. (2021)</a>.
+         </h5>
+         <div class="w3-padding-32">
+         <details style="border-style:solid" class="w3-center">
+            <summary>
+               Click to see the script!
+            </summary>
+            <p>
+         <script src="https://gist.github.com/sghelichkhani/9f65f8a1f41656c9ae8d8d72fab279f4.js"></script>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- References -->
+   <div  class="w3-row-padding w3-black w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 class="w3-padding-small"> References: </h3>
+            <ol>
+               <li id='Cite:Blankenbach1989'> Blankenbach B, Busse F, Christensen U, Cserepes L, Gunkel D, Hansen U, Harder H, Jarvis G, Koch M,
+                  Marquart G, Moore D. A benchmark comparison for mantle convection codes. <i>Geophysical Journal International</i>. 1989 Jul 1;98(1):23-38.
+                  </li>
+               <li id='Cite:Davies2022'> D. R. Davies and S. C. Kramer and C. R. Wilson and N. Tosi and J. Besserer and C. Huttig and,P. E. van Keken,
+                  J. Giordani, L. Mores and, C. Thielout and A. Rozel and P. Tackley and M. Kameyama and L. Noack and W. Bangerth, 2022.
+                  A community benchmark for compressible mantle convection in a two-dimensional cylindrical domain<i>In prep</i>.
+                  </li>
+               <li id='Cite:Kramer2021'> Kramer, S.C., Davies, D.R. and Wilson, C.R., 2021. Analytical solutions for mantle flow in cylindrical and spherical shells.
+                  <i>Geoscientific Model Development</i>, 14(4), pp.1899-1919..
+                  </li>
+            </ol>
+      </div>
+   </div>
+
+
+   <!-- Footer--> 
+   <footer class="w3-container w3-black w3-center">
+       <h5 style="margin-right:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-left"></i> <a href="./example_2_1.html">Previous Example</a>
+       </h5>
+       <h5 style="margin-left:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-right"></i> <a href="./example_2_3.html">Next Example</a>
+       </h5>
+   </footer> 
+
+   <!-- defining the main scripts -->
+   <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+         var x = document.getElementById("navDemo");
+         if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+         } else { 
+            x.className = x.className.replace(" w3-show", "");
+         }
+      }
+   </script>
+
+
+   </body>
+</html>
