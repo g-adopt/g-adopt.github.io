@@ -2,7 +2,7 @@
 <html lang="en">
    <head>
       <title>
-         G-ADOPT
+         G-ADOPT: Examples
       </title>
       <link rel="shortcut icon" href="./graphix/icon.png" type="image/x-icon"> 
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -33,8 +33,8 @@
       <div class="w3-bar w3-black w3-card w3-left-align w3-large">
          <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
          <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+         <a href="./contributors.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Partners & Investigators</a>
          <a href="./examples.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-padding-large ">Examples</a>
-         <a href="./contributors.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contributors</a>
          <a href="https://github.com/g-adopt/g-adopt.git" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Repository <i class="fa fa-github" style="font-size:22px" ></i></a>
       </div>
       <!-- Navbar on small screens -->
@@ -45,10 +45,9 @@
       </div>
    </div>
 
-
-   <!-- Header, Here we have a big graphic of G-ADOPT -->
+   <!-- ################################################################################## -->
+   <!-- Header for community Benchmark -->
    <header class="w3-bar w3-white w3-center" style="padding-top:50px;padding-bottom:0px">
-
       <!-- A brief description of what is going to happen -->
       <div class="w3-container w3-white w3-center  w3-padding-32">
          <!-- Title of the text -->
@@ -61,15 +60,49 @@
       </div> 
 
       <!-- A menu of all the Examples we are going to show--> 
-      <div class="w3-container w3-black w3-center  w3-padding-32">
+      <div class="w3-container w3-black w3-center">
+      <div class="w3-content  w3-left-align">
+         <div style="margin-left:128px!important">
          <!-- Each case is a button from here, referenced to the section we have  -->
-         <h5  class=" w3-button w3-margin">
-            <a href="#blankenbach2d">Blankenbach 2D square convection - isoviscous</a> 
-         </h5>
+         <h4 class="w3-button"> 
+            <a href="#BasicExamples"> 1. Basic examples:</a>
+         </h4><br/>
+         <h5  class=" w3-button w3-margin-left">
+            <a href="#blankenbach2d">1.1. Convection in a Rectangle  - isoviscous (Blankenbach 3D)</a> 
+         </h5><br/>
+         <h5 class=" w3-button w3-margin-left">
+            <a href="#BusseBox">1.2. Convection in a Box - isoviscous (Busse 2D)</a>             
+         </h5><br/>
 
-         <h5 class=" w3-button w3-margin">
-            <a href="#BusseBox">Busse 3D convection - isoviscous</a>             
-         </h5>
+         <h4 class="w3-button"> 
+            <a href="#GeometricExt"> 2. Geometrical Extensions:</a>
+         </h4><br/>
+
+         <h5  class=" w3-button w3-margin-left">
+            <a href="#CylinderIso">2.1. Cylindrical Domain - isoviscous (2D)</a> 
+         </h5><br/>
+
+         <h5  class=" w3-button w3-margin-left">
+            <a href="#SphericalIso">2.2. Spherical Domain - isoviscous (2D)</a> 
+         </h5><br/>
+
+         <h4 class="w3-button"> 
+            <a href="#PhysExt"> 3. Extensions of the Physical Approximations:</a>
+         </h4><br/>
+
+         <h5  class=" w3-button w3-margin-left">
+            <a href="#ViscoPlastic">3.1. Viscoplastic rheology in a Rectangle (2D)</a> 
+         </h5><br/>
+
+         <h5  class=" w3-button w3-margin-left">
+            <a href="#EBAKing">3.2. Extended Bousinessq Approximation in a Rectangle (King etl al. 2009 - 2D)</a> 
+         </h5><br/>
+
+         <h5  class=" w3-button w3-margin-left">
+            <a href="#ALAKing">3.2. Anelastic Liquid Approximation in a Rectangle (King etl al. 2009 - 2D)</a> 
+         </h5><br/>
+         </div>
+      </div> 
       </div> 
    </header>
 
@@ -77,17 +110,18 @@
    <div  class="w3-row-padding w3-padding-small w3-container">
       <div class="w3-content w3-onethird w3-left-align">
           <!-- main header -->
-          <h2 id="blankenbach2d" class="w3-padding-small"> Blankenbach 2D square convection - isoviscous <a href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/blankenbach_1e4.py"><i class="fa fa-github" style="font-size:32px" ></i></a></h2>
-          <h5>
+          <h3 id="BasicExample" class="w3-padding-small"> 1. Basic Examples</h3>
+          <h4 id="blankenbach2d" class="w3-padding-small"> 1.1. Convection in a Rectangle  - isoviscous (Blankenbach 3D)<a href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/blankenbach_1e4.py"><i class="fa fa-github" style="font-size:32px" ></i></a></h4>
+          <h5 class="w3-justify">
              <!-- First paragraph -->
-            A simple 2-D square convection problem, from <a href='#refblankenbach2d'>Blankenbach et al (1989)</a>, for execution in Firedrake, is displayed in Listing 1. 
+            A simple 2-D square convection problem, from <a href='#Cite:Blankenbach1989'>Blankenbach et al (1989)</a>, for execution in Firedrake, is displayed in Listing 1. 
             The problem is incompressible (Bousinessq approximation), is heated from below and cooled from above, with closed, free-slip
             boundaries. Solutions are obtained by solving the Stokes equations for velocity and pressure, coupled to the energy equation
             for temperature and a suitable equation of state.
          </h5>
-         <h5>
+         <h5 class="w3-justify">
             We have set up the problem using a bilinear (quadrilateral, Q2-Q1) elements for velocity and pressure, and Q2 elements for
-            temperature, on a unit square mesh. In Listing 1, line 3 defines the mesh, with 40 quadrilateral elements in x and y directions.
+            temperature, on a unit square mesh. In Listing below, line 3 defines the mesh, with 40 quadrilateral elements in x and y directions.
             Important constants (Rayleigh Number, \(Ra\); Viscosity, \(\mu\); Thermal diffusivity, \(\kappa\)), in addition to the timestep and
             unit vector, are defined on lines 5-9. Lines 11-13 define the finite element function spaces and degree, using continuous Lagrange
             elements, on the given mesh. Test (lines 15-17) and trial (lines 19-26) functions are subsequently defined and initialised, with
@@ -98,46 +132,237 @@
             for velocity and pressure (z), using default solver options, and the energy equation solved using the same default options. Output, in
             VTU format is written on line 47, to a file initialised on line 40.
          </h5>
-         <div class="w3-center w3-padding-64">
-         <iframe width="560" height="560" src="https://www.youtube.com/embed/uupD4YXaZ3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <div class="w3-padding-32">
+            <script src="https://gist.github.com/sghelichkhani/ed6bd63161f537a6513aac4cbc4c94fa.js"></script>
+         </div>
+         <h5 class="w3-justify">
+            We have computed the RMS velocity and Nusselt number at a range of different mesh resolutions and Rayleigh numbers, with results presented in Fig. 1.
+            Video 1 is the visualisation of this time-dependent problem.
+         </h5>
+         <div class="w3-container w3-center w3-padding-32">
+                  <img style="max-width: 100%;min-width: 60%;
+                              height: auto\9; width: auto;
+                              text-align:center;"
+                              src="./graphix/Blankenbach_Isoviscous.png" alt="BlankenbachConvergence">
+                  <figcaption class="w3-justify">Figure 1) Results from 2-D, isoviscous square convection benchmark cases: (a) Nusselt number versus number of pressure and
+                     velocity degrees of freedom (DOF), at \(Ra= 1\times10^4\) (case 1a - <a href="#Cite:Blankenbach1989">Blankenbach et al., 1989</a>),
+                     for a series of uniform, structured meshes and finite elementpairs; (b) RMS velocity versus number of pressure and velocity DOF,
+                     at \(Ra= 1\times 10^4\); (c, d) as in panels a and b, but at \(Ra= 1\times10^5\)(case1b - <a href="#Cite:Blankenbach1989">Blankenbach et al., 1989</a>);
+                     (e, f) at \(Ra=1\times 10^6\)(case 1c - <a href="#Cite:Blankenbach1989">Blankenbach et al., 1989</a>). Benchmark values denoted by dashed red lines .</figcaption>
+         </div>
+         <div class="w3-container">
+            <div class="w3-center w3-padding-64">
+               <iframe width="560" height="560" src="https://www.youtube.com/embed/uupD4YXaZ3U" title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+               <figcaption>Video 1) Visualisation of the time-dependent problem in example 1.1.</figcaption>
+            </div>
          </div>
       </div>
    </div>
+
 
    <!-- Text for Busse Benchmark-->
    <div  class="w3-row-padding w3-padding-small w3-container">
       <div class="w3-content w3-onethird w3-left-align">
           <!-- main header -->
-          <h2 id="BusseBox" class="w3-padding-small"> Busse 3D convection - isoviscous <a href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/busse_C1.py"><i class="fa fa-github" style="font-size:32px" ></i></a></h2>
-          <h5>
+          <h4 id="BusseBox" class="w3-padding-small"> 1.2. Convection in a Box - isoviscous (Busse 2D) <a href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/busse_C1.py"><i class="fa fa-github" style="font-size:32px" ></i></a></h2>
+          <h5 class="w3-justify">
             <!-- First paragraph -->
             Here we highlight the ease at which things can be tried in different geometries. We first examine and validate our setup in a
-            3-D Cartesian domain, for a steady state case with both constant viscosity -- case 1a from <a href='#refbusse3d'>Busse el al. (1994)</a>.
+            3-D Cartesian domain, for a steady state case with both constant viscosity -- case 1a from <a href='#Cite:Busse1994'>Busse el al. (1994)</a>.
             The domain is a box of dimensions \(1.0079 \times 0.6283 \times 1\). Boundary conditions for temperature are T = 0 at the surface (z = 1) and 
             T = 1 at the base (z = 0), with insulating (homogeneous Neumann) sidewalls. No‐slip velocity boundary conditions are specified
             at the top surface and base of the domain, with free‐slip and no‐normal flow boundary conditions on all sidewalls. Initial
             conditions are chosen to produce a single ascending and descending flow, at \(x = y = 0\) and \((x = a)\), \((y = b)\), respectively.
             The Rayleigh number \(= 3 \times 10^{4}\).
          </h5>
+         <script src="https://gist.github.com/sghelichkhani/083e7fa40a84d66281ee035ae2919793.js"></script>
+
+         <h5>
+            For this benchmark, we compute the Nusselt number and RMS velocity at a range of different mesh resolutions, with results presented in Fig. 2.
+            Video 1 is the visualisation of this time-dependent problem.
+         </h5>
+         <!-- Figure -->
+         <div class="w3-container w3-center w3-padding-32">
+                  <img style="max-width: 100%;min-width: 60%;
+                              height: auto\9; width: auto;
+                              text-align:center;"
+                       src="./graphix/Busse_Isoviscous.png" alt="BusseConvergence">
+                  <figcaption class="w3-justify">Figure 2) Results from 3‐D isoviscous benchmark cases 
+                     <a href='#Cite:Busse1994'>Busse el al. (1994)</a>: (a) Nusselt number versus number of
+                     pressure and velocity DOF, at \(Ra = 3 \times 10^4\) (Case 1a - <a href='#Cite:Busse1994'>Busse el al. (1994)</a>,
+                     for a series of uniform, structured meshes; (b) RMS velocity versus number of pressure and velocity DOF. Benchmark values
+                     denoted by dashed red lines. </figcaption>
+         </div>
+         <div class="w3-container w3-center w3-padding-32">
+                  <img style="max-width: 100%;min-width: 60%;
+                              height: auto\9; width: auto;
+                              text-align:center;"
+                       src="./graphix/Blankenbach_Busse.png" alt="BusseBlankenbachFinal">
+                  <figcaption class="w3-justify">Figure 3)  </figcaption>
+         </div>
          <div class="w3-center w3-padding-64">
             <iframe width="560" height="560" src="https://www.youtube.com/embed/s6W_K5ftNpQ" title="Busse et al 1994 3-dimensional benchmark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>Video 2) Visualisation of the time-dependent problem in example 1.2.</figcaption>
          </div>
 
       </div>
    </div>
 
-   <!-- References -->
+   <hr/>
+   <!-- Geometrical Extensions -->
    <div  class="w3-row-padding w3-padding-small w3-container">
       <div class="w3-content w3-onethird w3-left-align">
           <!-- main header -->
-          <h3 id="blankenbach2d" class="w3-padding-small"> References: </h3>
+          <h3 id="GeometricExt" class="w3-padding-small"> 2. Geometrical Extensions</h3>
+          <h4 id="CylinderIso" class="w3-padding-small"> 2.1. Cylindrical Domain - isoviscous (2D) </h4>
+          <h5 class="w3-justify">
+             The domain is defined by the radii of the inner (\(r_min\)) and outer (\(r_{max}\)) boundaries. These are chosen such that the 
+             non–dimensional depth of the mantle, \(z=r_{max}−r_{min}= 1.0\), and the ratio of the inner and outer radii, \(f=r_{min}/r_{max}= 0.55\),
+             thus equalling the ratio between the radii of Earth’s surface and CMB.Specifically, we set \(r_{min} = 1.22\) and \(r_{max}= 2.22\).
+         </h5>
+         <h5 class="w3-justify">
+            Having validated  our Stokes solver,  we now return  to more  typical examples and  highlight the modifications  necessaryfrom our base case.
+            We examine two cases from <a href="#Cite:Davies2022"> Davies et al. (2022)</a>, at a Rayleigh number of \(Ra= 10^{4}\): the first withzero-slip boundary conditions and the second
+            with free-slip boundary conditions. These represent an extension of of the cases presented in <a href="#Cite:Blankenbach1989">Blankenbach et al. (1989)</a>.
+            In both cases, temperature boundary conditions are set to 1 at the base of the domain 1 and 0 at the surface. These test cases allow us to illustrate the
+            simplicity of changing the geometry and boundary conditions in Firedrake. Furthermore, the case with free-slip boundary conditions on both
+            boundaries, which we incorporate weakly through the Nitsche approximation, implies that we may add an arbitrary rotation of the form \((−y,x) =r^\theta\) to
+            the velocity solution (i.e. this model incorporates a velocity nullspace, as well as a pressure nullspace). These lead to
+            zero modes (eigenvectors) for the linear system, rendering the resulting matrix singular. In preconditioned Krylov methods we typically need to
+            subtract the zero modes from the approximate solution at every iteration <a href="#Cite:Kramer2021"> Kramer et al. (2021)</a>.
+         </h5>
+         <div class="w3-padding-32">
+         <script src="https://gist.github.com/sghelichkhani/9f65f8a1f41656c9ae8d8d72fab279f4.js"></script>
+         </div>
+         <h4 id="SphericalIso" class="w3-padding-small"> 2.2. Spherical Domain - isoviscous (3D) </h4>
+         <h5 class="w3-justify">
+            We next move into a 3-D spherical shell geometry, which is representative of Earth's mantle. The radii of our top and bottom surfaces are consistent with the 2-D
+            cylindrical case presented above. In line with our 2-D cases, we first confirm the accuracy of our Stokes solver for both zero-slip and free-slip boundary conditions,
+            through comparisons with analytical solutions from <a href="Cite:Kramer2021">Kramer et al. (2021)</a>. These provide a suite of solutions based upon a smooth forcing term, at a range of spherical
+            harmonic degrees, \(l\), and orders, \(m\), with radial dependence formed by a polynomial of arbitrary order \(k\). We study the convergence of our trilinear \(Q2-Q1\)
+            discretisation with respect to these solutions. Consistent with our 2-D cases, we observe super-convergence for the \(Q2-Q1\) element pair at fourth- and second-order,
+            for velocity and pressure, respectively, with both zero-slip and free-slip boundary conditions.
+            <div class="w3-padding-32">
+               <script src="https://gist.github.com/sghelichkhani/f3463148979c25ba012ea04370d37930.js"></script>
+            </div>
+         </h5>
+         <h5 class="w3-justify">
+            Having validated our Stokes solver, we now return to more typical examples and highlight the modifications necessary from our 2-D cylindrical case.
+            We examine a well-known isoviscous community benchmark case (e.g. <a href="#Cite:Bercovici1989"> Bercovici et al. 1989</a>, <a href="#Cite:Ratcliff1996"> Ratcliff et al. 1966 </a>,
+            <a href="#Cite:Zhong2008">Zhong et al 1989</a>, <a href="#Cite:Davies2013">Davies et al. 2013</a>), at a Rayleigh number
+            of \(Ra = 7 \times 10^{3}\), with free-slip boundaries. Temperature boundary conditions are set to 1 at the base of the domain and 0 at the surface, with 
+            a spherical harmonic temperature perturbation for an initial condition. 
+         </h5>
+         <h5 class="w3-justify">
+            The only major change required to simulate this case, in comparison to the cylindrical counterpart, as illustrated in Listing 4, is the initial mesh generation.
+            We generate a cubed sphere mesh, at refinement level 5, and extrude it radially to form 16 layers. Note that the quadratic approximation of the domain, for these
+            spherical cases, is incorporated in the generation of the 2D cubed sphere mesh. Additional changes, all relate to extensions into 3-dimensions (e.g. nullspaces 
+            and near-nullspaces, gravitational vector) and the initial condition for temperature. 
+         </h5>
+      </div>
+   </div>
+
+
+   <hr/>
+   <!-- Geometrical Extensions -->
+   <div  class="w3-row-padding w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 id="PhysExt" class="w3-padding-small"> 3. Extensions of the Physical Approximations</h3>
+          <h4 id="ViscoPlastic" class="w3-padding-small"> 3.1. Viscoplastic Rheology in a Rectangle (2D)</h4>
+          <h5 class="w3-justify">
+               Our cases are all examined in a 2-D square box, building on those presented in 
+               <a href="#BasicExamples">basic examples</a>. Aside from the viscosity, all other aspects of our setup are identical. 
+               The viscosity field, \(\mu\), is calculated as the harmonic mean between a linear component, \(\mu_{lin}\) and a non-linear,
+               plastic component, \(\mu_{plast}\), which is dependent on the strain-rate, as follows:
+          </h5>
+          <h5 class="w3-center">
+             \(\mu(T,z,\dot \epsilon)\) = \(2 \left( \frac{1}{\mu_{lin\left(T,z\right)}}  + \frac{1}{\mu_{plast\left(\dot\epsilon\right)}}\right)^{-1} \)
+         </h5>
+         <h5 class="w3-justify">
+         The linear part is given by an Arrhenius law (the so-called Frank-Kamenetskii approximation):
+         </h5>
+         <h5 class="w3-center">
+            \(\mu_{lin(T,z)} = exp(-\gamma_{T}T + \gamma_{z}z)\),
+         </h5>
+         <h5 class="w3-justify">
+            where \(\gamma_{T}=ln(\Delta\mu_T)\) and \(\gamma_{z}=ln(\Delta\mu_z)\) are parameters controlling the total viscosity contrast due to temperature 
+            and pressure, respectively. The non-liner component is given by:
+         </h5>
+         <h5 class="w3-center" data-equation-id="0">
+            \(\mu_{plast}(\dot\epsilon) = \mu^\star + \frac{\sigma_{y}}{\sqrt{\dot\epsilon:\dot\epsilon}}\)
+         </h5>
+         <h5 class="w3-justify">w
+            where \(\mu^\star\) is a constant representing the effective viscosity at high stresses and \(\sigma_{y}\) is the yield stress.
+            The denominator of the second term represents the second invariant of the strain-rate tensor. The
+            visco-plastic flow law leads to linear viscous deformation at low stresses and to plastic deformation at stresses that exceed \(\sigma_{y}\),
+            with the decrease in viscosity limited by the choice of \(\mu^\star\). 
+
+            Although <a href="Cite:Tosi2014">Tosi et al._(2015)</a> examined a number of cases, we focus on two here.
+            Case 3 allows us to illustrate the inclusion of a temperature- and depth-dependent viscosity, with Case 4 allowing for the inclusion of the non-linear parts.
+
+            The key changes required to simulate these cases are highlighted in Listing 4 (noting that the full codes are available in Appendix XXX). These are:
             <ol>
-               <li id='refblankenbach2d'> Blankenbach B, Busse F, Christensen U, Cserepes L, Gunkel D, Hansen U, Harder H, Jarvis G, Koch M,
+               <li> The solver dictionary is updated to account for non-linearities, using the Scalable Nonlinear Equations Solvers (SNES) available through PETSc. </li>
+               <li> Viscosity is determined, as a function of temperature and depth ($\mu_{lin}$) and strain-rate ($\mu_{plast}$), subsequently combined via a harmonic mean. </li>
+               <li> The solve call includes an additional option: "appctx". This is supplied with the viscosity, which is subequently used in Firedrake's customisable preconditioners to compute the scaled pressure mass matrix.</li>
+            </ol>
+            We also update values for key constants (e.g. \(Ra\)) 
+         </h5>
+         <div class="w3-container w3-center w3-padding-32">
+                  <img style="max-width: 100%;min-width: 60%;
+                              height: auto\9; width: auto;
+                              text-align:center;"
+                       src="./graphix/Cylindrical_Spherical.png" alt="BusseBlankenbachFinal">
+                  <figcaption class="w3-justify">Figure 3) Final steady-state temperature field results from Firedrake,
+                     designed to match: (a) Case 2.1 <a href="#Cite:Davies2022">Davies et al. (2022)</a>, 
+                     in a 2-D cylindrical geometry, with contours spanning temperatures of 0 to 1, at 0.05
+                     intervals; (b) Case A1 from <a href="#Cite:Zhong2008">Zhong et al. (2008)</a>, in a 3-D
+                     spherical geometry, with isosurfaces plotted at temperature anomalies (i.e. away from the radial
+                     average) of \(T=-0.15\) (blue) and \(T=0.15\) (orange). 
+                  </figcaption>
+         </div>
+
+      </div>
+   </div> 
+
+
+   <!-- References -->
+   <div  class="w3-row-padding w3-black w3-padding-small w3-container">
+      <div class="w3-content w3-onethird w3-left-align">
+          <!-- main header -->
+          <h3 class="w3-padding-small"> References: </h3>
+            <ol>
+               <li id='Cite:Blankenbach1989'> Blankenbach B, Busse F, Christensen U, Cserepes L, Gunkel D, Hansen U, Harder H, Jarvis G, Koch M,
                   Marquart G, Moore D. A benchmark comparison for mantle convection codes. <i>Geophysical Journal International</i>. 1989 Jul 1;98(1):23-38.
                   </li>
-               <li id='refbusse3d'> Busse FH, Christensen U, Clever R, Cserepes L, Gable C, Giannandrea E, Guillou L, Houseman G, Nataf HC, Ogawa M, 
+               <li id='Cite:Bercovici1989'> Bercovici. <i> ???</i>. 
+                  </li>
+               <li id='Cite:Busse1994'> Busse FH, Christensen U, Clever R, Cserepes L, Gable C, Giannandrea E, Guillou L, Houseman G, Nataf HC, Ogawa M, 
                   Parmentier M. 3D convection at infinite Prandtl number in Cartesian geometry—A benchmark comparison. <i>Geophysical & Astrophysical Fluid Dynamics</i>.
                   1994 Aug 1;75(1):39-59.
+                  </li>
+               <li id='Cite:Davies2013'> Davies, D.R., Wilson, C.R. and Kramer, S.C., 2011. Fluidity: A fully unstructured anisotropic adaptive
+                  mesh computational modeling framework for geodynamics. <i>Geochemistry, Geophysics, Geosystems</i>, 12(6).
+                  </li>
+               <li id='Cite:Davies2022'> D. R. Davies and S. C. Kramer and C. R. Wilson and N. Tosi and J. Besserer and C. Huttig and,P. E. van Keken,
+                  J. Giordani, L. Mores and, C. Thielout and A. Rozel and P. Tackley and M. Kameyama and L. Noack and W. Bangerth, 2022.
+                  A community benchmark for compressible mantle convection in a two-dimensional cylindrical domain<i>In prep</i>.
+                  </li>
+               <li id='Cite:Kramer2021'> Kramer, S.C., Davies, D.R. and Wilson, C.R., 2021. Analytical solutions for mantle flow in cylindrical and spherical shells.
+                  <i>Geoscientific Model Development</i>, 14(4), pp.1899-1919..
+                  </li>
+               <li id='Cite:Ratcliff1966'> Ratcliff, J.T., Schubert, G. and Zebib, A., 1996. Steady tetrahedral and cubic patterns 
+                  of spherical shell convection with temperature‐dependent viscosity. <i>Journal of Geophysical Research: Solid Earth</i>, 101(B11), pp.25473-25484.
+                  </li>
+               <li id='Cite:Tosi2014'> Tosi, N., Stein, C., Noack, L., Hüttig, C., Maierova, P., Samuel, H., Davies, D.R., Wilson, C.R., Kramer, S.C., 
+                  Thieulot, C. and Glerum, A., 2015. A community benchmark for viscoplastic thermal convection in a 2‐D square box.
+                  <i>Geochemistry, Geophysics, Geosystems</i>, 16(7), pp.2175-2196.
+                  </li>
+               <li id='Cite:Zhong2008'> Zhong, S., McNamara, A., Tan, E., Moresi, L. and Gurnis, M., 2008. A benchmark study on mantle convection in a 3‐D spherical 
+                  shell using CitcomS. <i>Geochemistry, Geophysics, Geosystems</i>, 9(10).
                   </li>
             </ol>
       </div>
@@ -149,10 +374,10 @@
        <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
    </div> -->
    <!-- Footer -->
-   <footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
+   <!-- <footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
       <div class="w3-xlarge w3-padding-32">
       </div>
-   </footer> 
+   </footer> --> 
 
    <!--<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
      <div class="w3-xlarge w3-padding-32">
