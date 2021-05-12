@@ -38,12 +38,22 @@
       </div>
    </div>
 
+   <!-- Header--> 
+   <header class="w3-container w3-black w3-center">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large w3-padding-32"></div>
+       <h5 style="margin-right:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-left"></i> <a href="../examples.html">List of Examples</a>
+       </h5>
+       <h5 style="margin-left:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-right"></i> <a href="./example_2_1.html">Next Example</a>
+       </h5>
+   </header> 
 
    <!-- Text for Blankenbach 2 dimensional -->
    <div  class="w3-row-padding w3-padding-small w3-container">
       <div class="w3-content w3-onethird w3-left-align">
           <!-- main header -->
-          <h3 id="BasicExample" class="w3-padding-32"></h3>
+          <h3 id="BasicExample" class="w3-padding-16"></h3>
           <h4 id="blankenbach2d" class="w3-padding-small"> 1.1. Convection in a Rectangle  - isoviscous (Blankenbach 3D) <a style="font-size:12px" href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/blankenbach_1e4.py">Click on <i class="fa fa-github" style="font-size:32px"></i> for code</a></h4>
           <h5 class="w3-justify">
              <!-- First paragraph -->
@@ -79,7 +89,12 @@
             We have computed the RMS velocity and Nusselt number at a range of different mesh resolutions and Rayleigh numbers, with results presented in Fig. 1.
             Video 1 is the visualisation of this time-dependent problem.
          </h5>
-         <div class="w3-container w3-center w3-padding-32">
+
+            <details style="border-style:solid" class="w3-center">
+               <summary>
+                  Click to see the figure!
+               </summary>
+               <p>
                   <img style="max-width: 100%;min-width: 60%;
                               height: auto\9; width: auto;
                               text-align:center;"
@@ -89,9 +104,12 @@
                      for a series of uniform, structured meshes and finite elementpairs; (b) RMS velocity versus number of pressure and velocity DOF,
                      at \(Ra= 1\times 10^4\); (c, d) as in panels a and b, but at \(Ra= 1\times10^5\)(case1b - <a href="#Cite:Blankenbach1989">Blankenbach et al., 1989</a>);
                      (e, f) at \(Ra=1\times 10^6\)(case 1c - <a href="#Cite:Blankenbach1989">Blankenbach et al., 1989</a>). Benchmark values denoted by dashed red lines .</figcaption>
-         </div>
+
+               </p>
+            </details>
+
          <div class="w3-container">
-            <div class="w3-center w3-padding-64">
+            <div class="w3-center w3-padding-32">
                <iframe width="560" height="560" src="https://www.youtube.com/embed/uupD4YXaZ3U" title="YouTube video player"
                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>

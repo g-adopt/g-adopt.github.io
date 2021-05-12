@@ -38,13 +38,22 @@
       </div>
    </div>
 
+   <!-- Header--> 
+   <header class="w3-container w3-black w3-center">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large w3-padding-32"></div>
+       <h5 style="margin-right:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-left"><a href="./example_2_2.html"> Previous Example</a> </i> 
+       </h5>
+       <h5 style="margin-left:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-right"><a href="./example_3_1.html"> Next Example</a></i> 
+       </h5>
+   </header> 
 
 
    <!-- Geometrical Extensions -->
-   <div  class="w3-row-padding w3-padding-small w3-container">
+   <div class="w3-row-padding w3-padding-small w3-container">
       <div class="w3-content w3-onethird w3-left-align">
           <!-- main header -->
-         <div class="w3-padding-64">
          <h4 id="SphericalIso" class="w3-padding-small"> 2.3. Spherical Domain - isoviscous (3D) </h4>
          <h5 class="w3-justify">
             We next move into a 3-D spherical shell geometry, which is representative of Earth's mantle. The radii of our top and bottom surfaces are consistent with the 2-D
@@ -53,18 +62,13 @@
             harmonic degrees, \(l\), and orders, \(m\), with radial dependence formed by a polynomial of arbitrary order \(k\). We study the convergence of our trilinear \(Q2-Q1\)
             discretisation with respect to these solutions. Consistent with our 2-D cases, we observe super-convergence for the \(Q2-Q1\) element pair at fourth- and second-order,
             for velocity and pressure, respectively, with both zero-slip and free-slip boundary conditions.
-            <div class="w3-padding-32">
-            <details style="border-style:solid" class="w3-center">
-               <summary>
-                  Click to see the script!
-               </summary>
-               <p>
-               <script src="https://gist.github.com/sghelichkhani/f3463148979c25ba012ea04370d37930.js"></script>
-               </p>
-            </details>
-
-            </div>
          </h5>
+         <div class="w3-padding-32">
+            <details style="border-style:solid" class="w3-center">
+            <summary> Click to see the script! </summary>
+            <p><script src="https://gist.github.com/sghelichkhani/f3463148979c25ba012ea04370d37930.js"></script></p>
+            </details>
+         </div>
          <h5 class="w3-justify">
             Having validated our Stokes solver, we now return to more typical examples and highlight the modifications necessary from our 2-D cylindrical case.
             We examine a well-known isoviscous community benchmark case (e.g. <a href="#Cite:Bercovici1989"> Bercovici et al. 1989</a>, <a href="#Cite:Ratcliff1996"> Ratcliff et al. 1966 </a>,
@@ -96,7 +100,7 @@
 
 
    <!-- References -->
-   <div  class="w3-black w3-container">
+   <footer class="w3-container w3-black w3-center">
       <div class="w3-content w3-onethird w3-left-align">
           <!-- main header -->
           <h3 class="w3-padding-small"> References: </h3>
@@ -118,11 +122,6 @@
                   </li>
             </ol>
       </div>
-   </div>
-
-
-   <!-- Footer--> 
-   <footer class="w3-container w3-black w3-center">
        <h5 style="margin-right:100px" class="w3-button"> 
           <i class="fa fa-arrow-circle-left"></i> <a href="./example_2_2.html">Previous Example</a>
        </h5>

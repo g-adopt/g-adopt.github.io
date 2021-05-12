@@ -38,10 +38,22 @@
       </div>
    </div>
 
+   <!-- Header--> 
+   <header class="w3-container w3-black w3-center">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large w3-padding-32"></div>
+       <h5 style="margin-right:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-left"></i> <a href="./example_1_1.html">Previous Example</a>
+       </h5>
+       <h5 style="margin-left:100px" class="w3-button"> 
+          <i class="fa fa-arrow-circle-right"></i> <a href="./example_2_2.html">Next Example</a>
+       </h5>
+   </header> 
+
+
    <!-- Text for Busse Benchmark-->
    <div  class="w3-row-padding w3-padding-small w3-container">
       <div class="w3-content w3-onethird w3-left-align">
-         <div class="w3-padding-32"></div>
+         <div class="w3-padding-16"></div>
           <!-- main header -->
           <h4 id="BusseBox" class="w3-padding-small"> 2.1. Convection in a Box - isoviscous (Busse 3D) <a style="font-size:12px" href="https://github.com/g-adopt/g-adopt/blob/master/benchmarks/busse_C1.py">Click on <i class="fa fa-github" style="font-size:32px" ></i> for code</a></h2>
           <h5 class="w3-justify">
@@ -67,7 +79,11 @@
             Video 1 is the visualisation of this time-dependent problem.
          </h5>
          <!-- Figure -->
-         <div class="w3-container w3-center w3-padding-32">
+            <details style="border-style:solid" class="w3-center">
+               <summary>
+                  Click to see the figure!
+               </summary>
+               <p>
                   <img style="max-width: 100%;min-width: 60%;
                               height: auto\9; width: auto;
                               text-align:center;"
@@ -77,18 +93,10 @@
                      pressure and velocity DOF, at \(Ra = 3 \times 10^4\) (Case 1a - <a href='#Cite:Busse1994'>Busse el al. (1994)</a>,
                      for a series of uniform, structured meshes; (b) RMS velocity versus number of pressure and velocity DOF. Benchmark values
                      denoted by dashed red lines. </figcaption>
-         </div>
-         <div class="w3-container w3-center w3-padding-32">
-                  <img style="max-width: 100%;min-width: 60%;
-                              height: auto\9; width: auto;
-                              text-align:center;"
-                       src="../graphix/Blankenbach_Busse.png" alt="BusseBlankenbachFinal">
-                  <figcaption class="w3-justify">Figure 3) Final steady-state temperature field results from Firedrake, designed to
-                     match: (a) case 1a from <a href="#Cite:Blankenbach1989">Blankenbach et al. (1989)</a>, with contours spanning 
-                     temperatures of 0 to 1, at 0.05 intervals; (b) case 1a from <a href="#Cite:Busse1994">Busse et al (1994)</a>,
-                     with isosurfaces plotted at $T=0.3, 0.5, 0.7$. </figcaption>
-         </div>
-         <div class="w3-center w3-padding-64">
+               </p>
+            </details>
+
+         <div class="w3-center w3-padding-32">
             <iframe width="560" height="560" src="https://www.youtube.com/embed/s6W_K5ftNpQ" title="Busse et al 1994 3-dimensional benchmark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <figcaption>Video 2) Visualisation of the time-dependent problem in example 1.2.</figcaption>
          </div>
@@ -99,7 +107,8 @@
 
 
    <!-- References -->
-   <div  class="w3-row-padding w3-black w3-padding-small w3-container">
+   <!-- Footer--> 
+   <footer class="w3-container w3-black w3-center">
       <div class="w3-content w3-onethird w3-left-align">
           <!-- main header -->
           <h3 class="w3-padding-small"> References: </h3>
@@ -114,11 +123,6 @@
                   </li>
             </ol>
       </div>
-   </div>
-
-
-   <!-- Footer--> 
-   <footer class="w3-container w3-black w3-center">
        <h5 style="margin-right:100px" class="w3-button"> 
           <i class="fa fa-arrow-circle-left"></i> <a href="./example_1_1.html">Previous Example</a>
        </h5>
