@@ -1,0 +1,18 @@
+site_name: G-ADOPT
+site_url: https://gadopt.org/
+repo_name: g-adopt
+repo_url: https://github.com/g-adopt/g-adopt
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+nav:
+  - Home: index.md
+  - Install: install.md
+  - Documentation: documentation.md
+  - Tutorials: tutorials.md
+  - Benchmarks: benchmarks.md
+  - Team: team.md
+  - Funding: funding.md
+  - Events: events.md
+  - Publications: publications.md
