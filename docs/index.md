@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Welcome to G-ADOPT
 
 **G-ADOPT** is a computational platform for inverse geoscientific
