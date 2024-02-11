@@ -1,4 +1,6 @@
 ::: gadopt.approximations
+    options:
+      show_source: false
 
 ::: gadopt.energy_solver
 

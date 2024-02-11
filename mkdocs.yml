@@ -39,6 +39,9 @@ plugins:
             show_root_full_path: false
             docstring_style: google
             merge_init_into_class: true
+            members_order: source
+          import:
+            - https://fenics.readthedocs.io/projects/ufl/en/latest/objects.inv
 nav:
   - Home:
       - index.md
