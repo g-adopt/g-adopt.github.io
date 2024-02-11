@@ -30,6 +30,15 @@ plugins:
       post_readtime: false
       archive: false
   - glightbox
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [g-adopt]
+          options:
+            show_root_heading: true
+            show_root_full_path: false
+            docstring_style: google
+            merge_init_into_class: true
 nav:
   - Home:
       - index.md
