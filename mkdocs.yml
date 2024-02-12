@@ -44,13 +44,17 @@ plugins:
             members_order: source
           import:
             - https://fenics.readthedocs.io/projects/ufl/en/latest/objects.inv
+  - mkdocs-jupyter:
+      toc_depth: 2
 nav:
   - Home:
       - index.md
       - About: about.md
   - Install: install.md
   - Documentation: documentation.md
-  - Tutorials: tutorials.md
+  - Tutorials:
+    - tutorials.md
+    - Helmholtz: tutorials/01-spd-helmholtz.nbconvert.ipynb
   - Benchmarks: benchmarks.md
   - Team: team.md
   - Funding: funding.md
