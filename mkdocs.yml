@@ -55,6 +55,10 @@ nav:
   - Tutorials:
     - tutorials.md
     - Helmholtz: tutorials/01-spd-helmholtz.ipynb
+    - Poisson: tutorials/02-poisson.ipynb
+    - Elasticity: tutorials/03-elasticity.ipynb
+    - "Burgers' Equation": tutorials/04-burgers.ipynb
+    - PDE Constrained Optimisation: tutorials/05-pde-constrained-optimisation.ipynb
   - Benchmarks: benchmarks.md
   - Team: team.md
   - Funding: funding.md
