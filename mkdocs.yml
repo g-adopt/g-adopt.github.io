@@ -4,10 +4,12 @@ repo_name: g-adopt
 repo_url: https://github.com/g-adopt/g-adopt
 theme:
   name: material
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github
   features:
     - content.code.copy
+    - navigations.indexes
     - navigation.tabs
     - toc.integrate
 markdown_extensions:
@@ -21,6 +23,12 @@ markdown_extensions:
       toc_depth: 3
 extra_css:
   - stylesheets/gadopt.css
+plugins:
+  - blog:
+      blog_dir: events/workshops
+      post_readtime: false
+      archive: false
+  - glightbox
 nav:
   - Home: index.md
   - Install: install.md
@@ -29,5 +37,7 @@ nav:
   - Benchmarks: benchmarks.md
   - Team: team.md
   - Funding: funding.md
-  - Events: events.md
+  - Events:
+      - events/workshops/index.md
+      - events.md
   - Publications: publications.md
