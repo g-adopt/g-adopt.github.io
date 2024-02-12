@@ -17,7 +17,7 @@ G-ADOPT was initiated and funded within the Australian Research Data Commons (AR
 
 ## Partners
 ![ARDC logo](images/ardc_logo.svg "ARDC logo"){ align=right width="200" }
-The Australian Research Data Commons (ARDC) is a transformational initiative that enables Australian research community and industry access to nationally significant, leading edge data intensive einfrastructure, platforms, skills and collections of high-quality data. In partnerships with organisations, the ARDC leads facilitations that work towards a coherent research environment to enable researchers to find, access, contribute to and effectively use services to maximise research quality and impact. The ARDC is funded by the Australian Government's National Collaborative Research Infrastructure Strategy (NCRIS).
+The Australian Research Data Commons (ARDC) is a transformational initiative that enables Australian research community and industry access to nationally significant, leading edge data intensive infrastructure, platforms, skills and collections of high-quality data. In partnerships with organisations, the ARDC leads facilitations that work towards a coherent research environment to enable researchers to find, access, contribute to and effectively use services to maximise research quality and impact. The ARDC is funded by the Australian Government's National Collaborative Research Infrastructure Strategy (NCRIS).
 
 ---
 
