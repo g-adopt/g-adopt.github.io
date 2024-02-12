@@ -1,2 +1,3 @@
 mkdocs~=1.5.3
 mkdocs-material~=9.5.8
+https://github.com/angus-g/mkdocs-jupyter/releases/download/0.24.7/mkdocs_jupyter-0.24.6-py3-none-any.whl
