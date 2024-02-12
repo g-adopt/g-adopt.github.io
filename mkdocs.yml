@@ -26,3 +26,6 @@ nav:
   - Funding: funding.md
   - Events: events.md
   - Publications: publications.md
+
+markdown_extensions:
+  - md_in_html
