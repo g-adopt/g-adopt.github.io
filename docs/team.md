@@ -105,7 +105,7 @@
 
 ---
 
-[Matt](https://discover.utas.edu.au/Matt.King) is Professor of polar geodesy at the University of Tasmania. ACEAS Director. Since 2021, he has been Director of the [Australian Centre for Excellence in Antarctic Science](https://antarctic.org.au/). His research focusses on solid earth geophysics and geodesy, with a particular focus on Antarctica. Matt focuses on the use of geodetic tools to solve problems related to Earth geophysics, notably Earth deformation due to glacier melt, earthquakes, and tides; sea-level change; and polar ice mass balance. He also seeks to advance the accuracy and precision of those geodetic tools (e.g., Global Navigation Satellite Systems (GNSS/GPS) and satellite gravimetry (GRACE)).
+[Matt](https://discover.utas.edu.au/Matt.King) is Professor of polar geodesy at the University of Tasmania. Since 2021, he has been Director of the [Australian Centre for Excellence in Antarctic Science](https://antarctic.org.au/). His research focusses on solid earth geophysics and geodesy, with a particular focus on Antarctica. Matt focuses on the use of geodetic tools to solve problems related to Earth geophysics, notably Earth deformation due to glacier melt, earthquakes, and tides; sea-level change; and polar ice mass balance. He also seeks to advance the accuracy and precision of those geodetic tools (e.g., Global Navigation Satellite Systems (GNSS/GPS) and satellite gravimetry (GRACE)).
 </figcaption>
 </figure>
 
