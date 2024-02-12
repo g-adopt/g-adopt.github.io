@@ -134,6 +134,16 @@
 
 ## Other Contributors
 
-**Tom New (PhD Student - EarthByte Group, University of Sydney):** Tom is 
+<div class="bio-grid" markdown>
+<figure class="bio" markdown>
+![Ruby Turner](mugshots/ruby.jpg){ width="300" }
+<figcaption markdown>### Ruby Turner
+#### PhD Student
+#### Research School of Earth Sciences, ANU
 
-**Ruby Turner (PhD Student - Research School of Earth Sciences, ANU):** Ruby is
+---
+
+[Ruby](https://earthsciences.anu.edu.au/people/students/ruby-turner) is interested in multi-disciplinary approaches to modelling and understanding the dynamics of Earth's mantle. In particular, Ruby’s research centres on utilising the geochemistry of intraplate basalts to inform reconstructions of the mantle’s evolution and history.
+</figcaption>
+</figure>
+</div>
