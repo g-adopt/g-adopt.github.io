@@ -12,7 +12,7 @@ More detailed instructions for installing Firedrake and suggestions for troubles
 on the [Firedrake website](https://www.firedrakeproject.org/download.html). Note that the install procedure may take 
 up to one hour depending on your system.
 
-Once Firedrake is installed you will need to activate the Firedrake virtual environent every time you want 
+Once Firedrake is installed you will need to activate the Firedrake virtual environment every time you want
 to use G-ADOPT:
 
     source firedrake/bin/activate
