@@ -1,0 +1,37 @@
+.bio-grid {
+    display: flex;
+    flex-flow: wrap;
+}
+
+figure.bio {
+    max-width: 40%;
+}
+
+.bio figcaption {
+    font-style: normal;
+    margin-right: 1rem;
+}
+
+.bio figcaption h3 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bio figcaption h4 {
+    font-weight: 400;
+}
+
+.bio figcaption p {
+    text-align: justify;
+}
+
+.bio figcaption hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+}
+
+.bio img {
+    border-radius: 5rem;
+    width: 10rem;
+}
