@@ -11,6 +11,11 @@ theme:
     - toc.integrate
 markdown_extensions:
   - attr_list
+  - md_in_html
+  - toc:
+      toc_depth: 3
+extra_css:
+  - stylesheets/team.css
 nav:
   - Home: index.md
   - Install: install.md
