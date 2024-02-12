@@ -16,33 +16,36 @@ G-ADOPT was initiated and funded within the Australian Research Data Commons (AR
 **CIs**: D. R. Davies (ANU), M. J. Hoggard (ANU), S. Ghelichkhan (ANU), S. C. Kramer (Imperial College London), A. Gibson (ANU), A. Hogg (ACCESS-NRI),  T. Rawling (AuScope). 
 
 ## Partners
+![ARDC logo](images/ardc_logo.svg "ARDC logo"){ align=right width="200" }
 The Australian Research Data Commons (ARDC) is a transformational initiative that enables Australian research community and industry access to nationally significant, leading edge data intensive einfrastructure, platforms, skills and collections of high-quality data. In partnerships with organisations, the ARDC leads facilitations that work towards a coherent research environment to enable researchers to find, access, contribute to and effectively use services to maximise research quality and impact. The ARDC is funded by the Australian Government's National Collaborative Research Infrastructure Strategy (NCRIS).
 
-<figure markdown="span">
-  ![ARDC Logo](images/ardc_logo.svg){ align=left, width="200" }
-  <figcaption>Image caption</figcaption>
-</figure>
+---
 
+![AuScope Logo](images/auscope_logo.png "AuScope logo"){ align=right width="200" }
 AuScope provides geoscientists with a world-class research ‘toolkit’ to help tackle Australia’s key geoscience challenges and improve Australian life and the environment. AuScope is funded by the Australian Government's National Collaborative Research Infrastructure Strategy (NCRIS).
 
-![AuScope Logo](images/auscope_logo.png "AuScope Logo!")
+---
 
+![NCI logo](images/nci_logo.svg "NCI logo"){ align=right width="200" }
 The National Computational Infrastructure (NCI) is Australia’s leading high-performance data, storage and computing organisation, providing expert services to benefit all domains of science, government and industry. NCI brings the Australian Government and the Australian research sector together through a broad collaboration involving the largest national science agencies, universities, industry and the Australian Research Council. NCI is supported by the Australian Government's National Collaborative Research Infrastructure Strategy (NCRIS)
 
-![NCI Logo](images/nci_logo.svg "NCI Logo!")
+---
 
+![ACCESS-NRI logo](images/access_nri_logo.svg "ACCESS NRI logo"){ align=right width="200" }
 The Australian Earth-System Simulator (ACCESS-NRI) is a national research Infrastructure created to support development and research with the Australian Community Climate and Earth System Simulator (ACCESS) modelling system framework. ACCESS simulates past, present and future climate, weather and Earth-Systems.
 
-![ACCESS-NRI Logo](images/access_nri_logo.svg "ACCESS NRI Logo!")
+---
 
+![Geosciences Australia logo](images/ga_logo.svg "Geosciences Australia logo"){ align=right width="200" }
 Geoscience Australia is Australia's pre-eminent public sector geoscience organisation. They are the nation's trusted advisor on the geology and geography of Australia. They apply science and technology to describe and understand the Earth for the benefit of Australia.
 
-![Geosciences Australia Logo](images/ga_logo.svg "Geosciences Australia Logo!")
+---
 
+![Australian Research Council logo](images/arc_logo.svg "Australian Research Council logo"){ align=right width="200" }
 The Australian Research Council's purpose is to `grow knowledge and innovation for the benefit of the Australian community through funding the highest quality research, assessing the quality, engagement and impact of research, and providing advice on research matters'.
 
-![Australian Research Council Logo](images/arc_logo.svg "ARC Logo!")
+---
 
+![ACEAS logo](images/aceas_logo.png "ACEAS logo"){ align=right width="200" }
 The consequences of changes in the Antarctic, including sea-level rise, extreme weather events, alterations to rainfall patterns, and fisheries impacts, will be profoundly costly to Australia. However, the speed and scale of future change remains poorly understood. The Australian Centre of Excellence in Antarctic Sciences (ACEAS) will combine new field data with innovative models to revolutionise predictions of the future of the East Antarctic and Southern Ocean.
 
-![ACEAS Logo](images/aceas_logo.png "ACEAS Logo!")
