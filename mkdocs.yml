@@ -9,11 +9,16 @@ theme:
   features:
     - navigation.tabs
     - toc.integrate
+plugins:
+  - mkdocs-jupyter:
+      toc_depth: 2
 nav:
   - Home: index.md
   - Install: install.md
   - Documentation: documentation.md
-  - Tutorials: tutorials.md
+  - Tutorials:
+    - tutorials.md
+    - Helmholtz: tutorials/01-spd-helmholtz.nbconvert.ipynb
   - Benchmarks: benchmarks.md
   - Team: team.md
   - Funding: funding.md
