@@ -54,7 +54,7 @@ nav:
   - Documentation: documentation.md
   - Tutorials:
     - tutorials.md
-    - Helmholtz: tutorials/01-spd-helmholtz.nbconvert.ipynb
+    - Helmholtz: tutorials/01-spd-helmholtz.ipynb
   - Benchmarks: benchmarks.md
   - Team: team.md
   - Funding: funding.md
