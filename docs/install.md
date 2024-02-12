@@ -9,7 +9,7 @@ You can install Firedrake by running:
     python3 firedrake-install
 
 More detailed instructions for installing Firedrake and suggestions for troubleshooting can be found 
-on the [Firedrake website](https://www.firedrakeproject.org/download.html). Note that the install proceduce may take 
+on the [Firedrake website](https://www.firedrakeproject.org/download.html). Note that the install procedure may take 
 up to one hour depending on your system.
 
 Once Firedrake is installed you will need to activate the Firedrake virtual environent every time you want 
@@ -39,6 +39,14 @@ To bring in the optional nonlinear optimisation dependencies, install the optimi
 
     pip install gadopt[optimisation]
 
-For developers who intend to change the core G-ADOPT code you should add the editable flag:
+## Developing G-ADOPT
+If you are keen to make changes to the core G-ADOPT code you should first clone the GitHub repository from 
+[https://github.com/g-adopt/g-adopt](https://github.com/g-adopt/g-adopt):
 
-    pip install -e gadopt
+    git clone https://github.com/g-adopt/g-adopt.git
+
+You can then install G-ADOPT with 
+    
+    pip install -e g-adopt/
+
+The editable, -e, flag means that any updates you make to this directory will be reflected directly in the Firedrake virtual environment.
