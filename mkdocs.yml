@@ -9,6 +9,8 @@ theme:
   features:
     - navigation.tabs
     - toc.integrate
+markdown_extensions:
+  - attr_list
 nav:
   - Home: index.md
   - Install: install.md
