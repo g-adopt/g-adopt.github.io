@@ -23,13 +23,13 @@ The Australian Research Data Commons (ARDC) is a transformational initiative tha
   <figcaption>Image caption</figcaption>
 </figure>
 
+AuScope provides geoscientists with a world-class research ‘toolkit’ to help tackle Australia’s key geoscience challenges and improve Australian life and the environment. AuScope is funded by the Australian Government's National Collaborative Research Infrastructure Strategy (NCRIS).
+
+![AuScope Logo](images/auscope_logo.png "AuScope Logo!")
+
 The National Computational Infrastructure (NCI) is Australia’s leading high-performance data, storage and computing organisation, providing expert services to benefit all domains of science, government and industry. NCI brings the Australian Government and the Australian research sector together through a broad collaboration involving the largest national science agencies, universities, industry and the Australian Research Council. NCI is supported by the Australian Government's National Collaborative Research Infrastructure Strategy (NCRIS)
 
 ![NCI Logo](images/nci_logo.svg "NCI Logo!")
-
-Provides geoscientists with a world-class research ‘toolkit’ to help tackle Australia’s key geoscience challenges and improve Australian life and the environment. AuScope is funded by the Australian Government's National Collaborative Research Infrastructure Strategy (NCRIS).
-
-![AuScope Logo](images/auscope_logo.png "AuScope Logo!")
 
 The Australian Earth-System Simulator (ACCESS-NRI) is a national research Infrastructure created to support development and research with the Australian Community Climate and Earth System Simulator (ACCESS) modelling system framework. ACCESS simulates past, present and future climate, weather and Earth-Systems.
 
@@ -42,3 +42,7 @@ Geoscience Australia is Australia's pre-eminent public sector geoscience organis
 The Australian Research Council's purpose is to `grow knowledge and innovation for the benefit of the Australian community through funding the highest quality research, assessing the quality, engagement and impact of research, and providing advice on research matters'.
 
 ![Australian Research Council Logo](images/arc_logo.svg "ARC Logo!")
+
+The consequences of changes in the Antarctic, including sea-level rise, extreme weather events, alterations to rainfall patterns, and fisheries impacts, will be profoundly costly to Australia. However, the speed and scale of future change remains poorly understood. The Australian Centre of Excellence in Antarctic Sciences (ACEAS) will combine new field data with innovative models to revolutionise predictions of the future of the East Antarctic and Southern Ocean.
+
+![ACEAS Logo](images/aceas_logo.png "ACEAS Logo!")
