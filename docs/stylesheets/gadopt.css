@@ -35,3 +35,8 @@ figure.bio {
     border-radius: 5rem;
     width: 10rem;
 }
+
+.bibbase.author.link {
+    color: inherit;
+    pointer-events: none;
+}

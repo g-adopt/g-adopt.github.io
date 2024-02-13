@@ -20,7 +20,7 @@ markdown_extensions:
   - toc:
       toc_depth: 3
 extra_css:
-  - stylesheets/team.css
+  - stylesheets/gadopt.css
 nav:
   - Home: index.md
   - Install: install.md
