@@ -15,13 +15,3 @@ Please also cite Firedrake using the instructions [here](https://www.firedrakepr
 ## Journal papers and conference proceedings about G-ADOPT
 
 <script src="https://bibbase.org/show?bib=https://bibbase.org/network/files/zhofWTSihyTEbzR8W&jsonp=1"></script>
-
-
-<!---
-Add the below in when we have some applications...
-
-## Journal papers and conference proceedings using G-ADOPT
-
-<script src="https://bibbase.org/show?bib=https://bibbase.org/network/files/xiRp977Pw7zBtg5Ma&jsonp=1"></script>
-
---->
