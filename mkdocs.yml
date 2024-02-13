@@ -8,6 +8,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    - announce.dismiss
     - content.code.copy
     - navigations.indexes
     - navigation.tabs
