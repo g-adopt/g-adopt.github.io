@@ -4,7 +4,7 @@ title: G-ADOPT
 
 # Welcome to the homepage for G-ADOPT
 
-![Logo](images/gadopt_logo.png){ align=right width="400" }
+![Logo](images/gadopt_logo.svg){ align=right width="400" }
 **The Geoscientific Adjoint Optimisation PlaTform (G-ADOPT)** is a computational platform for simulating geoscientific flows, being developed and maintained by researchers from the [Research School of Earth Sciences](https://earthsciences.anu.edu.au/) at the [Australian National University (ANU)](https://www.anu.edu.au/).
 
 Building on the concepts of composable abstraction and automatic code generation techniques, G-ADOPT aims to provide accurate, efficient, flexible, easily extensible, scalable, transparent, and reproducible open-source research software for (forward and inverse) data-driven geoscientific simulations.  
