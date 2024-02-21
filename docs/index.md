@@ -1,14 +1,26 @@
 ---
-hide:
-  - navigation
+title: G-ADOPT
 ---
 
-# Welcome to G-ADOPT
+# Welcome to the homepage for G-ADOPT
 
-**G-ADOPT** is a computational platform for inverse geoscientific
-modelling being developed and maintained by researchers from the
-*Research School of Earth Sciences* at the *Australian National
-University*. It builds on a recent surge in accessible observational
-datasets and advances in inversion methods using sophisticated adjoint
-techniques that provide a mechanism for fusing these observations with
-dynamics, physics and chemistry.
+![Logo](images/gadopt_logo.svg){ align=right width="400" }
+**The Geoscientific ADjoint Optimisation PlaTform (G-ADOPT)** is a next-generation computational platform for simulating geoscientific flows. It is being developed and maintained by researchers from the [Research School of Earth Sciences](https://earthsciences.anu.edu.au/) at the [Australian National University (ANU)](https://www.anu.edu.au/), alongside international partners.
+
+Building on the concepts of composable abstraction and automatic code generation techniques, G-ADOPT provides accurate, efficient, flexible, easily extensible, scalable, transparent, and reproducible open-source research software for (forward and inverse) data-driven geoscientific simulations.
+
+Areas of current application include:
+1. **Geodynamics**: with a particular emphasis on simulating mantle dynamics and its diverse surface manifestations.
+2. **Glacial Isostatic Adjustment (GIA)**: the ongoing response of Earth's surface and sea level to changes in ice and water loading as Earth moves into and out of periods of glaciation, in conjunction with the [Australian Centre for Excellence in Antarctic Science](https://antarctic.org.au/).
+3. **Groundwater**: simulations of groundwater flow, in conjunction with the [ANU Institute for Water Futures](https://waterfutures.anu.edu.au/).
+
+Over time, the webpage will be updated to include [tutorials](tutorials.md) and information on [benchmark](benchmarks.md) configurations, in each of these geoscientific domains.
+
+---
+
+<figure markdown>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i7MVDvISByk?si=GBXUxCCr6v5Feyd6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<figcaption markdown>
+Thermal structure predicted from a global mantle convection simulation in G-ADOPT, where the geographic distribution of heterogeneity is dictated by 230 Myr of imposed plate motion history from [GPlates](https://www.gplates.org/). Each image includes a radial surface immediately above the core-mantle boundary, a cross-section, and transparent isosurfaces at temperature anomalies (i.e. away from the radial average) of T=-0.075 (blue) and T=0.075 (red), highlighting the location of downwelling slabs and upwelling mantle plumes, respectively. Continental boundaries provide geographic reference. The animation provides an Africa-centered view.
+</figcaption>
+</figure>

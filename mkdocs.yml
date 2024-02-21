@@ -31,7 +31,9 @@ plugins:
       archive: false
   - glightbox
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
+      - About: about.md
   - Install: install.md
   - Documentation: documentation.md
   - Tutorials: tutorials.md
