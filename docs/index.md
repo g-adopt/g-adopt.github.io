@@ -5,11 +5,16 @@ title: G-ADOPT
 # Welcome to the homepage for G-ADOPT
 
 ![Logo](images/gadopt_logo.svg){ align=right width="400" }
-**The Geoscientific Adjoint Optimisation PlaTform (G-ADOPT)** is a computational platform for simulating geoscientific flows, being developed and maintained by researchers from the [Research School of Earth Sciences](https://earthsciences.anu.edu.au/) at the [Australian National University (ANU)](https://www.anu.edu.au/).
+**The Geoscientific ADjoint Optimisation PlaTform (G-ADOPT)** is a next-generation computational platform for simulating geoscientific flows. It is being developed and maintained by researchers from the [Research School of Earth Sciences](https://earthsciences.anu.edu.au/) at the [Australian National University (ANU)](https://www.anu.edu.au/), alongside international partners. 
 
-Building on the concepts of composable abstraction and automatic code generation techniques, G-ADOPT aims to provide accurate, efficient, flexible, easily extensible, scalable, transparent, and reproducible open-source research software for (forward and inverse) data-driven geoscientific simulations.  
+Building on the concepts of composable abstraction and automatic code generation techniques, G-ADOPT provides accurate, efficient, flexible, easily extensible, scalable, transparent, and reproducible open-source research software for (forward and inverse) data-driven geoscientific simulations.  
 
-Current application areas include geodynamics, glacial isostatic adjustment (GIA), groundwater and renewable energy optimisation.
+Areas of current application include:  
+1. **Geodynamics**: with a particular emphasis on simulating mantle dynamics and its diverse surface manifestations.  
+2. **Glacial Isostatic Adjustment (GIA)**: the ongoing response of Earth's surface and sea level to changes in ice and water loading as Earth moves into and out of periods of glaciation, in conjunction with the [Australian Centre for Excellence in Antarctic Science](https://antarctic.org.au/).  
+3. **Groundwater**: simulations of groundwater flow, in conjunction with the [ANU Institute for Water Futures](https://waterfutures.anu.edu.au/).
+
+Over time, the webpage will be updated to include [tutorials](https://gadopt.org/tutorials.md) and information on [benchmark](https://gadopt.org/benchmarks.md) configurations, in each of these geoscientific domains. 
 
 ---
 
