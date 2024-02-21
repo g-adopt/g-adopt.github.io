@@ -36,12 +36,12 @@ and then install the optimisation variant:
     pip install gadopt[optimisation]
 
 ## Developing G-ADOPT
-If you are keen to make changes to the core G-ADOPT code you should first clone the GitHub repository from 
+If you are keen to make changes to the core G-ADOPT code (and you want to work in a separate directory to Firedrake's default location for G-ADOPT) you should first clone the GitHub repository from 
 [https://github.com/g-adopt/g-adopt](https://github.com/g-adopt/g-adopt):
 
     git clone https://github.com/g-adopt/g-adopt.git
 
-After activating the virtual enviornment of an existing Firedrake installation, you can then install G-ADOPT with:
+After activating the virtual environment of an existing Firedrake installation, you can then install G-ADOPT with:
     
     pip install -e g-adopt/
 
