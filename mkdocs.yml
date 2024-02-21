@@ -22,7 +22,9 @@ markdown_extensions:
 extra_css:
   - stylesheets/gadopt.css
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
+      - About: about.md
   - Install: install.md
   - Documentation: documentation.md
   - Tutorials: tutorials.md

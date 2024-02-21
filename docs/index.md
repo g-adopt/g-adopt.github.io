@@ -1,6 +1,5 @@
 ---
-hide:
-  - navigation
+title: G-ADOPT
 ---
 
 # Welcome to the homepage for G-ADOPT
