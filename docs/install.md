@@ -28,7 +28,7 @@ Firedrake can output data in VTK format, suitable for viewing in [Paraview](http
 On Ubuntu and similar systems, you can obtain Paraview by installing the paraview package. On Mac OS the 
 easiest approach is to download a binary from the paraview website.
 
-## Optional Install
+## Optional install
 
 To bring in the optional nonlinear optimisation dependencies you should activate the virtual environment of an existing Firedrake installation
 and then install the optimisation variant:
@@ -36,6 +36,7 @@ and then install the optimisation variant:
     pip install gadopt[optimisation]
 
 ## Developing G-ADOPT
+
 If you are keen to make changes to the core G-ADOPT code (and you want to work in a separate directory to Firedrake's default location for G-ADOPT) you should first clone the GitHub repository from 
 [https://github.com/g-adopt/g-adopt](https://github.com/g-adopt/g-adopt):
 
