@@ -1,6 +1,9 @@
 ::: gadopt.approximations
     options:
       show_source: false
+      filters: ["!BaseApproximation"]
+
+::: gadopt.diagnostics
 
 ::: gadopt.energy_solver
 
