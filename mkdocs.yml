@@ -23,6 +23,8 @@ nav:
     - Elasticity: tutorials/03-elasticity.ipynb
     - "Burgers' Equation": tutorials/04-burgers.ipynb
     - PDE Constrained Optimisation: tutorials/05-pde-constrained-optimisation.ipynb
+    - Stokes Square Convection: tutorials/06-GD-2D-convection.ipynb
+    - Stokes Cylindrical Convection: tutorials/07-GD-2D-cylindrical.ipynb
   - Benchmarks: benchmarks.md
   - Team: team.md
   - Funding: funding.md
