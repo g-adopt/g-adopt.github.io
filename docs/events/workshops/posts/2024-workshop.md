@@ -13,6 +13,7 @@ The workshop will provide background to the platform and training for potential 
 3. Multi-material simulations.
 4. Adjoint-based optimisation problems.
 
-Thanks to generous support from our partners at [AuScope](https://www.auscope.org.au/), this workshop will be free for all students and early career academics.
+Thanks to generous support from our partners at [AuScope](https://www.auscope.org.au/), this workshop will be free for all students and early career academics, provided registration is complete before the **early-bird registration deadline of 30/06/2024**. Student and early-career registrations after this date require a contribution of $50. Registration for other participants will be $200 prior to the early-bird registration deadline, and $250 thereafter. 
 
-Further details on registration will be provided in due course. 
+## [Register Here](https://payments.anu.edu.au/GADOPT2024)
+
