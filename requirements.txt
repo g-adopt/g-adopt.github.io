@@ -1,3 +1,4 @@
 mkdocs~=1.5.3
 mkdocs-material~=9.5.8
 mkdocs-glightbox~=0.3.7
+mkdocstrings[python]~=0.24.0
