@@ -5,15 +5,25 @@ G-ADOPT was initiated and funded within the Australian Research Data Commons (AR
 
 ## Specific Funding Awards and Grants
 
-1. **ARDC Platform Grant (2020)** - Geodynamic ADjoint Optimization PlaTform (PL031).  
+1. **2020 - ARDC Platform Grant** - Geodynamic ADjoint Optimization PlaTform (PL031).  
 **Funding**: $1,355,492.  
 **Purpose**: To develop transformational new research software infrasturcutre for inverse geodynamical simulation.  
 **CIs**: D. R. Davies (ANU), S. Ghelichkhan (ANU), K. Czarnota (GA), D. Müller (USyd), S. C. Kramer (Imperial College London), D. Ham (Imperial College London), S. Funke (Simula Research Laboratories), P. E. Farrell (Oxford University), M. Sambridge (ANU), M. Seton (USyd), S. D. B. Goes (Imperial College London), B. Evans (NCI), T. Rawling (AuScope).  
 
-2. **AuScope 2023 NCRIS Research Infrastructure Investment Plan (RIIP) - Coastal Research Infrastructure (CoastRI)**.  
+2. **2022 - Australian Centre for Excellence in Antarctic Science (ACEAS)** - Simulating Glacial Isostatic Adjustment in Firedrake.  
+**Funding**: ~$600,000.  
+**Purpose**: To develop G-ADOPT research software infrastructure for simulating Glacial Isostatic Adjustment (GIA) and solid Earth impacts on sea level.  
+**CIs**: D. R. Davies (ANU), M. J. Hoggard (ANU), S. Ghelichkhan (ANU), A. Gibson (ANU), W. Scott (ANU).
+
+3. **2023 - AuScope 2023 NCRIS Research Infrastructure Investment Plan (RIIP) - Coastal Research Infrastructure (CoastRI)**.  
 **Funding**: $1,418,350.  
 **Purpose**: To support development and maintenance of G-ADOPT’s research software infrastructure for simulating Glacial Isostatic Adjustment (GIA) and solid Earth impacts on sea level (for example, through dynamic topography).  
-**CIs**: D. R. Davies (ANU), M. J. Hoggard (ANU), S. Ghelichkhan (ANU), S. C. Kramer (Imperial College London), A. Gibson (ANU), A. Hogg (ACCESS-NRI),  T. Rawling (AuScope). 
+**CIs**: D. R. Davies (ANU), M. J. Hoggard (ANU), S. Ghelichkhan (ANU), S. C. Kramer (Imperial College London), A. Gibson (ANU), A. Hogg (ACCESS-NRI),  T. Rawling (AuScope).
+
+4. **2024 - ANU Institute for Water Futures (IWF)**
+**Funding**: ~$500,000.  
+**Purpose**: To develop G-ADOPT based research software infrastructure for digital twins of groundwater systems.
+**CIs**: S. Ghelichkhan (ANU), D. R. Davies (ANU), A. Gibson (ANU). 
 
 ## Partners
 [![ARDC logo](images/ardc_logo.svg "ARDC logo"){ align=right width="200" }](https://ardc.edu.au/)
