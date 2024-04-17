@@ -44,13 +44,25 @@ plugins:
             members_order: source
           import:
             - https://fenics.readthedocs.io/projects/ufl/en/latest/objects.inv
+  - mkdocs-jupyter:
+      toc_depth: 2
 nav:
   - Home:
       - index.md
       - About: about.md
   - Install: install.md
   - Documentation: documentation.md
-  - Tutorials: tutorials.md
+  - Tutorials:
+    - tutorials.md
+    - Firedrake:
+      - Helmholtz: tutorials/01-spd-helmholtz.ipynb
+      - Poisson: tutorials/02-poisson.ipynb
+      - Elasticity: tutorials/03-elasticity.ipynb
+      - "Burgers' Equation": tutorials/04-burgers.ipynb
+      - PDE Constrained Optimisation: tutorials/05-pde-constrained-optimisation.ipynb
+    - G-ADOPT:
+      - Stokes Square Convection: tutorials/06-GD-2D-convection.ipynb
+      - Stokes Cylindrical Convection: tutorials/07-GD-2D-cylindrical.ipynb
   - Benchmarks: benchmarks.md
   - Team: team.md
   - Funding: funding.md
