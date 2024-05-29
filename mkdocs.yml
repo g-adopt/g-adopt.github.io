@@ -54,15 +54,11 @@ nav:
   - Documentation: documentation.md
   - Tutorials:
     - tutorials.md
-    - Firedrake:
-      - Helmholtz: tutorials/01-spd-helmholtz.ipynb
-      - Poisson: tutorials/02-poisson.ipynb
-      - Elasticity: tutorials/03-elasticity.ipynb
-      - "Burgers' Equation": tutorials/04-burgers.ipynb
-      - PDE Constrained Optimisation: tutorials/05-pde-constrained-optimisation.ipynb
-    - G-ADOPT:
-      - Stokes Square Convection: tutorials/06-GD-2D-convection.ipynb
-      - Stokes Cylindrical Convection: tutorials/07-GD-2D-cylindrical.ipynb
+    - Base case: tutorials/base_case.ipynb
+    - Compressible (ALA): tutorials/2d_compressible_ALA.ipynb
+    - Compressible (TALA): tutorials/2d_compressible_TALA.ipynb
+    - Viscoplastic: tutorials/viscoplastic_case.ipynb
+    - 3D Cartesian: tutorials/3d_cartesian.ipynb
   - Benchmarks: benchmarks.md
   - Team: team.md
   - Funding: funding.md
