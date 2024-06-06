@@ -15,8 +15,6 @@ Areas of current application include:
 2. **Glacial Isostatic Adjustment (GIA)**, the ongoing response of Earth's surface and sea level to changes in ice and water loading as Earth moves into and out of periods of glaciation — in conjunction with the [Australian Centre for Excellence in Antarctic Science](https://antarctic.org.au/);
 3. **Groundwater**, focussing on predicting the evolution of water storage in Australia — in conjunction with the [ANU Institute for Water Futures](https://waterfutures.anu.edu.au/).
 
-Over time, the webpage will be updated to include [tutorials](tutorials.md) and information on [benchmark](benchmarks.md) configurations in each of these geoscientific domain.
-
 ---
 
 <figure markdown>
