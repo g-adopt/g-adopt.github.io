@@ -1,3 +1,7 @@
+---
+title: Install
+---
+
 # Installing the G-ADOPT library
 
 First of all, you need to install [Firedrake](https://www.firedrakeproject.org), the finite element framework that G-ADOPT is built on.

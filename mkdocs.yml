@@ -46,20 +46,15 @@ plugins:
             - https://fenics.readthedocs.io/projects/ufl/en/latest/objects.inv
   - mkdocs-jupyter:
       toc_depth: 2
+  - awesome-pages
+
 nav:
   - Home:
       - index.md
       - About: about.md
   - Install: install.md
   - Documentation: documentation.md
-  - Tutorials:
-    - tutorials.md
-    - Base case: tutorials/base_case.ipynb
-    - Compressible (ALA): tutorials/2d_compressible_ALA.ipynb
-    - Compressible (TALA): tutorials/2d_compressible_TALA.ipynb
-    - Viscoplastic: tutorials/viscoplastic_case.ipynb
-    - 3D Cartesian: tutorials/3d_cartesian.ipynb
-  - Benchmarks: benchmarks.md
+  - ... | tutorials/*
   - Team: team.md
   - Funding: funding.md
   - Events:
