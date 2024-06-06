@@ -47,6 +47,7 @@ jobs:
         env:
           GADOPT_LOGLEVEL: WARN
       - uses: actions/upload-artifact@v4
+        continue-on-error: true
         with:
           name: notebooks
           path: rendered
