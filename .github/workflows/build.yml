@@ -45,6 +45,7 @@ jobs:
           rm -rf rendered && mkdir rendered
           find tutorials/demos -name '*.ipynb' -exec cp "{}" rendered \;
           cp tutorials/demos/.pages rendered
+          cp tutorials/demos/.diagram.mermaid rendered
         env:
           GADOPT_LOGLEVEL: WARN
       - uses: actions/upload-artifact@v4
