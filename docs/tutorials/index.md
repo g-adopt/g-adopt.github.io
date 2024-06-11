@@ -4,7 +4,9 @@ The diagram below shows several G-ADOPT example codes and how they
 relate to each other.  These notebooks demonstrate how to use G-ADOPT
 to set up (forward and inverse) geodynamical simulations.
 
-INCLUDE IMAGE HERE.
+```mermaid
+--8<-- "docs/tutorials/.diagram.mermaid"
+```
 
 We start with the most basic problem - isoviscous, incompressible
 convection, in an enclosed 2-D Cartesian box (base) - and
