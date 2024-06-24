@@ -13,4 +13,4 @@ Once you have access you can then join the #gadopt channel. Slack chat history d
 and whilst it is as a sensible avenue for quick correspondence, our preference would be for important
 issues and discussions to be raised on GitHub.
 
-Email: You can email the G-ADOPT development team at - <sia@gadopt.com>
+Email: You can email the G-ADOPT project lead Rhodri Davies at <rhodri.davies@anu.edu.au>.
