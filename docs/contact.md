@@ -24,4 +24,4 @@ issues and discussions to be raised on GitHub.
 
 **Email**
 
-: You can email the G-ADOPT project lead Rhodri Davies at <rhodri.davies@anu.edu.au>.
+: You can email the G-ADOPT project team at <help@gadopt.org>.
