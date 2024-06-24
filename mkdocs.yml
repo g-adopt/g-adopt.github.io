@@ -53,13 +53,20 @@ plugins:
       toc_depth: 2
       custom_mathjax_url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"
   - awesome-pages
+  - gen-files:
+      scripts:
+        - scripts/gen_api_pages.py
 
 nav:
   - Home:
       - index.md
       - About: about.md
   - Install: install.md
-  - Documentation: documentation.md
+  - Documentation:
+      - documentation/index.md
+      - documentation/dev.md
+      - API:
+          - ... | flat | documentation/*
   - ... | tutorials/*
   - Team: team.md
   - Funding: funding.md
