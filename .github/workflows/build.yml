@@ -26,10 +26,15 @@ jobs:
         with:
           repository: g-adopt/g-adopt
           path: tutorials
+      - name: Make previous version of Mesa available
+        run: |
+          sed 's/noble/mantic/g' /etc/apt/sources.list.d/ubuntu.sources | sudo tee /etc/apt/sources.list.d/mantic.sources > /dev/null
+          sudo apt update
+          sudo apt remove -y libx11-6
+          sudo apt -t mantic install -y --allow-downgrades libglx-mesa0=23.2.1-1ubuntu3.1 libglapi-mesa=23.2.1-1ubuntu3.1 libgl1-mesa-dri=23.2.1-1ubuntu3.1 libx11-6=2:1.8.6-1ubuntu1
       - name: Install dependencies
         run: |
-          sudo apt update
-          sudo apt install -y libgl1-mesa-glx xvfb
+          sudo apt install -y xvfb gmsh
           . /home/firedrake/firedrake/bin/activate
           python3 -m pip install nbval nbconvert jupytext
           python3 -m pip install tutorials/[demos]
