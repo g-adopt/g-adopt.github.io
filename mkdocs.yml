@@ -18,6 +18,7 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
+  - def_list
   - md_in_html
   - pymdownx.details
   - pymdownx.snippets
@@ -65,3 +66,4 @@ nav:
       - events/workshops/index.md
       - events.md
   - Publications: publications.md
+  - Contact: contact.md
