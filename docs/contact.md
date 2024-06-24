@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Contact
 
 Please get in contact if our web material and tutorials do not answer your questions, if you run into problems that you cannot solve,
