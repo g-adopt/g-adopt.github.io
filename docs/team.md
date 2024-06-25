@@ -20,7 +20,7 @@ Rhodri is a Professor of computational and observational geodynamics at the ANU'
 
 ---
 
-Sia is a tenure-track research fellow at the Research School of Earth Sciences at the ANU, affiliated to the ANU's Institute for Water Futures. His main research areas are groundwater and mantle convection, with a common thread of comparison between inverse models and appropriate observational datasets.
+Sia is a tenure-track research fellow at the Research School of Earth Sciences, ANU, and is affiliated with the Institute for Water Futures at ANU. His primary research interest lies in inverse modeling of Earth system processes, particularly in groundwater and mantle convection. Sia's work addresses the fundamental challenge of establishing digital twins for continental-scale groundwater systems in Australia and Earth's mantle, both spatially and temporally.
 </figcaption>
 </figure>
 
