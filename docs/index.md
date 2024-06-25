@@ -1,5 +1,5 @@
 ---
-title: G-ADOPT
+title: Home 
 ---
 
 # Welcome to the homepage for G-ADOPT
