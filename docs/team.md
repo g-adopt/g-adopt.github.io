@@ -9,13 +9,13 @@
 
 ---
 
-Rhodri is a Professor of computational and observational geodynamics at the ANU's Research School of Earth Sciences. He is recognised for developing and integrating state-of-the-art tools that simulate mantle and lithosphere dynamics with a diverse range of observational datasets. His long-term vision is to develop a new paradigm for solid Earth evolution with the overarching goal of reconstructing the thermo-chemical structure and flow history of Earth’s mantle and its evolution through space and time (4-D), across spatial and temporal scales.   
+Rhodri is a Professor of computational and observational geodynamics at the ANU's Research School of Earth Sciences. He is recognised for developing and integrating state-of-the-art tools that simulate mantle and lithosphere dynamics with a diverse range of observational datasets. His long-term vision is to develop a new paradigm for solid Earth evolution with the overarching goal of reconstructing the thermo-chemical structure and flow history of Earth’s mantle and its evolution through space and time (4-D), across spatial and temporal scales.
 </figcaption>
 </figure>
 
 <figure class="bio" markdown>
 ![Sia Ghelichkhan](mugshots/sia.jpg){ width="300" }
-<figcaption markdown>### [Sia Ghelichkhan](https://earthsciences.anu.edu.au/people/academics/dr-sia-ghelichkhan) 
+<figcaption markdown>### [Sia Ghelichkhan](https://earthsciences.anu.edu.au/people/academics/dr-sia-ghelichkhan)
 #### Lead Investigator
 
 ---
@@ -26,12 +26,12 @@ Sia is a tenure-track research fellow at the Research School of Earth Sciences, 
 
 <figure class="bio" markdown>
 ![Stephan Kramer](mugshots/stephan.jpg){ width="300" }
-<figcaption markdown>### [Stephan Kramer](https://www.imperial.ac.uk/people/s.kramer) 
+<figcaption markdown>### [Stephan Kramer](https://www.imperial.ac.uk/people/s.kramer)
 #### International Software Development Coordinator
 
 ---
 
-Stephan is a research felllow at the department of Earth Science and Engineering at Imperial College London. He is an expert in the development of tools integrating state of the art numerical and computational techniques that enable cutting edge research in a variety of fields within the Earth Sciences, ranging from geodynamics to coastal oceanography. One of his key interests is the combination of modern automatic programming approaches and adjoint techniques to solve PDE-constrained inversion and optimisation problems.
+Stephan is a research felllow at the department of Earth Science and Engineering at Imperial College London. He is an expert in the development of tools integrating state-of-the-art numerical and computational techniques that enable cutting-edge research in a variety of fields within the Earth Sciences, ranging from geodynamics to coastal oceanography. One of his key interests is the combination of modern automatic programming approaches and adjoint techniques to solve PDE-constrained inversion and optimisation problems.
 </figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Stephan is a research felllow at the department of Earth Science and Engineering
 
 ---
 
-Angus is a research software engineer at the Research School of Earth Sciences at the ANU. His key interest is in synthesising the need for high performance computing with the demands of science, in the fields of geodynamics and geophysical fluid dynamics. This happens through the development, maintenance and support of tools for modelling and analysis, and optimisation of models to run efficiently on current and future supercomputers.
+Angus is a research software engineer at the Research School of Earth Sciences at the ANU. His key interest is in synthesising the need for high-performance computing with the demands of science, in the fields of geodynamics and geophysical fluid dynamics. This happens through the development, maintenance and support of tools for modelling and analysis, and optimisation of models to run efficiently on current and future supercomputers.
 </figcaption>
 </figure>
 </div>
@@ -52,7 +52,7 @@ Angus is a research software engineer at the Research School of Earth Sciences a
 <div class="bio-grid" markdown>
 <figure class="bio" markdown>
 ![Thomas Duvernay](mugshots/thomas.jpg){ width="300" }
-<figcaption markdown>### [Thomas Duvernay](https://researchers.anu.edu.au/researchers/duvernay-t?term=languages) 
+<figcaption markdown>### [Thomas Duvernay](https://researchers.anu.edu.au/researchers/duvernay-t?term=languages)
 #### Multi-material Approaches
 
 ---
@@ -63,12 +63,12 @@ Thomas is a postdoctoral fellow at the Research School of Earth Sciences, Austra
 
 <figure class="bio" markdown>
 ![David Ham](mugshots/david_ham.jpg){ width="300" }
-<figcaption markdown>### [David Ham](https://www.imperial.ac.uk/people/david.ham) 
+<figcaption markdown>### [David Ham](https://www.imperial.ac.uk/people/david.ham)
 #### Firedrake
 
 ---
 
-David is a Professor in Computational Mathematics at Imperial College London, Department of Mathematics. He leads the Firedrake project, a large project on the automatic generation of scientific models for multiple different massively parallel architectures from a single high-level mathematical specification in a domain specific language.
+David is a Professor in Computational Mathematics at Imperial College London, Department of Mathematics. He leads the Firedrake project, a large project on the automatic generation of scientific models for multiple different massively parallel architectures from a single high-level mathematical specification in a domain-specific language.
 </figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ David is a Professor in Computational Mathematics at Imperial College London, De
 
 ---
 
-Will is a computational geoscientist at the ANU's Research School of Earth Sciences, funded as a post-doctoral researcher by the Australian Centre for Excellence for Antarctic Science (ACEAS). Will's focus is on developing next generation (forward and inverse) finite element models to better understand polar contributions to sea level change. Before joining ANU he developed a new model for ocean flow under ice shelf cavities in Antarctica using the Firedrake finite element framework. At ANU he is working as part of a cross-disciplinary team to develop a 'state-of-the-art' Glacial Isostatic Adjustment (GIA) model to reduce uncertainty in sea level projections.
+Will is a computational geoscientist at the ANU's Research School of Earth Sciences, funded as a post-doctoral researcher by the Australian Centre for Excellence for Antarctic Science (ACEAS). Will's focus is on developing next-generation (forward and inverse) finite element models to better understand polar contributions to sea level change. Before joining ANU, he developed a new model for ocean flow under ice shelf cavities in Antarctica using the Firedrake finite element framework. At ANU he is working as part of a cross-disciplinary team to develop a 'state-of-the-art' Glacial Isostatic Adjustment (GIA) model to reduce uncertainty in sea level projections.
 </figcaption>
 </figure>
 </div>
@@ -94,7 +94,7 @@ Will is a computational geoscientist at the ANU's Research School of Earth Scien
 
 ---
 
-Mark is a Discovery Early Career Research Fellow ([DECRA](https://www.arc.gov.au/funding-research/funding-schemes/discovery-program/discovery-early-career-researcher-award-decra)) at the ANU's Research School of Earth Sciences. His research program is generally problem-orientated and therefore spans a wide range of topics, crossing the traditional discipline boundaries of Earth sciences. It brings together data and models from across seismology, rock physics, geochemistry, sedimentology, geochronology, geomorphology and paleoclimate. It combines field observations, numerical modelling, high-performance computing, uncertainty propagation and statistics. Mark generally tries to take an inverse approach to solving problems, whereby observational datasets are used to place constraints on unknown physical properties and parameters of the Earth. 
+Mark is a Discovery Early Career Research Fellow ([DECRA](https://www.arc.gov.au/funding-research/funding-schemes/discovery-program/discovery-early-career-researcher-award-decra)) at the ANU's Research School of Earth Sciences. His research program is generally problem-orientated and therefore spans a wide range of topics, crossing the traditional discipline boundaries of Earth sciences. It brings together data and models from across seismology, rock physics, geochemistry, sedimentology, geochronology, geomorphology and paleoclimate. It combines field observations, numerical modelling, high-performance computing, uncertainty propagation and statistics. Mark generally tries to take an inverse approach to solving problems, whereby observational datasets are used to place constraints on unknown physical properties and parameters of the Earth.
 </figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ Mark is a Discovery Early Career Research Fellow ([DECRA](https://www.arc.gov.au
 
 ---
 
-Matt is Professor of polar geodesy at the University of Tasmania. Since 2021, he has been Director of the [Australian Centre for Excellence in Antarctic Science](https://antarctic.org.au/). His research focusses on solid earth geophysics and geodesy, with a particular focus on Antarctica. Matt focuses on the use of geodetic tools to solve problems related to Earth geophysics, notably Earth deformation due to glacier melt, earthquakes, and tides; sea-level change; and polar ice mass balance. He also seeks to advance the accuracy and precision of those geodetic tools (e.g., Global Navigation Satellite Systems (GNSS/GPS) and satellite gravimetry (GRACE).
+Matt is Professor of polar geodesy at the University of Tasmania. Since 2021, he has been Director of the [Australian Centre for Excellence in Antarctic Science](https://antarctic.org.au/). His research focusses on solid earth geophysics and geodesy, with a particular focus on Antarctica. Matt focuses on the use of geodetic tools to solve problems related to Earth geophysics, notably Earth deformation due to glacier melt, earthquakes, and tides; sea-level change; and polar ice mass balance. He also seeks to advance the accuracy and precision of those geodetic tools (e.g., Global Navigation Satellite Systems (GNSS/GPS) and satellite gravimetry (GRACE)).
 </figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ Maria is an Associate Professor at the University of Sydney's School of Geoscien
 <div class="bio-grid" markdown>
 <figure class="bio" markdown>
 ![Ruby Turner](mugshots/ruby.jpg){ width="300" }
-<figcaption markdown>### [Ruby Turner](https://earthsciences.anu.edu.au/people/students/ruby-turner) 
+<figcaption markdown>### [Ruby Turner](https://earthsciences.anu.edu.au/people/students/ruby-turner)
 #### PhD Student
 #### Research School of Earth Sciences, ANU
 

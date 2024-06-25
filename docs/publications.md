@@ -1,8 +1,8 @@
 # Publications
 
-## Citing G-ADOPT 
+## Citing G-ADOPT
 
-If you publish results using G-ADOPT, we would be grateful if you would cite the software using the following metadata and the two articles below.
+If you publish results using G-ADOPT, we would be grateful if you could cite the software using the following metadata and the two articles below.
 
 ??? abstract "G-ADOPT references (BibTeX)"
     ``` bibtex title="gadopt.bib"

@@ -6,7 +6,7 @@ method;
 2. [dolfin-adjoint](https://github.com/dolfin-adjoint/pyadjoint), an algorithmic
 differentiation framework that automatically derives the corresponding representation
 of discrete adjoint equations in a form compatible with Firedrake;
-3. [Rapid Optimisation Library(ROL)](https://trilinos.github.io/rol.html), a highly
+3. [Rapid Optimisation Library (ROL)](https://trilinos.github.io/rol.html), a highly
 efficient package enabling advanced, large-scale optimization.
 
 Together, they constitute a high-performance geoscientific modelling framework with
