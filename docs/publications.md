@@ -14,4 +14,4 @@ Please also cite Firedrake using the instructions [here](https://www.firedrakepr
 
 ## Journal papers and conference proceedings about G-ADOPT
 
-<script src="https://bibbase.org/show?bib=https://bibbase.org/network/files/zhofWTSihyTEbzR8W&jsonp=1"></script>
+<script src="https://bibbase.org/show?bib=https://bibbase.org/network/files/tzBb6bg6tmizmKbju&jsonp=1"></script>
