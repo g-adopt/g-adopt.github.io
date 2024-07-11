@@ -51,6 +51,7 @@ plugins:
             - https://fenics.readthedocs.io/projects/ufl/en/latest/objects.inv
   - mkdocs-jupyter:
       toc_depth: 2
+      custom_mathjax_url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"
   - awesome-pages
 
 nav:
