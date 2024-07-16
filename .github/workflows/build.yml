@@ -5,60 +5,45 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'Run id for rendering job (defaults to latest)'
+        required: false
+        type: number
+  repository_dispatch:
+    types: [doc-rebuild]
 
 permissions:
   pages: write
   contents: read
   id-token: write
 
+env:
+  GH_TOKEN: ${{ github.token }}
+
 jobs:
-  render:
-    runs-on: self-hosted
-    container:
-      image: firedrakeproject/firedrake:latest
-      options: --shm-size 2g
-
-    env:
-      OMP_NUM_THREADS: 1
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          repository: g-adopt/g-adopt
-          path: tutorials
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y xvfb gmsh
-          . /home/firedrake/firedrake/bin/activate
-          python3 -m pip install nbval nbconvert jupytext
-          python3 -m pip install tutorials/[demos]
-          python3 -m ipykernel install --name firedrake --user
-      - name: Convert notebooks
-        run: |
-          . /home/firedrake/firedrake/bin/activate
-          export DISPLAY=:99
-          export PYVISTA_OFF_SCREEN=true
-          export LIBGL_ALWAYS_SOFTWARE=true
-          Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
-          sleep 3
-          make -j -C tutorials convert_demos
-          rm -rf rendered && mkdir rendered
-          find tutorials/demos -name '*.ipynb' -exec cp "{}" rendered \;
-          cp tutorials/demos/.pages rendered
-          cp tutorials/demos/.diagram.mermaid rendered
-        env:
-          GADOPT_LOGLEVEL: WARN
-      - uses: actions/upload-artifact@v4
-        continue-on-error: true
-        with:
-          name: notebooks
-          path: rendered
-
   build:
     runs-on: ubuntu-latest
     needs: render
     steps:
+      - name: Get run_id from repository dispatch
+        if: ${{ github.event_name == 'repository_dispatch' }}
+        run: echo "run_id=${{ github.event.client_payload.run_id }}" >> "$GITHUB_ENV"
+      - name: Get run_id from workflow dispatch
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          if [ -z "${{ inputs.run_id }}" ]; then
+            run_id=$(gh run list -R g-adopt/g-adopt -w render.yml -L 1 --json databaseId --jq '.[].databaseId')
+          else
+            run_id=${{ inputs.run_id }}
+          fi
+          echo "run_id=${run_id}" >> "$GITHUB_ENV"
+      - name: Get run_id for push
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          run_id=$(gh run list -R g-adopt/g-adopt -w render.yml -L 1 -b master -s success --json databaseId --jq '.[].databaseId')
+          echo "run_id=${run_id}" >> "$GITHUB_ENV"
+
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -67,15 +52,22 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install -r requirements.txt
+
       - name: Clone G-ADOPT for API documentation
         uses: actions/checkout@v4
         with:
           repository: g-adopt/g-adopt
           path: g-adopt
-      - uses: actions/download-artifact@v4
+
+      - name: Download rendered notebooks
+        uses: actions/download-artifact@v4
         with:
           name: notebooks
           path: docs/tutorials
+          github-token: ${{ github.token }}
+          repository: g-adopt/g-adopt
+          run-id: ${{ env.run_id }}
+
       - name: Build site
         run: |
           mkdocs build --clean
