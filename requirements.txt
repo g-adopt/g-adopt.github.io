@@ -3,5 +3,5 @@ mkdocs-material~=9.5.25
 mkdocs-glightbox~=0.4.0
 mkdocstrings[python]~=0.25.1
 mkdocs-jupyter~=0.24.7
-mkdocs-awesome-pages-plugin~=2.9.2
 mkdocs-gen-files~=0.5.0
+mkdocs-literate-nav~=0.6.1

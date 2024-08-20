@@ -42,6 +42,8 @@ plugins:
       blog_dir: events/workshops
       post_readtime: false
       archive: false
+  - literate-nav:
+      nav_file: CONTENTS.md
   - glightbox
   - mkdocstrings:
       handlers:
@@ -58,7 +60,6 @@ plugins:
   - mkdocs-jupyter:
       toc_depth: 2
       custom_mathjax_url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"
-  - awesome-pages
   - gen-files:
       scripts:
         - scripts/gen_api_pages.py
@@ -71,9 +72,8 @@ nav:
   - Documentation:
       - documentation/index.md
       - documentation/dev.md
-      - API:
-          - ... | flat | documentation/*
-  - ... | tutorials/*
+      - API: documentation/api/
+  - Tutorials: tutorials/
   - Team: team.md
   - Funding: funding.md
   - Events:
