@@ -1,5 +1,6 @@
 ---
-title: Home 
+title: Home
+glightbox: false
 ---
 
 # Welcome to the homepage for G-ADOPT
@@ -23,3 +24,11 @@ Areas of current application include:
 Thermal structure predicted from a global mantle convection simulation in G-ADOPT that incorporates 230 Myr of plate motion history reconstructed in [GPlates](https://www.gplates.org/). Each image includes a background cross-section, a radial surface immediately above the core-mantle boundary, and transparent isosurfaces at temperature anomalies (i.e. away from the radial average) of T=-0.075 (blue) and T=0.075 (red), highlighting the location of downwelling slabs and upwelling mantle plumes, respectively. Continental boundaries provide a geographic reference. The animation presents an Africa-centered view.
 </figcaption>
 </figure>
+
+---
+
+<div class="grid" style="align-items:center;" markdown>
+![ANU logo](images/anu_logo.png){ width="400" }
+
+![Imperial logo](images/imperial_logo.png){ width="400" vertical-align="middle" }
+</div>
