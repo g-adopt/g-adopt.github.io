@@ -27,8 +27,12 @@ Thermal structure predicted from a global mantle convection simulation in G-ADOP
 
 ---
 
-<div class="grid" style="align-items:center;" markdown>
-![ANU logo](images/anu_logo.png){ width="400" }
+<div class="grid" style="align-items:center; justify-items:center;" markdown>
+![ANU logo](images/anu_logo.png){ width="200" }
 
-![Imperial logo](images/imperial_logo.png){ width="400" vertical-align="middle" }
+![ARDC logo](images/ardc_logo.svg){ width="200" }
+
+![AuScope logo](images/auscope_logo.png){ width="200" }
+
+![Imperial logo](images/imperial_logo.png){ width="200" vertical-align="middle" }
 </div>
