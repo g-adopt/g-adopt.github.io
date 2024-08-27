@@ -8,3 +8,11 @@
 {% endif %}
 {{ super() }}
 {% endblock content %}
+{% block scripts %}
+{{ super() }}
+{% if not "tutorials" in page.url %}
+{% for script in config.extra.mathjax %}
+{{ script | script_tag }}
+{% endfor %}
+{% endif %}
+{% endblock scripts %}
