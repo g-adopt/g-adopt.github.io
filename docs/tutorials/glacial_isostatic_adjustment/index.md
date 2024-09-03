@@ -11,8 +11,8 @@ simulations using G-ADOPT. At present, they are focussed on simulating
 viscoelastic Earth deformation under evolving surface loads. This page will be updated as
 new functionality becomes available.
 
-```mermaid
---8<-- "docs/tutorials/glacial_isostatic_adjustment/.diagram.mermaid"
+```d2 scale="0.7"
+--8<-- "docs/tutorials/glacial_isostatic_adjustment/.diagram.d2"
 ```
 
 Our tutorials guide you from the simplest configurations to advanced, Earth-like simulations.
