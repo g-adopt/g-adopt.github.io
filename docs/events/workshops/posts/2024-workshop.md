@@ -27,15 +27,15 @@ Dinner and ice-breaker
 - 8.00–9.00  
 Breakfast
 - 9.15–10.00  
-**Keynote**: Welcome and overview of G-ADOPT platform and the team, including developments across 2023/2024  
+**Presentation**: Welcome and overview of G-ADOPT platform and the team, including developments across 2023/2024  
 _Rhodri Davies_
 - 10.00–10.30  
 Tea/coffee
 - 10.30–11.30  
-**Presentation**: Forward and adjoint modelling, via the Finite Element Method — theory and challenges  
+**Presentation**: Forward and adjoint modelling, via the Finite Element Method — theory, challenges and automation  
 _Sia Ghelichkhan_
 - 11.30–12.00  
-**Presentation**: Building Firedrake with G-ADOPT; accessing and running Firedrake on the NCI and Setonix; Continuous Integration  
+**Presentation**: The G-ADOPT project environment, including Github and CI; Colab; building Firedrake with G-ADOPT; accessing and running G-ADOPT on the NCI  
 _Angus Gibson, Dale Roberts_
 - 12.00–14.00  
 Lunch/beach
@@ -43,10 +43,10 @@ Lunch/beach
 **Tutorials 1**: Forward modelling tutorials, including free-surfaces and multi-material approaches → the G-ADOPT library  
 _Rhodri Davies, Thomas Duvernay_
 - 15.45–16.15  
-Tea/Coffee
+Tea/coffee
 - 16.15–18.00  
 **Tutorials 2**: PDE constrained optimisation and adjoints  
-_Will Scott, Sia Ghelichkhan, Thomas Duvernay_
+_Sia Ghelichkhan, Rhodri Davies_
 - 18.00–19.00  
 Downtime
 - 19.00–21.00  
@@ -58,18 +58,18 @@ _The infamous Mark Hoggard & Shihao Jiang_
 Breakfast
 - 9.00–9.45  
 **Presentation**: Glacial Isostatic Adjustment — theory, approach and timeline  
-_Will Scott, Mark Hoggard, Dale Roberts_
+_Will Scott, Mark Hoggard_
 - 9.45–10.45  
 **User showcase**
     - 9.45–10.00 — _Japjeet Singh_: towards coupling GIA and ice-sheet models
     - 10.00–10.10 — _Tom New_: coupled models of G-ADOPT and GPlates
-    - 10.10–10.20 — _Haining Chang_: mantle plume characteristics in dynamic Earth models
-    - 10.20–10.30 — _Prahlada Mittal_: synthetic inversions for mantle viscosity structure
-    - 10.30–10.40 — _Liam Morrow_: digital-twins of Earth’s groundwater systems
+    - 10.10–10.20 — _Haining Chang_: G-ADOPT dynamic Earth models
+    - 10.20–10.30 — _Prahlada Mittal_: synthetic inversions for mantle viscosity
+    - 10.30–10.40 — _Sia Ghelichkhan, Liam Morrow_: digital-twins of Earth’s groundwater systems
 - 10.40–11.15  
 Tea/coffee
 - 11.15–12.45  
-**Tutorials 3**: Towards Glacial Isostatic Adjustment in Firedrake  
+**Tutorials 3**: Towards Glacial Isostatic Adjustment in G-ADOPT  
 _Will Scott_
 - 12.45–13.30  
 Lunch
