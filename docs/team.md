@@ -90,7 +90,7 @@ Will is a computational geoscientist at the ANU's Research School of Earth Scien
 
 ---
 
-Dale is a Research Software Engineer at the Research School of Earth Sciences at ANU. His primary focus is the porting and optimisation of G-ADOPT and Firedrake for HPC platforms. He has over a decade of experience working on HPC systems and scientific application support at Australia's National Computational Infrastructure. 
+Dale is a Research Software Engineer at the Research School of Earth Sciences at ANU. His primary focus is the porting and optimisation of G-ADOPT and Firedrake for HPC platforms, with an emphasis on Glacial Isostatic Adjustment and Groundwater application areas. He has over a decade of experience working on HPC systems and scientific application support at Australia's National Computational Infrastructure. 
 </figcaption>
 </figure>
 </div>
