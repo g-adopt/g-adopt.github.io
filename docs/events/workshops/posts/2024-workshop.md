@@ -77,7 +77,7 @@ Lunch
   **Tutorials 4**
     1. Global mantle convection models (coupled to GPlates), including post-processing tools;  
     _Sia Ghelichkhan, Angus Gibson_
-    2. GIA extensions and adjoints
+    2. GIA extensions and adjoints  
     _Will Scott, Mark Hoggard_
 - 15.00–15.30  
 Tea/coffee
