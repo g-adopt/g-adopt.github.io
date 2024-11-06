@@ -43,7 +43,7 @@ Lunch/beach
 **Tutorials 1**: Forward modelling tutorials, including free-surfaces and multi-material approaches → the G-ADOPT library  
 _Rhodri Davies, Thomas Duvernay_
 - 15.45–16.15  
-Tea/Coffee
+Tea/coffee
 - 16.15–18.00  
 **Tutorials 2**: PDE constrained optimisation and adjoints  
 _Sia Ghelichkhan, Rhodri Davies_
