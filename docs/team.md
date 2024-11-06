@@ -82,6 +82,17 @@ David is a Professor in Computational Mathematics at Imperial College London, De
 Will is a computational geoscientist at the ANU's Research School of Earth Sciences, funded as a post-doctoral researcher by the Australian Centre for Excellence for Antarctic Science (ACEAS). Will's focus is on developing next-generation (forward and inverse) finite element models to better understand polar contributions to sea level change. Before joining ANU, he developed a new model for ocean flow under ice shelf cavities in Antarctica using the Firedrake finite element framework. At ANU he is working as part of a cross-disciplinary team to develop a 'state-of-the-art' Glacial Isostatic Adjustment (GIA) model to reduce uncertainty in sea level projections.
 </figcaption>
 </figure>
+
+<figure class="bio" markdown>
+![Dale Roberts](mugshots/dale.jpg){ width="300" }
+<figcaption markdown>### [Dale Roberts](https://github.com/dsroberts)
+#### Research Software Engineer
+
+---
+
+Dale is a Research Software Engineer at the Research School of Earth Sciences at ANU. His primary focus is the porting and optimisation of G-ADOPT and Firedrake for HPC platforms. He has over a decade of experience working on HPC systems and scientific application support at Australia's National Computational Infrastructure. 
+</figcaption>
+</figure>
 </div>
 
 ## Scientific Advisors
