@@ -27,15 +27,15 @@ Dinner and ice-breaker
 - 8.00–9.00  
 Breakfast
 - 9.15–10.00  
-**Presentation**: Welcome and overview of G-ADOPT platform and the team, including developments across 2023/2024
+**Presentation**: Welcome and overview of G-ADOPT platform and the team, including developments across 2023/2024  
 _Rhodri Davies_
 - 10.00–10.30  
 Tea/coffee
 - 10.30–11.30  
-**Presentation**: Forward and adjoint modelling, via the Finite Element Method — theory, challenges and automation
+**Presentation**: Forward and adjoint modelling, via the Finite Element Method — theory, challenges and automation  
 _Sia Ghelichkhan_
 - 11.30–12.00  
-**Presentation**: The G-ADOPT project environment, including Github and CI; Colab; building Firedrake with G-ADOPT; accessing and running G-ADOPT on the NCI
+**Presentation**: The G-ADOPT project environment, including Github and CI; Colab; building Firedrake with G-ADOPT; accessing and running G-ADOPT on the NCI  
 _Angus Gibson, Dale Roberts_
 - 12.00–14.00  
 Lunch/beach
