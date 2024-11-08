@@ -1,5 +1,5 @@
 ---
-date: 2024-02-13
+date: 2024-11-10
 ---
 
 # G-ADOPT Workshop 2024
