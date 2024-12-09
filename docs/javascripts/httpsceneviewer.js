@@ -1,16 +1,5 @@
 const vtkjs = window.vtkjs;
 
-// Load the rendering pieces we want to use (for both WebGL and WebGPU)
-//import "vtkjs/Rendering/Profiles/All";
-
-// Force DataAccessHelper to have access to various data source
-//import "@kitware/vtk.js/IO/Core/DataAccessHelper/HtmlDataAccessHelper";
-//import "@kitware/vtk.js/IO/Core/DataAccessHelper/HttpDataAccessHelper";
-//import "@kitware/vtk.js/IO/Core/DataAccessHelper/JSZipDataAccessHelper";
-
-//import vtkFullScreenRenderWindow from "@kitware/vtk.js/Rendering/Misc/FullScreenRenderWindow";
-//import vtkHttpSceneLoader from "@kitware/vtk.js/IO/Core/HttpSceneLoader";
-
 // ----------------------------------------------------------------------------
 // Standard rendering code setup
 // ----------------------------------------------------------------------------
@@ -23,6 +12,22 @@ const renderWindow = fullScreenRenderer.getRenderWindow();
 // ----------------------------------------------------------------------------
 // Example code
 // ----------------------------------------------------------------------------
+const controlPanel = `
+<button id="btn">Play/Pause</button>
+`;
+
+function initialiseAnim(nextStep) {
+  let interval = setInterval(nextStep,100);
+  const select = document.getElementById('btn');
+  select.addEventListener('click', () => {
+    if ( interval == null ) {
+      interval = setInterval(nextStep,100);
+    } else {
+      clearInterval(interval);
+      interval = null;
+    }
+  });
+};
 
 function downloadZipFile(url) {
   return new Promise((resolve, reject) => {
@@ -45,7 +50,7 @@ function downloadZipFile(url) {
   });
 }
 
-downloadZipFile("test4.vtkjs").then((zipContent) => {
+downloadZipFile("test10.vtkjs").then((zipContent) => {
   const dataAccessHelper = vtk.IO.Core.DataAccessHelper.get("zip", {
     zipContent,
     callback() {
@@ -57,23 +62,24 @@ downloadZipFile("test4.vtkjs").then((zipContent) => {
       sceneImporter.setUrl("index.json");
       sceneImporter.onReady(() => {
         const animationHandler = sceneImporter.getAnimationHandler();
-        //        if (animationHandler && animationHandler.getTimeSteps().length > 1) {
-        //          const steps = animationHandler.getTimeSteps();
-        //          const applyStep = (stepIdx) => {
-        //            const step = steps[stepIdx];
-        //            if (
-        //              step >= animationHandler.getTimeRange()[0] &&
-        //              step <= animationHandler.getTimeRange()[1]
-        //            ) {
-        //              animationHandler.setCurrentTimeStep(step);
-        //              renderer.resetCameraClippingRange();
-        //              renderWindow.render();
-        //            }
-        //          };
-        //          initialiseSelector(steps, applyStep);
-        //        }
+        if (animationHandler && animationHandler.getTimeSteps().length > 1) {
+          const steps = animationHandler.getTimeSteps();
+          const nextStep = () => {
+            global_step =
+              (global_step + 1) % animationHandler.getTimeSteps().length;
+            const step = steps[global_step];
+            animationHandler.setCurrentTimeStep(step);
+            renderer.resetCameraClippingRange();
+            renderWindow.render();
+            
+          };
+          initialiseAnim(nextStep)
+        }
         renderWindow.render();
       });
     },
   });
 });
+
+var global_step = 0;
+fullScreenRenderer.addController(controlPanel);
