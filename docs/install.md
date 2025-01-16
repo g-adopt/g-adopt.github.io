@@ -25,6 +25,33 @@ ensure that your Firedrake environment is activated:
 
 Furthermore, the `gadopt` Python module should be available for you to use.
 
+## Using the G-ADOPT library on Gadi
+
+The G-ADOPT team maintains an up-to-date Firedrake and G-ADOPT installation 
+on NCI's Gadi HPC system. To use G-ADOPT on Gadi, create an NCI account, then follow [this link](https://my.nci.org.au/mancini/project/fp50/join) to request to join the fp50 project. Once your request is approved, you can
+access G-ADOPT on Gadi by running:
+
+    module use /g/data/fp50/modules
+    module load firedrake
+
+To use G-ADOPT in you batch scripts, you'll need to add the following to your
+PBS flags:
+
+    -lstorage=gdata/fp50
+
+You can also use G-ADOPT in a JupyterLab session on the [ARE](https://opus.nci.org.au/spaces/Help/pages/162431120/ARE+User+Guide) at NCI. When launching a
+JupyterLab session, add the following in the 'Advanced options' section
+
+![G-ADOPT ARE](images/g-adopt-are.png){: style="width:450px"}
+
+By default, the latest release of G-ADOPT will be available when you load
+the firedrake module. If you wish to use your own G-ADOPT installation, set
+the environment variable `MY_GADOPT` before loading the firedrake module.
+
+    export MY_GADOPT=/g/data/ab12/path/to/my/gadopt
+    module use /g/data/fp50/modules
+    module load firedrake
+
 ## Run the tutorials
 
 The [G-ADOPT tutorials](tutorials/index.md) are located within the [G-ADOPT
@@ -53,6 +80,9 @@ tutorial! Start the notebook server:
 Within the browser window that pops up, you can browse to the
 `g-adopt/demos` directory and open any Python script with the `.py`
 extension as a notebook.
+
+The tutorials can also be run in the JupyterLab environment on the ARE
+after following the above instructions.
 
 ## Visualisation software
 
