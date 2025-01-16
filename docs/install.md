@@ -34,7 +34,7 @@ access G-ADOPT on Gadi by running:
     module use /g/data/fp50/modules
     module load firedrake
 
-To use G-ADOPT in you batch scripts, you'll need to add the following to your
+To use G-ADOPT in your batch scripts, you'll need to add the following to your
 PBS flags:
 
     -lstorage=gdata/fp50
