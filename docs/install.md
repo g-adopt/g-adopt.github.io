@@ -72,7 +72,7 @@ and then install the optimisation variant:
 
 ## Using the G-ADOPT library on Gadi
 
-The G-ADOPT team maintains an up-to-date Firedrake and G-ADOPT installation 
+The G-ADOPT team maintains an up-to-date G-ADOPT and Firedrake installation
 with all optional dependencies on NCI's Gadi HPC system. To use G-ADOPT on 
 Gadi, create an NCI account, then follow 
 [this link](https://my.nci.org.au/mancini/project/fp50/join) to request to 
@@ -80,32 +80,31 @@ join the fp50 project. Once your request is approved, you can
 access G-ADOPT on Gadi by running:
 
     module use /g/data/fp50/modules
-    module load firedrake
+    module load g-adopt
 
 To use G-ADOPT in your batch scripts, you'll need to add the following to your
 PBS flags:
 
     -lstorage=gdata/fp50
 
-By default, the latest release of G-ADOPT will be available when you load
-the firedrake module. If you wish to use your own G-ADOPT installation, set
-the environment variable `MY_GADOPT` before loading the firedrake module.
+By default, this will give you the latest release of G-ADOPT, and load the
+most recent `firedrake` module. If you wish to use your own G-ADOPT installation, set
+the environment variable `MY_GADOPT` and load the firedrake module.
 
     export MY_GADOPT=/g/data/ab12/path/to/my/gadopt
     module use /g/data/fp50/modules
     module load firedrake
 
-You can also use G-ADOPT in a JupyterLab session on the 
+You can also use G-ADOPT in a JupyterLab session on the
 [ARE](https://opus.nci.org.au/spaces/Help/pages/162431120/ARE+User+Guide) at 
 NCI. When launching a JupyterLab session, add `gdata/fp50` to the storage 
 field and the following in the 'Advanced options' section:
 
 ![G-ADOPT ARE](images/g-adopt-are.png){: style="width:450px"}
 
-To run the demos on the ARE, you must have a local copy of the G-ADOPT
-repository on Gadi. Once the ARE session has started, navigate to the 
-one of the demo directories in your copy of G-ADOPT, right click on the
-`.py` file and select Open With -> Notebook
+To run the demos on the ARE, untar the `demos.tgz` file found in `/g/data/fp50/apps/firedrake/gadopt`
+into your `/scratch` directory. Once the ARE session has started, navigate to one of the demo
+directories, right click on the `.py` file and select Open With -> Notebook
 
 ![Open notebook](images/open-notebook-are.png){ : style="width:450px"}
 
