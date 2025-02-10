@@ -108,6 +108,25 @@ directories, right click on the `.py` file and select Open With -> Notebook
 
 ![Open notebook](images/open-notebook-are.png){ : style="width:450px"}
 
+The demos can also be run in parallel on the standard job queues. For example, the following 
+script, when placed in the `mantle_convection/3d_spherical` directory will run the demo  on 4
+cores in Gadi's 'normal' queue:
+``` sh title="run_gadi.sh"
+#!/usr/bin/env bash
+#PBS -lncpus=4
+#PBS -lmem=16GB
+#PBS -lwalltime=00:15:00
+#PBS -lstorage=gdata/fp50
+#PBS -ljobfs=10GB
+#PBS -lwd
+#PBS -qnormal
+
+module use /g/data/fp50/modules
+module load g-adopt
+
+mpiexec python3 3d_spherical.py
+```
+
 ## Developing G-ADOPT
 
 If you are keen to make changes to the core G-ADOPT code (and you want to work in a separate directory to Firedrake's default location for G-ADOPT), you should first clone the [G-ADOPT GitHub repository](https://github.com/g-adopt/g-adopt):
