@@ -113,10 +113,11 @@ script, when placed in the `mantle_convection/3d_spherical` directory will run t
 cores in Gadi's 'normal' queue:
 ``` sh title="run_gadi.sh"
 #!/usr/bin/env bash
+#PBS -P [YOUR_PROJECT]
 #PBS -lncpus=4
 #PBS -lmem=16GB
 #PBS -lwalltime=00:15:00
-#PBS -lstorage=gdata/fp50
+#PBS -lstorage=scratch/[YOUR_PROJECT]+gdata/fp50
 #PBS -ljobfs=10GB
 #PBS -lwd
 #PBS -qnormal
@@ -126,6 +127,8 @@ module load g-adopt
 
 mpiexec python3 3d_spherical.py
 ```
+Note that `fp50` is a small project intended only for maintaining G-ADOPT on Gadi, you will need
+access to a separate project with a Gadi SU allocation to run the demos.
 
 ## Developing G-ADOPT
 
