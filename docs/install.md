@@ -109,7 +109,7 @@ directories, right click on the `.py` file and select Open With -> Notebook
 ![Open notebook](images/open-notebook-are.png){ : style="width:450px"}
 
 The demos can also be run in parallel on the standard job queues. For example, the following 
-script, when placed in the `mantle_convection/3d_spherical` directory will run the demo  on 4
+script, when placed in the `mantle_convection/3d_spherical` directory will run that demo on 4
 cores in Gadi's 'normal' queue:
 ``` sh title="run_gadi.sh"
 #!/usr/bin/env bash
