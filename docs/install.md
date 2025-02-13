@@ -55,7 +55,7 @@ Within the browser window that pops up, you can browse to the
 extension as a notebook.
 
 The tutorials can also be run in the JupyterLab environment on the ARE
-after following the above instructions.
+after following the instructions below.
 
 ## Visualisation software
 
