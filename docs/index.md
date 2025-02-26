@@ -19,9 +19,9 @@ Areas of current application include:
 ---
 
 <figure markdown>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/i7MVDvISByk?si=GBXUxCCr6v5Feyd6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="800" height="315" frameBorder="0" src="static/viewer.html"></iframe>
 <figcaption markdown>
-Thermal structure predicted from a global mantle convection simulation in G-ADOPT that incorporates 230 Myr of plate motion history reconstructed in [GPlates](https://www.gplates.org/). Each image includes a background cross-section, a radial surface immediately above the core-mantle boundary, and transparent isosurfaces at temperature anomalies (i.e. away from the radial average) of T=-0.075 (blue) and T=0.075 (red), highlighting the location of downwelling slabs and upwelling mantle plumes, respectively. Continental boundaries provide a geographic reference. The animation presents an Africa-centered view.
+Present-day thermal structure predicted from a global mantle convection simulation in G-ADOPT that incorporates 230 Myr of plate motion history reconstructed in [GPlates](https://www.gplates.org/). This interactive animation includes a background cross-section, a radial surface immediately above the core-mantle boundary, and isosurfaces at temperature anomalies (i.e. away from the radial average) of T=-0.075 (blue) and T=0.075 (red), highlighting the location of downwelling slabs and upwelling mantle plumes, respectively. Continental boundaries provide a geographic reference.
 </figcaption>
 </figure>
 
