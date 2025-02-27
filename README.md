@@ -6,17 +6,12 @@ theme. API documentation is generated using [mkdocstrings].
 
 ## Local development
 
-For simple development on the main content of the site, after cloning
-this repository, create a Python virtual environment, and install the
-required packages into it:
+For simple development on the main content of the site, first make sure that you 
+have installed [uv] by following the [installation instructions] for your 
+platform. Clone this repository, and change to its directory. Start the MkDocs 
+server, and the site will be available at http://localhost:8000
 
-    $ python3 -m venv env
-	$ source env/bin/activate
-	(env) $ python3 -m pip install -r requirements.txt
-
-Start the MkDocs server, and the site will be available at http://localhost:8000
-
-    (env) $ python3 -m mkdocs serve
+    $ uv run -- mkdocs serve
 
 ### API documentation
 
@@ -44,4 +39,6 @@ the `main` branch.
 [MkDocs]: https://www.mkdocs.org/
 [2]: https://squidfunk.github.io/mkdocs-material/
 [mkdocstrings]: https://mkdocstrings.github.io/
+[uv]: https://github.com/astral-sh/uv
+[installation instructions]: https://docs.astral.sh/uv/getting-started/installation/
 [g-adopt]: https://github.com/g-adopt/g-adopt

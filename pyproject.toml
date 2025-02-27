@@ -1,0 +1,15 @@
+[project]
+name = "g-adopt-github-io"
+version = "0.1.0"
+description = "The website and documentation for the g-adopt project"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocs-glightbox>=0.4.0",
+    "mkdocs-jupyter>=0.25.1",
+    "mkdocs-literate-nav>=0.6.1",
+    "mkdocs-material>=9.6.5",
+    "mkdocstrings[python]>=0.28.2",
+]
