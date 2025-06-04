@@ -14,17 +14,17 @@ development and advances on the forward and adjoint components of this finite-el
 modelling platform. Key areas of focus will include:
 
 1. Mantle and lithosphere dynamics;
-2. Glacial isostatic adjustment and visco-elasticity;
-3. Multi-material simulations;
-4. Adjoint-based optimisation problems;
-5. Groundwater dynamics.
+2. Multi-material simulations;
+3. Adjoint-based optimisation problems.
+
+Depending on the background and interests of registered participants, glacial isostatic
+adjustment, visco-elasticity, and groundwater modelling could be included.
 
 Thanks to generous support from our partners at [AuScope](https://www.auscope.org.au/),
-this workshop will be free for all students and early-career academics, provided
-registration is complete before the **early-bird registration deadline of 31/07/2025**.
-Student and early-career registrations after this date require a contribution of A$50.
-Registration for other participants will be A$200 prior to the early-bird registration
-deadline and A$250 thereafter.
+this workshop will be free for all students, provided registration is completed before
+the **early-bird registration deadline of 31/07/2025**. Student registrations after this
+date require a contribution of A$30. Registration for other participants will be A$30
+prior to the early-bird registration deadline and A$60 thereafter.
 
 ## [Register Here](https://payments.anu.edu.au/GADOPT2025)
 
@@ -52,17 +52,16 @@ Lunch break (Vanilla Bean)
 adjoint method
 _Sia Ghelichkhan_
 - 14.30–15:00
-**Presentation 3** Viscoelastic controls on glacial isostatic adjustment using G-ADOPT
-_Will Scott_
+**TBC** Title
+_Names_
 - 15.00–15.30
 Afternoon break (tea, coffee, fruits, nibbles)
 - 15.30–17.00
-**???** ???
+**TBC** Title
 _Names_
 - 17.00–17:30
-**Presentation 4** Towards a new view on groundwater systems via G-ADOPT-driven
-reconstructed spatio-temporal evolutions
-_Liam Morrow_
+**TBC** Title
+_Names_
 - 17.30–18.00
 **Interactive discussion** Feedback from workshop attendees, for example:
     1. What functionality would the community like prioritised for future developments?;
