@@ -22,4 +22,8 @@ developments. The objective was to provide an as-complete-as-possible first look
 Firedrake and G-ADOPT to potential new users.
 
 **Zurich, ETH — 09 May 2025**
-Sia Ghelichkhan visited ETH Zurich.
+**Munich, LMU — 06 May 2025**
+Sia Ghelichkhan visited the Computational Geodynamics group at LMU Munich and presented recent progress on the G-ADOPT platform. The visit included discussions on potential collaborations across multiple fronts, including adjoint methods and links to mineral physics models, with an emphasis on expanding the platform’s applicability to broader geodynamic research.
+
+**Zurich, ETH — 10 May 2025**
+Sia Ghelichkhan visited the Seismology and Wave Physics group at ETH Zurich~ to present the initial results from the GeoDynamic Preliminary Reference Earth Model, developed using the REVEAL workflow. The visit provided an opportunity to gather feedback and discuss future integration of seismic and geodynamic data in joint modeling efforts.
