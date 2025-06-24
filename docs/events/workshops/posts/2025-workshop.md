@@ -23,8 +23,8 @@ adjustment, visco-elasticity, and groundwater modelling could be included.
 Thanks to generous support from our partners at [AuScope](https://www.auscope.org.au/),
 this workshop will be free for all students, provided registration is completed before
 the **early-bird registration deadline of 31/07/2025**. Student registrations after this
-date require a contribution of A$30. Registration for other participants will be A$30
-prior to the early-bird registration deadline and A$60 thereafter.
+date require a contribution of A\$30. Registration for other participants will be A\$30
+prior to the early-bird registration deadline and A\$60 thereafter.
 
 ## Registration link available here soon.
 <!-- ## [Register Here](https://payments.anu.edu.au/GADOPT2025) -->
