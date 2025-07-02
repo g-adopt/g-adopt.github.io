@@ -26,8 +26,7 @@ the **early-bird registration deadline of 31/07/2025**. Student registrations af
 date require a contribution of A\$30. Registration for other participants will be A\$30
 prior to the early-bird registration deadline and A\$60 thereafter.
 
-## Registration link available here soon.
-<!-- ## [Register Here](https://payments.anu.edu.au/GADOPT2025) -->
+## [Register Here](https://payments.anu.edu.au/GADOPT2025)
 
 ## Schedule
 
