@@ -17,7 +17,7 @@ and time dedicated to each tailored to the background and interests of registere
 
 1. Mantle and lithosphere dynamics;
 2. Glacial isostatic adjustment (GIA);
-3  Visco-elasticity;
+3. Visco-elasticity;
 4. Groundwater modelling;
 5. Multi-material simulations;
 6. Adjoint-based optimisation problems.
