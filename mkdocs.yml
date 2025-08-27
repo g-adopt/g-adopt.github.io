@@ -76,7 +76,9 @@ nav:
       - documentation/index.md
       - documentation/dev.md
       - API: documentation/api/
-  - Tutorials: tutorials/
+  - Tutorials:
+      - tutorials/index.md
+      - tutorials/mantle-convection.md
   - Team: team.md
   - Funding: funding.md
   - Events:
