@@ -1,6 +1,6 @@
 # Mantle convection
 
-*** From simple box models to full Earth simulations - learn mantle convection step by step. ***
+*** From simple box models to full Earth simulations - learn to simulate mantle convection step by step. ***
 
 The diagram below shows the suite of G-ADOPT notebook tutorials for
 mantle convection, and how they build on one another. Together, these
@@ -28,5 +28,5 @@ After completing these tutorials, you will be equipped to:
 4. Compute and interpret dynamic topography.
 5. Use adjoint methods to invert for unknown initial conditions.
 
-Whether you're new to geodynamics or ready to tackle state-of-the-art research problems,
+Whether you're new to mantle dynamics or ready to tackle state-of-the-art research problems,
 these tutorials provide a clear step-by-step path into mantle convection modelling with G-ADOPT.
