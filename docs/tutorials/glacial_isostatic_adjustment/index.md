@@ -1,6 +1,6 @@
 # Glacial Isostatic Adjustment (GIA)
 
-*** From simple box models to full Earth simulations - learn how to simulate GIA step by step. ***
+**From simple box models to full Earth simulations - learn how to simulate GIA step by step.**
 
 The diagram below shows the suite of G-ADOPT notebook tutorials for simulating
 Glacial Isostatic Adjustment (GIA), and how they build on one another. Together, these
@@ -19,6 +19,7 @@ geometries. Along the way, you'll learn how to analyse key model diagnostics and
 G-ADOPT's adjoint tools to recover unknown ice histories and/or Earth structure.
 
 After completing these tutorials, you will be equipped to:
+
 1. Build forward models of viscoelastic defromation driven by surface loads - from simple boxes to full spherical shells.
 2. Incorporate different physics such as compressibility and a transient rheology.
 3. Apply adjoint methods to invert for unknown ice histories and rheological structure.
