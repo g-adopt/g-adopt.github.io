@@ -8,7 +8,7 @@ tutorials demonstrate how to set up and run both forward and inverse
 mantle dynamics simulations using G-ADOPT.
 
 ```mermaid
---8<-- "docs/tutorials/.diagram.mermaid"
+--8<-- "docs/tutorials/mantle_convection/.diagram.mermaid"
 ```
 
 Our tutorials take you on a journey from the simplest

@@ -10,7 +10,7 @@ viscoelastic Earth deformation under evolving surface loads. This page will be u
 new functionality becomes available.
 
 ```mermaid
---8<-- "docs/tutorials/.diagram.mermaid"
+--8<-- "docs/tutorials/glacial_isostatic_adjustment/.diagram.mermaid"
 ```
 
 Our tutorials guide you from the simplest configurations to advanced, Earth-like simulations.
