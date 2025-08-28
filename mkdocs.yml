@@ -12,7 +12,7 @@ theme:
   features:
     - announce.dismiss
     - content.code.copy
-    - navigations.indexes
+    - navigation.indexes
     - navigation.tabs
     - toc.integrate
 markdown_extensions:
@@ -46,6 +46,7 @@ plugins:
       archive: false
   - literate-nav:
       nav_file: CONTENTS.md
+      implicit_index: true
   - glightbox
   - mkdocstrings:
       handlers:
@@ -76,9 +77,7 @@ nav:
       - documentation/index.md
       - documentation/dev.md
       - API: documentation/api/
-  - Tutorials:
-      - tutorials/index.md
-      - tutorials/mantle-convection.md
+  - Tutorials: tutorials/
   - Team: team.md
   - Funding: funding.md
   - Events:
