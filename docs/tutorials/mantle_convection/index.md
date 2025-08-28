@@ -13,11 +13,11 @@ mantle dynamics simulations using G-ADOPT.
 
 Our tutorials take you on a journey from the simplest
 model setups to advanced, Earth-like simulations. Starting with a basic
-2D convection model (isoviscous, incompressible), you'll gradually
+2D convection model (isoviscous, incompressible), you will gradually
 explore more realistic physics, new boundary conditions, 3D and spherical
 geometries, and even link your models to plate reconstructions with GPlates.
 
-Along the way, you'll also discover how to analyse key surface signals
+Along the way, you will also discover how to analyse key surface signals
 such as dynamic topography and learn how to use G-ADOPT's powerful adjoint
 tools to recover unknown conditions from data.
 
@@ -29,5 +29,5 @@ After completing these tutorials, you will be equipped to:
 4. Compute and interpret dynamic topography.
 5. Use adjoint methods to invert for unknown initial conditions.
 
-Whether you're new to mantle dynamics or ready to tackle state-of-the-art research problems,
+Whether you are new to mantle dynamics or ready to tackle state-of-the-art research problems,
 these tutorials provide a clear step-by-step path into mantle convection modelling with G-ADOPT.

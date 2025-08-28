@@ -13,7 +13,7 @@ To run them, you'll need a working installation of **Firedrake** and **G-ADOPT**
 
 ---
 
-## Getting Started Pathway
+## Getting Started
 
 If you're new to this ecosystem, we recommend the following sequence:  
 
@@ -21,10 +21,10 @@ If you're new to this ecosystem, we recommend the following sequence:
    Begin with the [introductory Firedrake tutorials](https://www.firedrakeproject.org/documentation.html) to learn the basics of the finite element framework on which G-ADOPT is built.  
 
 2. **Mantle Convection**  
-   Start with the simplest 2-D convection models and build up to spherical Earth simulations. This series introduces the essential concepts and workflows in G-ADOPT.  
+   Start with the simplest 2-D convection models and build up to spherical Earth simulations. This series introduces the essential concepts and workflows in G-ADOPT. *If your main interest is in GIA, you can skip this section.*
 
 3. **Glacial Isostatic Adjustment (GIA)**  
-   Explore viscoelastic Earth deformation under surface loads, advancing towards adjoint-based inversions for ice history and rheology.  
+   Explore viscoelastic Earth deformation under surface loads, advancing towards adjoint-based inversions for ice history and rheology. *If your main interest is in mantle convection, you can skip this section.*
 
 4. **Generic Functionality**  
    Once comfortable with the physics-based tutorials, branch out into cross-cutting capabilities such as multi-material modelling and PDE-constrained optimisation.  
