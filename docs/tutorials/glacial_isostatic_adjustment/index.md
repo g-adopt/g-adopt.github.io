@@ -1,6 +1,8 @@
 # Glacial Isostatic Adjustment (GIA)
 
-**From simple box models to full Earth simulations - learn how to simulate GIA step by step.**
+![Burgers rheology example](../../images/graphics/GIA_burgers.png){ align=center width="450" }
+
+**From simple box models to full Earth simulations with a transient rheology - learn how to simulate GIA step by step.**
 
 The diagram below shows the suite of G-ADOPT notebook tutorials for simulating
 Glacial Isostatic Adjustment (GIA), and how they build on one another. Together, these

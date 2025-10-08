@@ -1,6 +1,8 @@
-# Mantle convection
+# Mantle Convection
 
-**From simple box models to full Earth simulations - learn to simulate mantle convection step by step.**
+![Global mantle convection simulation](../../images/graphics/Mantle_Convection_Global.png){ align=center width="800" }
+
+**From simple box models to global spherical simulations like the one above - learn to simulate mantle convection step by step.**
 
 The diagram below shows the suite of G-ADOPT notebook tutorials for
 mantle convection, and how they build on one another. Together, these
