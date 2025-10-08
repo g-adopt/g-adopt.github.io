@@ -7,7 +7,7 @@ hide:
 
 # G-ADOPT: The Geoscientific ADjoint Optimisation PlaTform
 
-![G-ADOPT logo](images/gadopt_logo.svg){ class="inline end" }
+![G-ADOPT logo](images/gadopt_logo.svg){ class="gadopt-logo inline end" }
 
 !!! info what-is-gadopt "What is G-ADOPT?"
     **G-ADOPT** is a next-generation computational platform for simulating geoscientific flows with adjoint-based methods,
