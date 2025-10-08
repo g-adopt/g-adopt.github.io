@@ -7,15 +7,13 @@ hide:
 
 # G-ADOPT: The Geoscientific ADjoint Optimisation PlaTform
 
-!!! info "What is G-ADOPT?" {#what-is-gadopt}
+![G-ADOPT logo](images/gadopt_logo.svg){ class="inline end" }
+
+!!! info what-is-gadopt "What is G-ADOPT?"
     **G-ADOPT** is a next-generation computational platform for simulating geoscientific flows with adjoint-based methods,
     built on [Firedrake](https://www.firedrakeproject.org). Developed at the ANU’s [Research School of Earth Sciences](https://earthsciences.anu.edu.au/)
     in collaboration with international partners, it supports applications across mantle and lithosphere dynamics,
     glacial isostatic adjustment (GIA), and groundwater modelling.
-
-![G-ADOPT logo](images/gadopt_logo.svg){ .hero-logo }
-
-<div class="clearfix"></div>
 
 ---
 
