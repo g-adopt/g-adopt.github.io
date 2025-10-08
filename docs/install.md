@@ -13,8 +13,7 @@ You can install both Firedrake and G-ADOPT by running:
     python3 firedrake-install --install gadopt
 
 More detailed instructions for installing Firedrake and suggestions for troubleshooting can be found
-on the [Download](https://www.firedrakeproject.org/download.html) page of the Firedrake website. Note that the install procedure may take
-up to one hour depending on your system.
+on the [Download](https://www.firedrakeproject.org/download.html) page of the Firedrake website. Note that the install procedure may take up to one hour depending on your system.
 
 ## Using the G-ADOPT library
 
