@@ -47,12 +47,12 @@ figure.bio {
 }
 
 /* Enlarge the "What is G-ADOPT?" text */
-.admonition.what-is-gadopt { font-size: 1rem; line-height: 1.8; padding: 1.1rem 1.4rem; border-width: 2px; }
-.admonition.what-is-gadopt .admonition-title { font-size: 1.25rem; font-weight: 800; }
+.admonition.what-is-gadopt { font-size: .9rem; line-height: 1.8; padding: 1.1rem 1.4rem; border-width: 2px; }
+.admonition.what-is-gadopt .admonition-title { font-size: 1.1rem; font-weight: 800; }
 
 /* Cards (left) + viewer (right) side-by-side */
 .content-split { display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 2rem; align-items: start; }
-.viewer-frame { width: 100%; height: 440px; border: 0; border-radius: 8px; box-shadow: 0 1px 10px rgba(0,0,0,.08); }
+.viewer-frame { width: 100%; height: 300px; border: 0; border-radius: 8px; box-shadow: 0 1px 10px rgba(0,0,0,.08); }
 
 /* Partner logos – tidy sizing */
 .logo-row {

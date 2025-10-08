@@ -35,7 +35,7 @@ hide:
 <figure markdown>
   <iframe class="viewer-frame" src="static/viewer.html" title="G-ADOPT viewer" frameborder="0"></iframe>
   <figcaption markdown>
-  Present-day thermal structure predicted from a global mantle convection simulation in G-ADOPT that incorporates 230 Myr of plate-motion history reconstructed in [GPlates](https://www.gplates.org/).
+  Present-day thermal structure predicted from a global mantle convection simulation in G-ADOPT.
   </figcaption>
 </figure>
 
