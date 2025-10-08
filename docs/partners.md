@@ -1,29 +1,34 @@
 # Funding and Partners
 
 ## Background
-G-ADOPT was initiated and funded within the Australian Research Data Commons (ARDC) [2020 platforms program](https://doi.org/10.47486/PL031), which invested in platforms that would transform the way research is conducted in various disciplines. G-ADOPT is short for ‘Geoscientific ADjoint Optimization PlaTform’. At first, though, the ‘G’ stood for ‘Geodynamic’ when the platform had a tighter focus. G-ADOPT is now applied across many branches of geosciences, including groundwater simulation, optimisation for renewable energy generation, and Earth's response to melting polar ice sheets. In 2023, the platform received funding from AuScope to focus, in particular, on the latter challenge.
+
+**G-ADOPT** — the *Geoscientific ADjoint Optimisation PlaTform* — was launched under the [Australian Research Data Commons (ARDC) 2020 Platforms Program](https://doi.org/10.47486/PL031), an initiative designed to transform the way research is conducted across disciplines through world-class digital research infrastructure.
+
+Originally conceived as the **Geodynamic ADjoint Optimisation PlaTform**, G-ADOPT has since expanded beyond its initial focus on mantle convection and plate dynamics to support a wide range of geoscientific applications. These now include **groundwater simulation**, and **Earth’s response to melting polar ice sheets**.
+
+In 2023, the platform received additional support from **AuScope**, under the **NCRIS Research Infrastructure Investment Plan (RIIP)**, to accelerate development of G-ADOPT’s capabilities for modelling glacial isostatic adjustment (GIA) and related solid Earth processes — areas critical to understanding sea-level change and Earth system evolution.
 
 ## Specific Funding Awards and Grants
 
-1. **2020 — ARDC Platform Grant** — Geodynamic ADjoint Optimization PlaTform (PL031)
-  **Funding**: A$1,355,492.
-  **Purpose**: To develop transformational new research software infrastructure for inverse geodynamical simulation.
-  **CIs**: D. R. Davies (ANU), S. Ghelichkhan (ANU), K. Czarnota (GA), D. Müller (USyd), S. C. Kramer (Imperial College London), D. Ham (Imperial College London), S. Funke (Simula Research Laboratories), P. E. Farrell (Oxford University), M. Sambridge (ANU), M. Seton (USyd), S. D. B. Goes (Imperial College London), B. Evans (NCI), T. Rawling (AuScope).
+1. **2020 — ARDC Platform Grant** — *Geodynamic ADjoint Optimisation PlaTform (PL031)*
+   **Funding:** A\$1,355,492
+   **Purpose:** Development of transformational software infrastructure for inverse geodynamical simulation.
+   **Chief Investigators:** D.R. Davies (ANU), S. Ghelichkhan (ANU), K. Czarnota (GA), D. Müller (USyd), S.C. Kramer (Imperial College London), D. Ham (Imperial College London), S. Funke (Simula Research Laboratories), P.E. Farrell (Oxford University), M. Sambridge (ANU), M. Seton (USyd), S.D.B. Goes (Imperial College London), B. Evans (NCI), T. Rawling (AuScope).
 
-2. **2022 — Australian Centre for Excellence in Antarctic Science (ACEAS)** — Simulating Glacial Isostatic Adjustment in Firedrake
-  **Funding**: ~A$600,000.
-  **Purpose**: To develop G-ADOPT research software infrastructure for simulating Glacial Isostatic Adjustment (GIA) and solid Earth impacts on sea level.
-  **CIs**: D. R. Davies (ANU), M. J. Hoggard (ANU), S. Ghelichkhan (ANU), A. Gibson (ANU), W. Scott (ANU).
+2. **2022 — Australian Centre for Excellence in Antarctic Science (ACEAS)** — *Simulating Glacial Isostatic Adjustment in G-ADOPT*
+   **Funding:** ~A\$600,000
+   **Purpose:** Development of G-ADOPT infrastructure for simulating glacial isostatic adjustment (GIA) and quantifying solid Earth impacts on sea level.
+   **Chief Investigators:** D.R. Davies (ANU), M.J. Hoggard (ANU), S. Ghelichkhan (ANU), A. Gibson (ANU), W. Scott (ANU).
 
-3. **2023 — AuScope 2023 NCRIS Research Infrastructure Investment Plan (RIIP) — Coastal Research Infrastructure (CoastRI)**
-  **Funding**: A$1,418,350.
-  **Purpose**: To support development and maintenance of G-ADOPT’s research software infrastructure for simulating Glacial Isostatic Adjustment (GIA) and solid Earth impacts on sea level (for example, through dynamic topography).
-  **CIs**: D. R. Davies (ANU), M. J. Hoggard (ANU), S. Ghelichkhan (ANU), S. C. Kramer (Imperial College London), A. Gibson (ANU), A. Hogg (ACCESS-NRI),  T. Rawling (AuScope).
+3. **2023 — AuScope NCRIS Research Infrastructure Investment Plan (RIIP)** — *Coastal Research Infrastructure (CoastRI)*
+   **Funding:** A\$1,418,350
+   **Purpose:** Support for the development and long-term maintenance of G-ADOPT’s GIA modelling capabilities, including dynamic topography and solid Earth feedbacks on coastal systems.
+   **Chief Investigators:** D.R. Davies (ANU), M.J. Hoggard (ANU), S. Ghelichkhan (ANU), S.C. Kramer (Imperial College London), A. Gibson (ANU), A. Hogg (ACCESS-NRI), T. Rawling (AuScope).
 
 4. **2024 — ANU Institute for Water Futures (IWF)**
-  **Funding**: ~A$500,000.
-  **Purpose**: To develop G-ADOPT-based research software infrastructure for digital twins of groundwater systems.
-  **CIs**: S. Ghelichkhan (ANU), D. R. Davies (ANU), A. Gibson (ANU).
+   **Funding:** ~A\$500,000
+   **Purpose:** Extension of G-ADOPT’s framework for digital twins of groundwater systems, integrating hydrological processes with geodynamic modelling.
+   **Chief Investigators:** S. Ghelichkhan (ANU), D.R. Davies (ANU), A. Gibson (ANU).
 
 ## Partners
 [![ARDC logo](images/ardc_logo.svg "ARDC logo"){ align=right width="200" }](https://ardc.edu.au/)
