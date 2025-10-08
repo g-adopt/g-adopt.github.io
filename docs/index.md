@@ -46,10 +46,12 @@ hide:
 
 ---
 
-<!-- Partner logos -->
 <div class="logo-row" markdown>
-![ANU](images/anu_logo.png)
-![ARDC](images/ardc_logo.svg)
-![AuScope](images/auscope_logo.png)
-![Imperial](images/imperial_logo.png)
+![ANU logo](images/anu_logo.png)
+
+![ARDC logo](images/ardc_logo.svg)
+
+![AuScope logo](images/auscope_logo.png)
+
+![Imperial logo](images/imperial_logo.png)
 </div>
