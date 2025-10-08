@@ -1,54 +1,55 @@
 ---
 title: Home
 glightbox: false
+hide:
+  - navigation
 ---
 
-# Welcome to the homepage for G-ADOPT
+# G-ADOPT: The Geoscientific ADjoint Optimisation PlaTform
 
-![Logo](images/gadopt_logo.svg){ align=right width="400" }
-**The Geoscientific ADjoint Optimisation PlaTform (G-ADOPT)** is a next-generation computational platform for simulating geoscientific flows. It is being developed and maintained by researchers from the [Research School of Earth Sciences](https://earthsciences.anu.edu.au/) at the [Australian National University (ANU)](https://www.anu.edu.au/), alongside international partners.
+!!! info "What is G-ADOPT?" {#what-is-gadopt}
+    **G-ADOPT** is a next-generation computational platform for simulating geoscientific flows with adjoint-based methods,
+    built on [Firedrake](https://www.firedrakeproject.org). Developed at the ANU’s [Research School of Earth Sciences](https://earthsciences.anu.edu.au/)
+    in collaboration with international partners, it supports applications across mantle and lithosphere dynamics,
+    glacial isostatic adjustment (GIA), and groundwater modelling.
 
-Building on composable abstraction and automatic code generation techniques, G-ADOPT provides accurate, efficient, flexible, easily extensible, scalable, transparent, and reproducible open-source research software for (forward and inverse) data-driven geoscientific simulations.
+![G-ADOPT logo](images/gadopt_logo.svg){ .hero-logo }
 
-Areas of current application include:
-
-1. **Geodynamics**, with a particular emphasis on simulating mantle dynamics and its diverse surface manifestations;
-2. **Glacial Isostatic Adjustment (GIA)**, the ongoing response of Earth's surface and sea level to changes in ice and water loading as Earth moves into and out of periods of glaciation — in conjunction with the [Australian Centre for Excellence in Antarctic Science](https://antarctic.org.au/);
-3. **Groundwater**, focussing on predicting the evolution of water storage in Australia — in conjunction with the [ANU Institute for Water Futures](https://waterfutures.anu.edu.au/).
+<div class="clearfix"></div>
 
 ---
+
+<div class="content-split" markdown>
+<div markdown>
+
+<div class="grid cards" markdown>
+- :material-rocket-launch: **[Get Started](install.md)** — New here? Install G-ADOPT and run your first tutorial.
+- :material-book-open-page-variant: **[Documentation](documentation/index.md)** — User and developer guides, API, and examples.
+- :material-school: **[Tutorials](tutorials/index.md)** — Hands-on lessons from first runs to advanced models.
+- :material-calendar-star: **[Events & Workshops](events.md)** — Training days, schedules, and past workshops.
+- :material-account-group: **[Community](team.md)** — Meet our [Team](team.md) and discover our [Partners](partners.md).
+- :material-newspaper-variant-multiple-outline: **[Publications & Outreach](publications.md)** — Explore our [Research Outputs](publications.md) and recent [Media Features](media.md).
+</div>
+
+</div>
+<div markdown>
 
 <figure markdown>
-<iframe width="800" height="315" frameBorder="0" src="static/viewer.html"></iframe>
-<figcaption markdown>
-Present-day thermal structure predicted from a global mantle convection simulation in G-ADOPT that incorporates 230 Myr of plate motion history reconstructed in [GPlates](https://www.gplates.org/). This interactive animation includes a background cross-section, a radial surface immediately above the core-mantle boundary, and isosurfaces at temperature anomalies (i.e. away from the radial average) of T=-0.075 (blue) and T=0.075 (red), highlighting the location of downwelling slabs and upwelling mantle plumes, respectively. Continental boundaries provide a geographic reference.
-</figcaption>
+  <iframe class="viewer-frame" src="static/viewer.html" title="G-ADOPT viewer" frameborder="0"></iframe>
+  <figcaption markdown>
+  Present-day thermal structure predicted from a global mantle convection simulation in G-ADOPT that incorporates 230 Myr of plate-motion history reconstructed in [GPlates](https://www.gplates.org/).
+  </figcaption>
 </figure>
 
----
-
-G-ADOPT is currently underpinned by three state-of-the-art software libraries:
-
-1. [Firedrake](https://www.firedrakeproject.org/), an automated system
-for solving partial differential equations using the finite element
-method;
-2. [dolfin-adjoint](https://github.com/dolfin-adjoint/pyadjoint), an algorithmic
-differentiation framework that automatically derives the corresponding representation
-of discrete adjoint equations in a form compatible with Firedrake;
-3. [Rapid Optimisation Library (ROL)](https://trilinos.github.io/rol.html), a highly
-efficient package enabling advanced, large-scale optimization.
-
-Together, they constitute a high-performance geoscientific modelling framework with
-forward and adjoint calculations that achieve theoretical computational efficiency.
+</div>
+</div>
 
 ---
 
-<div class="grid" style="align-items:center; justify-items:center;" markdown>
-![ANU logo](images/anu_logo.png){ width="200" }
-
-![ARDC logo](images/ardc_logo.svg){ width="200" }
-
-![AuScope logo](images/auscope_logo.png){ width="200" }
-
-![Imperial logo](images/imperial_logo.png){ width="200" vertical-align="middle" }
+<!-- Partner logos -->
+<div class="logo-row" markdown>
+![ANU](images/anu_logo.png)
+![ARDC](images/ardc_logo.svg)
+![AuScope](images/auscope_logo.png)
+![Imperial](images/imperial_logo.png)
 </div>

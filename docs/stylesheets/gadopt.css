@@ -45,3 +45,27 @@ figure.bio {
     color: inherit;
     pointer-events: none;
 }
+
+/* Float the logo to the right of the admonition */
+.hero-logo { float: right; width: 300px; max-width: 35%; margin: .25rem 0 1rem 1.25rem; }
+.clearfix::after { content: ""; display: block; clear: both; }
+
+/* Enlarge the "What is G-ADOPT?" text */
+#what-is-gadopt .admonition { font-size: 1.25rem; line-height: 1.8; padding: 1.1rem 1.4rem; border-width: 2px; }
+#what-is-gadopt .admonition-title { font-size: 1.5rem; font-weight: 800; }
+
+/* Cards (left) + viewer (right) side-by-side */
+.content-split { display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 2rem; align-items: start; }
+.viewer-frame { width: 100%; height: 440px; border: 0; border-radius: 8px; box-shadow: 0 1px 10px rgba(0,0,0,.08); }
+
+/* Partner logos – tidy sizing */
+.logo-row { display: grid !important; grid-template-columns: repeat(4,1fr); justify-items: center; align-items: center; gap: 1.5rem; width: 85%; margin: 3rem auto 2rem; padding: 1rem 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.logo-row p { margin: 0; display: flex; justify-content: center; }
+.logo-row img { max-height: 46px; width: auto; height: auto; object-fit: contain; }
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .hero-logo { float: none; display: block; margin: 1rem auto; max-width: 260px; width: 60%; }
+  .content-split { grid-template-columns: 1fr; }
+  .viewer-frame { height: 380px; }
+}
