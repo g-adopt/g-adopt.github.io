@@ -48,6 +48,8 @@ extra:
   analytics:
     provider: google
     property: G-E8ZDKFN2BR
+extra_javascript:
+  - javascripts/open-external.js
 plugins:
   - blog:
       blog_dir: events/workshops
