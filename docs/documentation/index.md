@@ -31,9 +31,5 @@ For all other matters, such as setting up the mesh, finite-element spaces, and
 representation of physical variables, G-ADOPT simply relies on Firedrake APIs, such as
 `Mesh`, `FunctionSpace`, and `Function`.
 
-G-ADOPT includes a series of demos that illustrate the essence of the library. You are
-encouraged to go through them and familiarise yourself with the concepts summarised
-here. The first demo represents a base case and constitutes an excellent starting place,
-as most other demos build on the foundations it lays. More advanced demos bring a
-gentle introduction to some state-of-the-art approaches in the current geodynamics
-paradigm.
+G-ADOPT includes a series of [tutorials](../tutorials/) that illustrate the essence of the library.
+You are encouraged to go through them and familiarise yourself with the concepts summarised here.
