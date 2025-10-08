@@ -24,7 +24,7 @@ hide:
 - :material-rocket-launch: **[Get Started](install.md)** — New here? Install G-ADOPT and run your first tutorial.
 - :material-book-open-page-variant: **[Documentation](documentation/index.md)** — User and developer guides, API, and examples.
 - :material-school: **[Tutorials](tutorials/index.md)** — Hands-on lessons from first runs to advanced models.
-- :material-calendar-star: **[Events & Workshops](events.md)** — Training days, schedules, and past workshops.
+- :material-calendar-star: **[Events & Workshops](events/workshops/index.md)** — Training days, schedules, and past workshops.
 - :material-account-group: **[Community](team.md)** — Meet our [Team](team.md) and discover our [Partners](partners.md).
 - :material-newspaper-variant-multiple-outline: **[Publications & Outreach](publications.md)** — Explore our [Research Outputs](publications.md) and recent [Media Features](media.md).
 </div>
