@@ -72,9 +72,7 @@ plugins:
         - scripts/gen_api_pages.py
 
 nav:
-  - Home:
-      - index.md
-      - About: about.md
+  - index.md
   - Install: install.md
   - Documentation:
       - documentation/index.md
