@@ -12,6 +12,7 @@ theme:
   features:
     - announce.dismiss
     - content.code.copy
+    - content.code.select
     - navigation.indexes
     - navigation.tabs
     - toc.integrate
@@ -30,6 +31,11 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       toc_depth: 3
 extra_css:
@@ -78,11 +84,15 @@ nav:
       - documentation/index.md
       - documentation/dev.md
       - API: documentation/api/
-  - Tutorials: tutorials/
+  - Tutorials:
+      - tutorials/index.md
+      - tutorials/mantle_convection/index.md
+      - tutorials/glacial_isostatic_adjustment/index.md
   - Team: team.md
-  - Funding: funding.md
+  - Partners: partners.md
   - Events:
       - events/workshops/index.md
       - events.md
   - Publications: publications.md
+  - Media: media.md
   - Contact: contact.md
