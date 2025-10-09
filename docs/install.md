@@ -10,6 +10,17 @@ Firedrake is available for Ubuntu, Mac, and, in principle, other Linux and Linux
 Up to date, detailed instructions for installing Firedrake and suggestions for troubleshooting can be found
 on the [Installing Firedrake](https://www.firedrakeproject.org/install.html) page of the Firedrake website.
 
+## Installing G-ADOPT
+
+With Firedrake installed, you can install the G-ADOPT library:
+
+    source venv-firedrake/bin/activate
+	python3 -m pip install gadopt
+
+This is only the base installation of G-ADOPT. You can install extra
+dependencies to [run the tutorials](#run-the-tutorials) or for
+[nonlinear optimisation](#optional-install).
+
 ## Using the G-ADOPT library
 
 If you would like to run G-ADOPT through scripts or interactively, simply
@@ -33,7 +44,7 @@ will be installed into it:
 
 Next, install Jupyter Notebook and the optional G-ADOPT requirements:
 
-    python3 -m pip install notebook gadopt[demos]
+    python3 -m pip install notebook gadopt[demos,optimisation] pygplates
 
 Finally, clone the G-ADOPT repository to access the demos:
 
