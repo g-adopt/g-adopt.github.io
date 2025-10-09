@@ -12,6 +12,7 @@ theme:
   features:
     - announce.dismiss
     - content.code.copy
+    - content.code.select
     - navigation.indexes
     - navigation.tabs
     - toc.integrate
@@ -30,6 +31,11 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       toc_depth: 3
 extra_css:
@@ -37,11 +43,12 @@ extra_css:
 extra:
   mathjax:
     - javascripts/mathjax.js
-    - https://polyfill.io/v3/polyfill.min.js?features=es6
     - https://unpkg.com/mathjax@3/es5/startup.js
   analytics:
     provider: google
     property: G-E8ZDKFN2BR
+extra_javascript:
+  - javascripts/open-external.js
 plugins:
   - blog:
       blog_dir: events/workshops
@@ -80,9 +87,9 @@ nav:
       - API: documentation/api/
   - Tutorials: tutorials/
   - Team: team.md
-  - Funding: funding.md
+  - Partners: partners.md
   - Events:
       - events/workshops/index.md
-      - events.md
   - Publications: publications.md
+  - Media: media.md
   - Contact: contact.md

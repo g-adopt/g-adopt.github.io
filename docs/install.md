@@ -15,7 +15,7 @@ on the [Installing Firedrake](https://www.firedrakeproject.org/install.html) pag
 With Firedrake installed, you can install the G-ADOPT library:
 
     source venv-firedrake/bin/activate
-	python3 -m pip install gadopt
+    python3 -m pip install gadopt
 
 This is only the base installation of G-ADOPT. You can install extra
 dependencies to [run the tutorials](#run-the-tutorials) or for
