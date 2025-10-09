@@ -68,7 +68,6 @@ figure.bio {
 /* Responsive */
 @media (max-width: 1100px) {
   .content-split { grid-template-columns: 1fr; }
-  .viewer-frame { height: 380px; }
 }
 
 @media (max-width: 700px) {
