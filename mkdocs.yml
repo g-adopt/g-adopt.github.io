@@ -86,10 +86,7 @@ nav:
       - documentation/index.md
       - documentation/dev.md
       - API: documentation/api/
-  - Tutorials:
-      - tutorials/index.md
-      - tutorials/mantle_convection/index.md
-      - tutorials/glacial_isostatic_adjustment/index.md
+  - Tutorials: tutorials/
   - Team: team.md
   - Partners: partners.md
   - Events:
