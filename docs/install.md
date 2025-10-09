@@ -7,20 +7,26 @@ title: Install
 First of all, you need to install [Firedrake](https://www.firedrakeproject.org), the finite element framework underpinning G-ADOPT.
 Firedrake is available for Ubuntu, Mac, and, in principle, other Linux and Linux-like systems.
 
-You can install both Firedrake and G-ADOPT by running:
+Up to date, detailed instructions for installing Firedrake and suggestions for troubleshooting can be found
+on the [Installing Firedrake](https://www.firedrakeproject.org/install.html) page of the Firedrake website.
 
-    curl -O https://raw.githubusercontent.com/firedrakeproject/firedrake/master/scripts/firedrake-install
-    python3 firedrake-install --install gadopt
+## Installing G-ADOPT
 
-More detailed instructions for installing Firedrake and suggestions for troubleshooting can be found
-on the [Download](https://www.firedrakeproject.org/download.html) page of the Firedrake website. Note that the install procedure may take up to one hour depending on your system.
+With Firedrake installed, you can install the G-ADOPT library:
+
+    source venv-firedrake/bin/activate
+    python3 -m pip install gadopt
+
+This is only the base installation of G-ADOPT. You can install extra
+dependencies to [run the tutorials](#run-the-tutorials) or for
+[nonlinear optimisation](#optional-install).
 
 ## Using the G-ADOPT library
 
 If you would like to run G-ADOPT through scripts or interactively, simply
 ensure that your Firedrake environment is activated:
 
-    source firedrake/bin/activate
+    source venv-firedrake/bin/activate
 
 Furthermore, the `gadopt` Python module should be available for you to use.
 
@@ -34,11 +40,11 @@ your Firedrake environment.
 First, activate the Firedrake environment so that the requirements
 will be installed into it:
 
-    source firedrake/bin/activate
+    source venv-firedrake/bin/activate
 
 Next, install Jupyter Notebook and the optional G-ADOPT requirements:
 
-    python3 -m pip install notebook gadopt[demos]
+    python3 -m pip install notebook gadopt[demos,optimisation] pygplates
 
 Finally, clone the G-ADOPT repository to access the demos:
 
@@ -72,9 +78,9 @@ and then install the optimisation variant:
 ## Using the G-ADOPT library on Gadi
 
 The G-ADOPT team maintains an up-to-date G-ADOPT and Firedrake installation
-with all optional dependencies on NCI's Gadi HPC system. To use G-ADOPT on 
-Gadi, create an NCI account, then follow 
-[this link](https://my.nci.org.au/mancini/project/fp50/join) to request to 
+with all optional dependencies on NCI's Gadi HPC system. To use G-ADOPT on
+Gadi, create an NCI account, then follow
+[this link](https://my.nci.org.au/mancini/project/fp50/join) to request to
 join the fp50 project. Once your request is approved, you can
 access G-ADOPT on Gadi by running:
 
@@ -95,8 +101,8 @@ the environment variable `MY_GADOPT` and load the firedrake module.
     module load firedrake
 
 You can also use G-ADOPT in a JupyterLab session on the
-[ARE](https://opus.nci.org.au/spaces/Help/pages/162431120/ARE+User+Guide) at 
-NCI. When launching a JupyterLab session, add `gdata/fp50` to the storage 
+[ARE](https://opus.nci.org.au/spaces/Help/pages/162431120/ARE+User+Guide) at
+NCI. When launching a JupyterLab session, add `gdata/fp50` to the storage
 field and the following in the 'Advanced options' section:
 
 ![G-ADOPT ARE](images/g-adopt-are.png){: style="width:450px"}
@@ -107,7 +113,7 @@ directories, right click on the `.py` file and select Open With -> Notebook
 
 ![Open notebook](images/open-notebook-are.png){ : style="width:450px"}
 
-The demos can also be run in parallel on the standard job queues. For example, the following 
+The demos can also be run in parallel on the standard job queues. For example, the following
 script, when placed in the `mantle_convection/3d_spherical` directory will run that demo on 4
 cores in Gadi's 'normal' queue:
 ``` sh title="run_gadi.sh"
