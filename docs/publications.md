@@ -16,7 +16,7 @@ For mantle convection applications we would be grateful if you could cite the fo
     --8<-- "gadopt_mc.bib"
     ```
 
-Likewise for glacial isostatic adjustment applications we would be grateful if you could cite.
+Likewise for glacial isostatic adjustment applications we would be grateful if you could cite the following study.
 
 ??? abstract "G-ADOPT Glacial Isostatic Adjustment references (BibTeX)"
     ``` bibtex title="gadopt_gia.bib"
