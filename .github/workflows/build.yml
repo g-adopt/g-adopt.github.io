@@ -40,7 +40,7 @@ jobs:
       - name: Get run_id for push
         if: ${{ github.event_name == 'push' }}
         run: |
-          run_id=$(gh run list -R g-adopt/g-adopt -w render.yml -L 1 -b master -s success --json databaseId --jq '.[].databaseId')
+          run_id=$(gh run list -R g-adopt/g-adopt -w render.yml -L 1 -b main -s success --json databaseId --jq '.[].databaseId')
           echo "run_id=${run_id}" >> "$GITHUB_ENV"
 
       - uses: actions/checkout@v4
