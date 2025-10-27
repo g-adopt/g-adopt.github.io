@@ -11,6 +11,9 @@ Adjustment (GIA) in Hobart, Tasmania on Tuesday 04/11/25. We welcome
 all participants, including existing and prospective users, developers,
 and collaborators.
 
+The location will be the the TEAL seminar room 136, Centenary Building, Sandy Bay Campus.
+See here for a [map link](https://maps.utas.edu.au/apple-app-site-association?zLevel=1&center=147.32718768345978,-42.902839363876865&zoom=20.479005488986587&sharepoi=NaN&gad_source=1&gad_campaignid=23023387813&gbraid=0AAAABAyYvKUmvF0_diaLh0_sF6aL001Ba&gclid=Cj0KCQjwsPzHBhDCARIsALlWNG3jLOF_WY16TE0vQ8NpPZC_zkf2u9SgsWiCrQkG9c-pb1M5MZCMlIsaAjKrEALw_wcB).
+
 A tentative schedule is included below. Note the workshop will take place the day before the ACEAS conference in Hobart.
 
 ## 🕘 Schedule (Tentative)
