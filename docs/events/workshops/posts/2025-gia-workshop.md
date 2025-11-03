@@ -16,20 +16,18 @@ See here for a [map link](https://maps.utas.edu.au/apple-app-site-association?zL
 
 A tentative schedule is included below. Note the workshop will take place the day before the ACEAS conference in Hobart.
 
-## 🕘 Schedule (Tentative)
+## 🕘 Schedule
 
 | Time | Session |
 |:------|:---------|
 | **09:30 – 10:15** | <span style="color:#FF8C00;">**Welcome & Introduction**</span> — Overview of GIA modelling in G-ADOPT. |
 | **10:15 – 12:15** | <span style="color:#8B0000;">**Tutorial 1:**</span> Base case setup *(includes coffee break)*. |
 | **12:15 – 13:15** | **Lunch**. |
-| **13:15 – 13:30** | <span style="color:#8B0000;">**Tutorial 2:**</span> Annulus demo (fly through) — visualising checkpointed states in ParaView *(no code run)*. |
+| **13:15 – 13:30** | <span style="color:#8B0000;">**Tutorial 2:**</span> Annulus demo (fly through). |
 | **13:30 – 14:00** | <span style="color:#FF8C00;">**Primer – Adjoint Theory**</span> — Key concepts and intuition. |
-| **14:00 – 15:30** | <span style="color:#8B0000;">**Tutorial 3:**</span> Adjoint inversion — recovering unknown viscosity structure. |
+| **14:00 – 15:30** | <span style="color:#8B0000;">**Tutorial 3:**</span> Adjoint inversions — recovering unknown ice thickness and viscosity. |
 | **15:30 – 15:45** | **Break**. |
-| **15:45 – 16:45** | <span style="color:#8B0000;">**Participant Challenge:**</span> Exploring sensitivity of viscosity estimates to ice-sheet size using adjoint kernels. |
-| **16:45 – 17:00** | **Wrap-Up Discussion**. |
-| **17:00 →** | **Pub!** 🍻 |
+| **15:45 – 16:15** | **Wrap-Up Discussion**. |
 
 ### 🧩 Notes
 
