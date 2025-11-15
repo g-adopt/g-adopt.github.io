@@ -4,8 +4,6 @@ date: 2025-11-04
 
 # GIA Workshop 2025
 
-## [Register Here](https://docs.google.com/forms/d/e/1FAIpQLSdFLfBbpipmrhwG-hRXfDuMNSo83ii_fy-e5WzX1xx6fcvMnQ/viewform?usp=dialog) ##
-
 The G-ADOPT team will be holding a workshop focused on Glacial Isostatic
 Adjustment (GIA) in Hobart, Tasmania on Tuesday 04/11/25. We welcome
 all participants, including existing and prospective users, developers,
