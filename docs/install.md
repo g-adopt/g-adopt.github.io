@@ -77,12 +77,18 @@ and then install the optimisation variant:
 
 ## Using the G-ADOPT library on Gadi
 
-The G-ADOPT team maintains an up-to-date G-ADOPT and Firedrake installation
-with all optional dependencies on NCI's Gadi HPC system. To use G-ADOPT on
-Gadi, create an NCI account, then follow
-[this link](https://my.nci.org.au/mancini/project/fp50/join) to request to
-join the fp50 project. Once your request is approved, you can
-access G-ADOPT on Gadi by running:
+For existing users of NCI's Gadi HPC system, the G-ADOPT team
+maintains an up-to-date G-ADOPT and Firedrake installation with all
+optional dependencies.  This requires that you already have an NCI
+account and are a member of an existing project with some compute
+allocation. To gain access to G-ADOPT on Gadi, follow [this
+link](https://my.nci.org.au/mancini/project/fp50/join) to request to
+join the `fp50` project. This is a small project intended only for
+providing access to G-ADOPT, and must not be used as a PBS project
+(except for requesting storage access, as below).
+
+Once your request is approved, you can access G-ADOPT on Gadi by
+running:
 
     module use /g/data/fp50/modules
     module load g-adopt
@@ -132,8 +138,6 @@ module load g-adopt
 
 mpiexec python3 3d_spherical.py
 ```
-Note that `fp50` is a small project intended only for maintaining G-ADOPT on Gadi, you will need
-access to a separate project with a Gadi SU allocation to run the demos.
 
 ## Developing G-ADOPT
 
