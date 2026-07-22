@@ -31,5 +31,5 @@ For all other matters, such as setting up the mesh, finite-element spaces, and
 representation of physical variables, G-ADOPT simply relies on Firedrake APIs, such as
 `Mesh`, `FunctionSpace`, and `Function`.
 
-G-ADOPT includes a series of [tutorials](../tutorials/) that illustrate the essence of the library.
+G-ADOPT includes a series of [tutorials](../tutorials/index.md) that illustrate the essence of the library.
 You are encouraged to go through them and familiarise yourself with the concepts summarised here.
