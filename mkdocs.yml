@@ -51,7 +51,7 @@ extra_javascript:
   - javascripts/open-external.js
 plugins:
   - blog:
-      blog_dir: events/workshops
+      blog_dir: outreach/community/workshops
       post_readtime: false
       archive: false
   - literate-nav:
@@ -88,8 +88,11 @@ nav:
   - Tutorials: tutorials/
   - Team: team.md
   - Partners: partners.md
-  - Events:
-      - events/workshops/index.md
-  - Publications: publications.md
-  - Media: media.md
-  - Contact: contact.md
+  - Outreach:
+      - outreach/index.md
+      - Community:
+          - outreach/community/index.md
+          - Workshops: outreach/community/workshops/index.md
+      - Contact: outreach/contact/index.md
+      - Media: outreach/media/index.md
+      - Publications: outreach/publications/index.md

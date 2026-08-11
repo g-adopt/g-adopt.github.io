@@ -4,7 +4,7 @@ date: 2025-03-28
 
 # G-ADOPT Presentations and Tutorials — March–May 2025
 
-![2025 Sydney](../../../images/events/2025_sydney.webp "2025 Sydney"){: style="height:108px" loading=lazy }
+![2025 Sydney](../../../../images/events/2025_sydney.webp "2025 Sydney"){: style="height:108px" loading=lazy }
 
 **Sydney, Earthbyte group — 28 March 2025**
 Rhodri Davies and Sia Ghelichkhan visited the Earthbyte group at the University of
