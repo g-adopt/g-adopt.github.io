@@ -73,3 +73,57 @@ figure.bio {
 @media (max-width: 700px) {
     .gadopt-logo { display: none; }
 }
+
+/* Simulation gallery */
+.simulation-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.simulation-card {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.5rem;
+    background: var(--md-default-bg-color);
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+}
+
+.simulation-card video,
+.simulation-placeholder {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+}
+
+.simulation-card video {
+    object-fit: contain;
+    background: #000;
+}
+
+.simulation-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    background: var(--md-default-fg-color--lightest);
+    color: var(--md-default-fg-color--light);
+    font-weight: 600;
+    text-align: center;
+}
+
+.simulation-card-body {
+    padding: 0.8rem 1rem 1rem;
+}
+
+.simulation-card-body h2 {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.simulation-card-body p:last-child {
+    margin-bottom: 0;
+}
