@@ -42,13 +42,21 @@ simulation performed using G-ADOPT.
 
 <article class="simulation-card">
 
-<div
-  class="simulation-placeholder"
-  role="img"
-  aria-label="Glacial isostatic adjustment animation coming soon"
+<video
+  controls
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="metadata"
+  aria-label="Animation of a global sea-level simulation"
 >
-  <span>Animation coming soon</span>
-</div>
+  <source
+    src="https://data.gadopt.org/website/ICE6G-VM5a_animation_global.mp4"
+    type="video/mp4"
+  >
+  Your browser does not support embedded video.
+</video>
 
 <div class="simulation-card-body">
 

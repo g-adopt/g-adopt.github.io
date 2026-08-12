@@ -100,7 +100,7 @@ figure.bio {
 
 .simulation-card video {
     object-fit: contain;
-    background: #000;
+    background: var(--md-default-bg-color);
 }
 
 .simulation-placeholder {
