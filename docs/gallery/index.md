@@ -8,9 +8,9 @@ glightbox: false
 Explore simulations produced using G-ADOPT across mantle convection,
 glacial isostatic adjustment, and groundwater modelling.
 
-<div class="simulation-gallery">
+<div class="simulation-gallery" markdown>
 
-<article class="simulation-card">
+<div class="simulation-card" markdown>
 
 <video
   controls
@@ -28,19 +28,17 @@ glacial isostatic adjustment, and groundwater modelling.
   Your browser does not support embedded video.
 </video>
 
-<div class="simulation-card-body">
+<div class="simulation-card-body" markdown>
 
-<h2>Mantle convection</h2>
+## Mantle convection
 
-<p>
 Present-day thermal structure predicted by a global mantle-convection
 simulation performed using G-ADOPT.
-</p>
 
 </div>
-</article>
+</div>
 
-<article class="simulation-card">
+<div class="simulation-card" markdown>
 
 <video
   controls
@@ -58,19 +56,17 @@ simulation performed using G-ADOPT.
   Your browser does not support embedded video.
 </video>
 
-<div class="simulation-card-body">
+<div class="simulation-card-body" markdown>
 
-<h2>Glacial isostatic adjustment</h2>
+## Glacial isostatic adjustment
 
-<p>
 Simulations of solid-Earth deformation and sea-level change in response
 to evolving ice-sheet loads.
-</p>
 
 </div>
-</article>
+</div>
 
-<article class="simulation-card">
+<div class="simulation-card" markdown>
 
 <div
   class="simulation-placeholder"
@@ -80,15 +76,13 @@ to evolving ice-sheet loads.
   <span>Animation coming soon</span>
 </div>
 
-<div class="simulation-card-body">
+<div class="simulation-card-body" markdown>
 
-<h2>Groundwater modelling</h2>
+## Groundwater modelling
 
-<p>
 Finite-element simulations of groundwater flow and subsurface transport.
-</p>
 
 </div>
-</article>
+</div>
 
 </div>
