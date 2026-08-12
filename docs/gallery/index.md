@@ -68,13 +68,21 @@ to evolving ice-sheet loads.
 
 <div class="simulation-card" markdown>
 
-<div
-  class="simulation-placeholder"
-  role="img"
-  aria-label="Groundwater animation coming soon"
+<video
+  controls
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="metadata"
+  aria-label="Animation of a ground water infiltration"
 >
-  <span>Animation coming soon</span>
-</div>
+  <source
+    src="https://streamable.com/e/7u56gy"
+    type="video/mp4"
+  >
+  Your browser does not support embedded video.
+</video>
 
 <div class="simulation-card-body" markdown>
 
