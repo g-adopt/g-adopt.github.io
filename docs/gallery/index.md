@@ -12,21 +12,16 @@ glacial isostatic adjustment, and groundwater modelling.
 
 <div class="simulation-card" markdown>
 
-<video
-  controls
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="metadata"
-  aria-label="Animation of a global mantle-convection simulation"
->
-  <source
-    src="https://data.gadopt.org/website/frontpage_animation.mp4"
-    type="video/mp4"
-  >
-  Your browser does not support embedded video.
-</video>
+<div style="position:relative; width:100%; height:0px; padding-bottom:50.000%">
+  <iframe 
+    allow="fullscreen" 
+    allowfullscreen 
+    height="100%"
+    src="https://streamable.com/e/tk7rwv?" 
+    width="100%"
+    style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+  </iframe
+></div>
 
 <div class="simulation-card-body" markdown>
 
@@ -40,21 +35,16 @@ simulation performed using G-ADOPT.
 
 <div class="simulation-card" markdown>
 
-<video
-  controls
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="metadata"
-  aria-label="Animation of a global sea-level simulation"
->
-  <source
-    src="https://data.gadopt.org/website/ICE6G-VM5a_animation_global.mp4"
-    type="video/mp4"
-  >
-  Your browser does not support embedded video.
-</video>
+<div style="position:relative; width:100%; height:0px; padding-bottom:50%">
+  <iframe 
+    allow="fullscreen" 
+    allowfullscreen 
+    height="100%"
+    src="https://streamable.com/e/bzofi4?" 
+    width="100%"
+    style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+  </iframe
+></div>
 
 <div class="simulation-card-body" markdown>
 
@@ -68,27 +58,42 @@ to evolving ice-sheet loads.
 
 <div class="simulation-card" markdown>
 
-<video
-  controls
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="metadata"
-  aria-label="Animation of a ground water infiltration"
->
-  <source
-    src="https://streamable.com/e/7u56gy"
-    type="video/mp4"
-  >
-  Your browser does not support embedded video.
-</video>
+<div style="position:relative; width:100%; height:0px; padding-bottom:69.364%">
+  <iframe 
+    allow="fullscreen" 
+    allowfullscreen height="100%" 
+    src="https://streamable.com/e/7u56gy?"
+    width="100%"
+    style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+  </iframe>
+</div>
 
 <div class="simulation-card-body" markdown>
 
 ## Groundwater modelling
 
 Finite-element simulations of groundwater flow and subsurface transport.
+
+</div>
+</div>
+
+<div class="simulation-card" markdown>
+
+<div style="position:relative; width:100%; height:0px; padding-bottom:70%">
+  <iframe 
+    allow="fullscreen" 
+    allowfullscreen height="100%" 
+    src="https://streamable.com/e/lkvp7l?"
+    width="100%"
+    style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+  </iframe>
+</div>
+
+<div class="simulation-card-body" markdown>
+
+## Subduction modelling
+
+Finite-element simulations of subduction with level sets and adaptive mesh refinement.
 
 </div>
 </div>
