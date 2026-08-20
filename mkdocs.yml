@@ -86,6 +86,7 @@ nav:
       - documentation/dev.md
       - API: documentation/api/
   - Tutorials: tutorials/
+  - Gallery: gallery/index.md
   - Team: team.md
   - Partners: partners.md
   - Outreach:
