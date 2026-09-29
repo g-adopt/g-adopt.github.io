@@ -1,7 +1,7 @@
 # g-adopt.github.io
 
 You've reached the repository that powers [the G-ADOPT website][1].
-It's powered by [ProperDocs], using the [Material for MkDocs][2]
+It's powered by [ProperDocs], using the [MaterialX]
 theme. API documentation is generated using [mkdocstrings].
 
 ## Local development
@@ -37,7 +37,7 @@ the `main` branch.
 
 [1]: https://gadopt.org
 [ProperDocs]: https://properdocs.org/
-[2]: https://squidfunk.github.io/mkdocs-material/
+[MaterialX]: https://jaywhj.github.io/mkdocs-materialx/
 [mkdocstrings]: https://mkdocstrings.github.io/
 [uv]: https://github.com/astral-sh/uv
 [installation instructions]: https://docs.astral.sh/uv/getting-started/installation/

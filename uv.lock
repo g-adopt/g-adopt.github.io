@@ -484,7 +484,7 @@ dependencies = [
     { name = "mkdocs-glightbox" },
     { name = "mkdocs-jupyter" },
     { name = "mkdocs-literate-nav" },
-    { name = "mkdocs-material" },
+    { name = "mkdocs-materialx" },
     { name = "mkdocstrings", extra = ["python"] },
     { name = "properdocs" },
 ]
@@ -495,7 +495,7 @@ requires-dist = [
     { name = "mkdocs-glightbox", specifier = ">=0.4.0" },
     { name = "mkdocs-jupyter", specifier = ">=0.25.1" },
     { name = "mkdocs-literate-nav", specifier = ">=0.6.1" },
-    { name = "mkdocs-material", specifier = ">=9.6.5" },
+    { name = "mkdocs-materialx" },
     { name = "mkdocstrings", extras = ["python"], specifier = ">=0.28.2" },
     { name = "properdocs" },
 ]
@@ -941,6 +941,20 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-document-dates"
+version = "3.8.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "babel" },
+    { name = "mkdocs" },
+    { name = "properdocs" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/47/9d/c77aedfdc4228b6aeb80d3ccc4d3c6e642b064f44e1ce47cef93101ff59d/mkdocs_document_dates-3.8.7.tar.gz", hash = "sha256:da03b4fcc5f94689a92791e96ff4b38cb967b6abce8a3a465fee849451aa5f1f", size = 195236 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f4/10/7bd3e3a5edeb1dde352b5183a05819f8d2003958f17af42fade886cb025d/mkdocs_document_dates-3.8.7-py3-none-any.whl", hash = "sha256:9f9f699ad08080e1e8b5199820350d43e8c358c1de53bb6ef386bb360316eb9f", size = 200431 },
+]
+
+[[package]]
 name = "mkdocs-gen-files"
 version = "0.6.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1039,6 +1053,32 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/79/9b/9b4c96d6593b2a541e1cb8b34899a6d021d208bb357042823d4d2cabdbe7/mkdocs_material_extensions-1.3.1.tar.gz", hash = "sha256:10c9511cea88f568257f960358a467d12b970e1f7b2c0e5fb2bb48cab1928443", size = 11847 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5b/54/662a4743aa81d9582ee9339d4ffa3c8fd40a4965e033d77b9da9774d3960/mkdocs_material_extensions-1.3.1-py3-none-any.whl", hash = "sha256:adff8b62700b25cb77b53358dad940f3ef973dd6db797907c49e3c2ef3ab4e31", size = 8728 },
+]
+
+[[package]]
+name = "mkdocs-materialx"
+version = "10.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "babel" },
+    { name = "backrefs" },
+    { name = "colorama" },
+    { name = "jinja2" },
+    { name = "markdown", version = "3.10.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "markdown", version = "3.11", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "mkdocs" },
+    { name = "mkdocs-document-dates" },
+    { name = "mkdocs-material-extensions" },
+    { name = "pagefind", extra = ["extended"] },
+    { name = "paginate" },
+    { name = "properdocs" },
+    { name = "pygments" },
+    { name = "pymdown-extensions" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a4/2c/095a5fe0b7e0fc37d88f13b4cef0ba34e8ecfcdd43f6828ecb6e33eda52f/mkdocs_materialx-10.2.0.tar.gz", hash = "sha256:4ad6009fde5bdb59d2b98cabe1ee5f872aaf23470ed6c2ff29b7541f587a6a31", size = 4269100 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/06/a2/2959404a107a95c15c4c3d80979a6b2ea3d305ec9924d7b3e2be7e7f0373/mkdocs_materialx-10.2.0-py3-none-any.whl", hash = "sha256:a912eb1ae76b7aa4c912995baa936f4acc17f06078c0f604f87757d18155c14f", size = 10219633 },
 ]
 
 [[package]]
@@ -1150,6 +1190,33 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/7d/fa/3944b40b07da9ce895c0e6303a5ab7d53da063554f534556b134a54d6093/packaging-26.3.tar.gz", hash = "sha256:94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79", size = 313412 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl", hash = "sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c", size = 129956 },
+]
+
+[[package]]
+name = "pagefind"
+version = "1.5.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/50/cc/efc080eb3191d1afc75dc58c336676c0847fc4610b1d9e7d58b4083836b6/pagefind-1.5.2.tar.gz", hash = "sha256:fffddd6e2016b06bdca83b83d4ac4bef379cf0559f05ecdb6908a8729a27dbf3", size = 52521 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0a/a7/414e1df2749f647784e32da78ce3081a9fedf1ae8d5b3bb8d4c5643f06cd/pagefind-1.5.2-py3-none-any.whl", hash = "sha256:6c4086ad9eaa7e8f863085652f6b1093549b1737848d946daa0706ee57f778d1", size = 10104 },
+]
+
+[package.optional-dependencies]
+extended = [
+    { name = "pagefind-bin-extended" },
+]
+
+[[package]]
+name = "pagefind-bin-extended"
+version = "1.5.2"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/36/5e/06ac224460edfea99cca6708b25f7a604a2eec0c5db8d8b1a3b7246426cc/pagefind_bin_extended-1.5.2-py3-none-macosx_12_0_arm64.whl", hash = "sha256:9c4e2d7e0def5ba3a7814594e1d91cb6876030c5e05ccec53cc778b94d8af6e6", size = 52590084 },
+    { url = "https://files.pythonhosted.org/packages/a6/31/39ebf3ccfd440f377f4507d6232a5b27e6a55ba3296b6f63f766937727ef/pagefind_bin_extended-1.5.2-py3-none-macosx_12_0_x86_64.whl", hash = "sha256:c4db4b46e5aa42c6641cee257b0767895a1d9471c2332717763116e295bd7340", size = 52335482 },
+    { url = "https://files.pythonhosted.org/packages/c1/33/66cc2d32a8bfaa3dc4109a7a5f557a0df61aecee9fce827bd8ca9dbb051c/pagefind_bin_extended-1.5.2-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:1762f4a8c2137ca07261b0fec1b441df1ba421a0f124a86e33c43c09ca2d1d6c", size = 52658197 },
+    { url = "https://files.pythonhosted.org/packages/1c/a4/bdf91a227c0c7dcb394c4e47db1db046cd42e56d1881f61d8efbbadfd6e2/pagefind_bin_extended-1.5.2-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:bcf47caa731c423c6ba355f593cf41febde986a296e8dd3a47620c72aa7a18e1", size = 52374465 },
+    { url = "https://files.pythonhosted.org/packages/ce/a7/fa14455f45f8b0ba7f99d9f51d7cbaeee26b187d8da3b457103977c6fd88/pagefind_bin_extended-1.5.2-py3-none-win_amd64.whl", hash = "sha256:2bf653ca30062b50e461887b14cd97be8e44dce6a28b9949b02db4b7f7ca694f", size = 52435085 },
+    { url = "https://files.pythonhosted.org/packages/3a/79/ea7a5edd10df47549fd2795d3e4183c08bd1ece96acc6445dd0b21b33f0e/pagefind_bin_extended-1.5.2-py3-none-win_arm64.whl", hash = "sha256:2a59c73b19857f84d7f3482c781897bd20d9409ab4b4e146d54c7b67713dd7cb", size = 52297865 },
 ]
 
 [[package]]

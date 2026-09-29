@@ -10,6 +10,6 @@ dependencies = [
     "mkdocs-glightbox>=0.4.0",
     "mkdocs-jupyter>=0.25.1",
     "mkdocs-literate-nav>=0.6.1",
-    "mkdocs-material>=9.6.5",
+    "mkdocs-materialx",
     "mkdocstrings[python]>=0.28.2",
 ]
