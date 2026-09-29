@@ -3,12 +3,15 @@ site_url: https://gadopt.org/
 repo_name: g-adopt
 repo_url: https://github.com/g-adopt/g-adopt
 theme:
-  name: material
+  name: materialx
   custom_dir: overrides
   logo: 'images/g_logo.svg'
   favicon: 'images/favicon.ico'
   icon:
     repo: fontawesome/brands/github
+  topbar_style: primary
+  palette:
+    primary: "#4051b5"
   features:
     - announce.dismiss
     - content.code.copy
@@ -68,7 +71,7 @@ plugins:
             docstring_style: google
             merge_init_into_class: true
             members_order: source
-          import:
+          inventories:
             - https://fenics.readthedocs.io/projects/ufl/en/latest/objects.inv
   - mkdocs-jupyter:
       toc_depth: 2
