@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "properdocs",
+    "mkdocs-d2-plugin",
     "mkdocs-gen-files>=0.5.0",
     "mkdocs-glightbox>=0.4.0",
     "mkdocs-jupyter>=0.25.1",
