@@ -9,7 +9,7 @@ mantle convection, and how they build on one another. Together, these
 tutorials demonstrate how to set up and run both forward and inverse
 mantle dynamics simulations using G-ADOPT.
 
-```d2 scale="0.7"
+```d2 scale="0.7" elk_algorithm="force"
 --8<-- "docs/tutorials/mantle_convection/.diagram.d2"
 ```
 
